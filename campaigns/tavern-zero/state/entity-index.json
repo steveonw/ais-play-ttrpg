@@ -1,0 +1,85 @@
+{
+  "crooked-lantern": {
+    "id": "crooked-lantern",
+    "name": "The Crooked Lantern",
+    "type": "LOCATION",
+    "undefined_fields": [
+      "settlement",
+      "region",
+      "history"
+    ]
+  },
+  "mara-blackkeg": {
+    "id": "mara-blackkeg",
+    "name": "Mara Blackkeg",
+    "type": "NPC",
+    "undefined_fields": [
+      "history",
+      "family",
+      "motives"
+    ]
+  },
+  "cellar-door": {
+    "id": "cellar-door",
+    "name": "Cellar door",
+    "type": "OBJECT",
+    "undefined_fields": [
+      "lock",
+      "mechanism"
+    ]
+  },
+  "tavern-cellar": {
+    "id": "tavern-cellar",
+    "name": "Crooked Lantern cellar",
+    "type": "LOCATION",
+    "undefined_fields": [
+      "age",
+      "extent",
+      "connections"
+    ]
+  },
+  "trapped-traveler": {
+    "id": "trapped-traveler",
+    "name": "Trapped traveler",
+    "type": "NPC",
+    "undefined_fields": [
+      "name",
+      "occupation",
+      "origin"
+    ]
+  },
+  "fallen-rack": {
+    "id": "fallen-rack",
+    "name": "Fallen storage rack",
+    "type": "OBJECT",
+    "undefined_fields": [
+      "cause-of-fall"
+    ]
+  },
+  "drain-grate": {
+    "id": "drain-grate",
+    "name": "Wooden drainage grate",
+    "type": "OBJECT",
+    "undefined_fields": [
+      "outlet",
+      "obstruction"
+    ]
+  },
+  "leather-satchel": {
+    "id": "leather-satchel",
+    "name": "Iven's leather satchel",
+    "type": "OBJECT",
+    "undefined_fields": [
+      "contents"
+    ]
+  },
+  "shutoff-board": {
+    "id": "shutoff-board",
+    "name": "Drain shutoff board",
+    "type": "OBJECT",
+    "undefined_fields": [
+      "age",
+      "maintenance"
+    ]
+  }
+}
