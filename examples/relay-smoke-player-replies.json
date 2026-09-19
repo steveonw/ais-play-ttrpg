@@ -1,0 +1,35 @@
+[
+  {
+    "request_id": "rq-71ec71e6af0e-000003",
+    "agent_id": "player-01",
+    "payload": {
+      "character_id": "arlen-vale",
+      "speech": "If we're waiting for paying work, I'd like to hear the unpleasant part before agreeing to anything.",
+      "action": "I look around the tavern from where I stand with the party, checking for any posted offers of work.",
+      "intent": "Find a lead while keeping the freedom to question its terms and refuse it.",
+      "target": "crooked-lantern"
+    }
+  },
+  {
+    "request_id": "rq-71ec71e6af0e-000007",
+    "agent_id": "player-02",
+    "payload": {
+      "character_id": "elara-voss",
+      "speech": "Fair enough, Arlen. But if someone's in trouble, I'd like to hear that before we talk about payment. Does anyone here need help?",
+      "action": "I remain beside the party and look around the tavern, listening for a response to my question.",
+      "intent": "Find out whether someone needs immediate help without committing my companions to danger.",
+      "target": null
+    }
+  },
+  {
+    "request_id": "rq-71ec71e6af0e-000011",
+    "agent_id": "player-03",
+    "payload": {
+      "character_id": "torren-bright",
+      "speech": "Before we agree to anything, I should like to hear exactly what happened—and what has already been tried. Ordinary explanations can be surprisingly elusive.",
+      "action": "I remain beside the party, notebook ready, and listen for any response to Elara’s question.",
+      "intent": "Gather a clear account before investigating or touching anything unfamiliar, and consider ordinary explanations before assuming magic.",
+      "target": "crooked-lantern"
+    }
+  }
+]

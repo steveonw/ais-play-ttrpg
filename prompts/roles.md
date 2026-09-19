@@ -1,8 +1,9 @@
 # Role prompts
 
-These prompts guide the supervising assistant's self-play. The current CLI does
-not launch agents or call an API. Future independent adapters must receive only
-their role's filtered context and must keep tool access equally restricted.
+These role descriptions apply to both the recorded self-play and live play.
+Executable live prompts are versioned in `agent_prompts.py`; `live.py` dispatches
+filtered requests through a chat relay or optional API transport. See
+[live play](../docs/live-play.md) for the isolation and routing requirements.
 
 ## GM
 
@@ -25,11 +26,12 @@ not a reason to know things your character has not learned.
 
 ## Chronicler
 
-In this first runtime the Chronicler is a deterministic recorder. Copy only
-GM-approved structured facts and grants, with their exact classification and
-source event. Never paraphrase a rumor into a stronger claim. Reject repeated
-fact IDs. Semantic contradictions across different IDs require GM review; this
-implementation does not claim to detect all natural-language contradictions.
+In live play, independently review proposed GM scenes and resolutions against
+existing facts and saved dice. Approve or identify conflicts; do not rewrite
+the scene or invent lore. A rejection pauses play until the operator routes a
+correction to the GM. Produce a factual summary at session end. The underlying
+deterministic recorder copies accepted facts and grants exactly and rejects
+repeated IDs. Neither layer guarantees detection of every semantic contradiction.
 
 ## Orchestrator
 
@@ -37,3 +39,6 @@ Use the software state machine, never a model's claimed state. Enforce actor
 order, phase, schema, approved modifiers, outcomes, idempotency and a hard limit
 of 100 total character turns. All participants remain together in this version;
 split-party audiences and combat must be implemented before those situations.
+Route only the exact current packet to its assigned role. Keep each player in
+a separate fresh context; never give them the supervisor's repository history.
+The supervisor alone writes checkpoints and publishes campaign records.

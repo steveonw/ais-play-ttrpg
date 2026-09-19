@@ -288,7 +288,9 @@ class Campaign:
         (self.root / "state/timeline.jsonl").write_text(log, encoding="utf-8")
         for cid, char in s["characters"].items():
             write_json(self.root / "characters" / cid / "knowledge.json", {"character_id": cid, "knowledge": [s["facts"][fid] for fid in char["knowledge"]]})
-        lines = ["# Tavern Zero — The First Night", "", "Mode: single-model self-play with software dice. All three characters are together throughout this session. Private intentions and discoveries are excluded from this table-facing transcript.", ""]
+        title = "Tavern Zero — The First Night" if s["config"]["play_mode"] == "SINGLE_MODEL_SELF_PLAY" else "Tavern Zero — " + s["config"]["session_id"]
+        mode = "single-model self-play" if s["config"]["play_mode"] == "SINGLE_MODEL_SELF_PLAY" else "separate agent requests"
+        lines = ["# " + title, "", f"Mode: {mode} with software dice. All characters remain together. Private intentions and discoveries are excluded from this table-facing transcript.", ""]
         for event in s["public_log"]:
             if event["kind"] == "scene":
                 lines += [f"## {event['scene_id']}", "", event["text"], ""]
