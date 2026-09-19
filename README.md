@@ -4,15 +4,24 @@ A tabletop adventure that grows through play. The GM establishes the world,
 three player characters choose their intentions, software rolls the dice, and
 the runtime records what happened.
 
-**The first adventure has been played: 24 turns, with a hard maximum of 100.**
-It uses one supervising model playing the roles, not independent model agents.
-The next session can use separate GM, player and Chronicler agents through the
-new live relay. The relay runs without API keys or third-party dependencies;
+**Two sessions are recorded: 24 turns of first-night self-play and a three-turn
+outside encounter with separate agents. Each session has a maximum of 100.**
+Session two uses separate GM, player and Chronicler invocations through the
+live relay. The relay runs without API keys or third-party dependencies;
 an optional API runner is also included. Neither runs in the background by itself.
 
 **[Start or resume separate-agent play](docs/live-play.md)**
 
 ## Read the adventure
+
+**[Session two — Outside the Crooked Lantern](https://github.com/steveonw/ais-play-ttrpg/blob/world-state/campaigns/tavern-zero/sessions/session-0002/transcript.md)**
+· [Summary](https://github.com/steveonw/ais-play-ttrpg/blob/world-state/campaigns/tavern-zero/sessions/session-0002/summary.md)
+
+The three characters question a notice poster on the lane outside the tavern.
+They learn of Sella, a possible contact at the bridge, while keeping claims
+about Dain unverified. Each player acts through a separate fresh context; the
+GM and Chronicler also run separately. The session pauses before the party
+travels to the bridge. No dice checks were needed for the chosen actions.
 
 **[The First Night — full transcript](https://github.com/steveonw/ais-play-ttrpg/blob/world-state/campaigns/tavern-zero/sessions/session-0001/transcript.md)**
 
@@ -25,9 +34,9 @@ Bright, a cautious wizard arrive at the Crooked Lantern. A bell rings below the
 floor. Mara says nobody is down there. The rest emerges from their choices and
 seven software-generated checks.
 
-The session finishes at a natural overnight pause. Four checks succeed and
-three fail. The story keeps those failures and their consequences. The next
-lead is recorded, but another session has not been run.
+The first session finishes at a natural overnight pause. Four checks succeed
+and three fail. The story keeps those failures and their consequences. Session
+two continues the lead in daylight outside the tavern.
 
 ## Run locally
 
@@ -91,11 +100,12 @@ been exercised against a live API account. See [validation](docs/validation.md).
 | Location | Contents |
 | --- | --- |
 | `main` branch | Runtime, tests, configuration, prompts, docs and replay inputs |
-| `world-state` branch | Runtime snapshot plus the first campaign and checkpoint |
+| `world-state` branch | Runtime snapshot, campaign archive and latest checkpoint |
 | `campaigns/tavern-zero/checkpoint.json` | Atomic authority for the saved run |
 | `campaigns/tavern-zero/state/` | World facts, entities and full event timeline |
 | `campaigns/tavern-zero/characters/` | Individual knowledge records |
 | `campaigns/tavern-zero/sessions/session-0001/` | Transcript, summary, metrics and full debug log |
+| `campaigns/tavern-zero/sessions/session-0002/` | Separate-agent transcript, summary, metrics and recovery snapshots |
 
 Campaign records, including fictional secrets, are public by the owner's choice.
 Player agents must use filtered contexts instead of reading the whole repository.
