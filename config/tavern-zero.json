@@ -1,0 +1,42 @@
+{
+  "protocol_version": "0.1",
+  "campaign_id": "tavern-zero",
+  "session_id": "session-0001",
+  "maximum_turns": 100,
+  "dice_seed": 728491,
+  "world_mode": "SCHRODINGER",
+  "ruleset": "TAVERN_ZERO_CHECKS_V1",
+  "play_mode": "SINGLE_MODEL_SELF_PLAY",
+  "repository": "steveonw/ais-play-ttrpg",
+  "github_visibility": "PUBLIC_FULL_CAMPAIGN",
+  "adversary_enabled": false,
+  "characters": [
+    {
+      "id": "arlen-vale", "agent_id": "player-01", "name": "Arlen Vale",
+      "role": "curious rogue",
+      "personality": "Suspicious, curious, dry humor. Notices inconsistencies and dislikes being steered.",
+      "goal": "Find paying work without becoming somebody else's disposable helper.",
+      "skills": {"INSIGHT": 3, "INVESTIGATION": 3, "STEALTH": 4, "DEXTERITY": 3, "PERCEPTION": 2},
+      "hp": 9, "inventory": ["dagger", "travel cloak", "chalk"],
+      "private_memories": ["I need money, but I will not accept a job without asking what it really involves."]
+    },
+    {
+      "id": "elara-voss", "agent_id": "player-02", "name": "Elara Voss",
+      "role": "idealistic fighter",
+      "personality": "Direct, protective, stubborn. Offers help first and asks about payment later.",
+      "goal": "Help somebody in immediate trouble without forcing the others into a fight.",
+      "skills": {"ATHLETICS": 4, "PERSUASION": 2, "PERCEPTION": 1, "INSIGHT": 1},
+      "hp": 12, "inventory": ["sword", "shield", "rope"],
+      "private_memories": ["Promises matter to me, even when keeping them is inconvenient."]
+    },
+    {
+      "id": "torren-bright", "agent_id": "player-03", "name": "Torren Bright",
+      "role": "cautious wizard",
+      "personality": "Methodical, polite, easily alarmed by unexplained machinery or magic.",
+      "goal": "Understand unusual phenomena before touching them.",
+      "skills": {"ARCANA": 4, "INVESTIGATION": 2, "PERCEPTION": 2, "DEXTERITY": 1},
+      "hp": 7, "inventory": ["notebook", "pencil", "walking staff"],
+      "private_memories": ["An unexplained event is not evidence of magic until ordinary explanations have been tested."]
+    }
+  ]
+}
