@@ -1,0 +1,6 @@
+GitHub access test
+Repository: steveonw/ais-play-ttrpg
+Date: 2026-09-19
+
+This file was created at the repository owner's request to test GitHub write access.
+It contains no application code or campaign state and can be removed after verification.
