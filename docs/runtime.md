@@ -2,11 +2,12 @@
 
 ## Scope
 
-This implementation is a local CLI for supervised self-play, not an unattended
-AI service. A supervising assistant authors the three players and GM. The
-runtime handles randomness, typed validation, deterministic recording and
-checkpointing. It needs Python 3.10 or later and only the standard library.
-There are no API keys, paid calls or background jobs in the included demo.
+`ttrpg.py` is the core local state machine. It handles randomness, typed
+validation, deterministic recording and checkpointing. `live.py` adds separate
+role dispatch, review, recovery and an optional API transport. See
+[live play](live-play.md) for that layer's contract. Python 3.10 or later and
+the standard library are sufficient. The included first-session replay needs
+no API keys, paid calls or background jobs.
 
 The first-night fixture was recorded as play progressed. Review messages and
 software dice results preceded the GM's final narration. Replaying it reproduces
@@ -62,7 +63,7 @@ own character sheet, known facts and the common table transcript, never the
 full world, another character's private memories, or pending private intents.
 The GM author remains responsible for not revealing secrets in public prose.
 
-This demo uses one model with shared context. Passing filter tests does not
+The first-session demo used one model with shared context. Passing filter tests does not
 prove that this model forgot secrets while playing a character. Real agent
 isolation requires separate calls with filtered prompts and restricted tools.
 All characters are together; split-party play is out of scope. The public
@@ -86,13 +87,14 @@ to GitHub. Standard authenticated Git or the connected GitHub tools publish it.
 
 ## Limits and next work
 
-- No model API adapter or continuous background execution.
+- No continuous background execution. The optional live adapter runs only when
+  invoked; its API path requires locally configured credentials and models.
 - No combat, HP modification, inventory mutation, spells, split parties or
   automatic next-session creation. These require additional contracts.
 - A deterministic Chronicler copies approved records; it cannot detect every
   semantic contradiction. GM narration and summaries still need semantic review.
-- Automatic model retries and budget enforcement belong in a future adapter.
-  Current invalid inputs return an error without advancing the checkpoint.
+- Core invalid inputs return an error without advancing the checkpoint.
+  The live layer adds a call limit, response validation and bounded attempts.
 - The 100-turn unit test exercises state transitions with fixtures. It is not
   evidence of a 100-turn independently generated multi-agent campaign.
 

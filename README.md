@@ -6,8 +6,11 @@ the runtime records what happened.
 
 **The first adventure has been played: 24 turns, with a hard maximum of 100.**
 It uses one supervising model playing the roles, not independent model agents.
-The code runs locally without API keys or third-party dependencies. It is not a
-background service; new fictional decisions require a human or assistant.
+The next session can use separate GM, player and Chronicler agents through the
+new live relay. The relay runs without API keys or third-party dependencies;
+an optional API runner is also included. Neither runs in the background by itself.
+
+**[Start or resume separate-agent play](docs/live-play.md)**
 
 ## Read the adventure
 
@@ -66,17 +69,22 @@ It may be lowered, but this version rejects values above 100.
 
 - A state machine with validated action, review, resolution and scene phases.
 - Approved skill modifiers, seeded d20 checks and advantage/disadvantage.
-- A deterministic Chronicler that copies GM-approved facts and grants.
+- A deterministic recorder that copies GM-approved facts and grants.
+- A separate Chronicler review before live GM scenes and results are committed.
 - Per-character knowledge, private intentions and filtered player requests.
 - Full protocol envelopes in the debug history and a table-facing transcript.
 - Atomic checkpoints with pending rolls, RNG state and idempotent message IDs.
 - Rebuildable JSON/Markdown records and a reproducible first-session fixture.
-- Eleven tests, including restart behavior, forbidden fields and the turn cap.
+- A durable agent dispatcher, strict response schemas and bounded retries.
+- A relay for chat agents and an optional stateless Responses API transport.
+- Continuation from a completed checkpoint, preserving knowledge and dice state.
+- Tests for routing, hidden information, recovery, provider errors and turn limits.
 
-Combat, inventory/HP changes, split parties, automatic new sessions and a live
-model-provider adapter are not implemented. A single model cannot demonstrate
-independent agent cognition or reliably forget its GM knowledge. Context-filter
-tests verify the runtime data boundary, not model-level isolation.
+Combat, inventory/HP changes, split parties and automatic new sessions are not
+implemented. Context-filter tests verify the runtime data boundary. Native chat
+agents must receive fresh contexts and restricted access; prompts alone are not
+a filesystem sandbox. The optional API transport has mocked tests but has not
+been exercised against a live API account. See [validation](docs/validation.md).
 
 ## Repository layout
 
@@ -98,8 +106,9 @@ Never put actual credentials in configuration, prompts, logs or checkpoints.
 - [Original protocol PDF](docs/protocol-v0.1.pdf)
 - [Setup guide](docs/setup-guide.docx)
 - [Implemented runtime contract](docs/runtime.md)
+- [Live separate-agent workflow](docs/live-play.md)
 - [Role prompts](prompts/roles.md)
 
 The protocol and setup guide describe the wider design. The runtime contract
-states this first implementation's limits. Source and session commits are made
+and live-play guide state the implementation's limits. Source and session commits are made
 explicitly through authenticated Git; the CLI itself never claims to push data.
