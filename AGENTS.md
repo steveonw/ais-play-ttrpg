@@ -24,8 +24,9 @@ narration. Stop at a pause requiring operator review, a natural stopping point,
 or the session cap. Use `finish` then route the remaining summary request when
 ending early. Report actual completed turns and outstanding pauses honestly.
 
-The first session is saved on `world-state`. Continue from its completed
-checkpoint into a new directory/session ID; preserve the original archive.
+The latest completed session is saved on `world-state`. Inspect the checkpoint's
+session ID, then continue into a new directory/session ID; preserve earlier archives.
+Sessions 0001 and 0002 are recorded. The next new session is 0003.
 Do not publish fixture tests as campaign history. Campaign records, including
 fictional secrets, may be public by the owner's instruction; credentials may
 never be committed. Publish completed records explicitly through authenticated

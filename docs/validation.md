@@ -1,5 +1,23 @@
 # Separate-agent layer validation
 
+## Recorded live session
+
+Session 0002 exercised the full native relay in actual play outside the tavern:
+15 fresh role invocations (7 GM, 3 player, 5 Chronicler), matching 15 accepted
+runtime calls and audit entries. Each character completed one turn. All four
+scene/result reviews and the final independent summary were accepted without
+retries. The GM requested no dice checks for the ordinary questions and travel
+proposal. The session ended at three turns with its 100-turn ceiling intact.
+No live model API was used; native token usage was unavailable.
+
+The full transcript and recovery snapshots are on `world-state` under
+`campaigns/tavern-zero/sessions/session-0002/`. This was a short outside
+encounter, not a 100-turn endurance run. The party has not yet reached the bridge.
+Manual transfer of full packets made this relay slow; host tool restrictions
+remain a cooperative boundary, as described in the live-play guide.
+
+## Automated tests and initial smoke test
+
 Run `python3 -m unittest discover -s tests -v` from the repository root.
 The suite covers the original engine and the new dispatcher: character order,
 turn caps, hidden-information filtering, forbidden targets, wrong-role replies,

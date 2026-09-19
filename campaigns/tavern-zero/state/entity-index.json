@@ -81,5 +81,58 @@
       "age",
       "maintenance"
     ]
+  },
+  "lantern-lane": {
+    "id": "lantern-lane",
+    "name": "Lane outside the Crooked Lantern",
+    "type": "LOCATION",
+    "undefined_fields": [
+      "settlement",
+      "other_destinations",
+      "history"
+    ]
+  },
+  "lane-stone-bridge": {
+    "id": "lane-stone-bridge",
+    "name": "Stone bridge at the end of the lane",
+    "type": "LOCATION",
+    "undefined_fields": [
+      "watercourse_name",
+      "far_bank",
+      "connection_to_north_sluice"
+    ]
+  },
+  "lane-repair-notice": {
+    "id": "lane-repair-notice",
+    "name": "North Sluice Repairs notice",
+    "type": "OBJECT",
+    "undefined_fields": [
+      "author",
+      "authority",
+      "posting_date"
+    ]
+  },
+  "gray-coated-notice-poster": {
+    "id": "gray-coated-notice-poster",
+    "name": "Gray-coated notice poster",
+    "type": "NPC",
+    "undefined_fields": [
+      "name",
+      "occupation",
+      "employer",
+      "knowledge_of_dain"
+    ]
+  },
+  "sella-repair-contact": {
+    "id": "sella-repair-contact",
+    "name": "Sella",
+    "type": "NPC",
+    "undefined_fields": [
+      "appearance",
+      "formal_position",
+      "employer",
+      "knowledge_of_dain",
+      "current_location"
+    ]
   }
 }

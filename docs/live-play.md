@@ -3,8 +3,9 @@
 The execution layer is ready for a supervised live session. One GM, three
 players and one Chronicler receive different packets. They cooperate through
 accepted game events, not direct access to one another's private context.
-The first adventure remains at its 24-turn overnight pause; these changes do
-not advance that story.
+Session one ended after 24 turns. Session two used the live relay for a
+three-turn encounter outside the tavern. The latest checkpoint pauses with the
+party beside the notice board, with a lead to ask Sella at the bridge.
 
 ## Layers
 
@@ -29,13 +30,14 @@ On `main`, fetch the saved checkpoint without switching away from current code:
 ```bash
 git fetch origin main world-state
 mkdir -p runs
-git show origin/world-state:campaigns/tavern-zero/checkpoint.json > runs/session-0001-checkpoint.json
-python3 live.py --campaign runs/session-0002 init \
-  --from-checkpoint runs/session-0001-checkpoint.json \
-  --session-id session-0002 --max-turns 100 --max-calls 600
+git show origin/world-state:campaigns/tavern-zero/checkpoint.json > runs/previous-checkpoint.json
+python3 live.py --campaign runs/session-0003 init \
+  --from-checkpoint runs/previous-checkpoint.json \
+  --session-id session-0003 --max-turns 100 --max-calls 600
 ```
 
-Use a new destination. Continuation preserves world facts, character knowledge,
+Inspect the saved checkpoint's session ID and choose the next unused ID; the
+example above follows session two. Use a new destination. Continuation preserves world facts, character knowledge,
 private memories, actor order and RNG state. It records the prior session's ID,
 summary and checkpoint hash. The new session starts at zero completed turns,
 awaiting a GM scene. The source checkpoint stays unchanged. The maximum is 100
@@ -50,11 +52,11 @@ The supervising assistant uses the host's separate-agent facility. Python
 creates and validates packets; it does not itself launch chat agents.
 
 ```bash
-python3 live.py --campaign runs/session-0002 request --output runs/request.json
+python3 live.py --campaign runs/session-0003 request --output runs/request.json
 # Send only that JSON packet to a fresh agent for packet.agent_id.
 # Save its exact JSON answer to runs/reply.json.
-python3 live.py --campaign runs/session-0002 reply runs/reply.json
-python3 live.py --campaign runs/session-0002 status
+python3 live.py --campaign runs/session-0003 reply runs/reply.json
+python3 live.py --campaign runs/session-0003 status
 ```
 
 Repeat while the session is active. Spawn with no parent history; provide the
@@ -80,8 +82,8 @@ together; split-party audiences are not implemented.
 ## Pauses and recovery
 
 ```bash
-python3 live.py --campaign runs/session-0002 status
-python3 live.py --campaign runs/session-0002 request --output runs/request.json
+python3 live.py --campaign runs/session-0003 status
+python3 live.py --campaign runs/session-0003 request --output runs/request.json
 ```
 
 The outstanding request survives restart. Resubmit the same accepted reply
@@ -99,8 +101,8 @@ or interrupted calls. Relay submissions consume attempts when submitted; an
 abandoned external agent invocation is not counted by the Python relay.
 
 ```bash
-python3 live.py --campaign runs/session-0002 retry
-python3 live.py --campaign runs/session-0002 finish
+python3 live.py --campaign runs/session-0003 retry
+python3 live.py --campaign runs/session-0003 finish
 ```
 
 `finish` requests an early end. Continue routing any outstanding request/current
@@ -133,9 +135,9 @@ requests. Choose models available to your account that support Responses and
 strict structured output. No model or price is assumed by this repository.
 
 ```bash
-python3 live.py --campaign runs/session-0002 run --steps 1
+python3 live.py --campaign runs/session-0003 run --steps 1
 # After inspecting the result, run up to 20 more role calls:
-python3 live.py --campaign runs/session-0002 run --steps 20
+python3 live.py --campaign runs/session-0003 run --steps 20
 ```
 
 Each call has only one role's packet, no tools, no shared conversation ID and

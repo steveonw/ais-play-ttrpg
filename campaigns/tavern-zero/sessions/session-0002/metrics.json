@@ -1,0 +1,26 @@
+{
+  "session_id": "session-0002",
+  "play_mode": "SEPARATE_AGENTS",
+  "phase": "ENDED",
+  "completed_turns": 3,
+  "maximum_turns": 100,
+  "role_invocations": 15,
+  "role_invocations_by_agent": {
+    "gm": 7,
+    "chronicler": 5,
+    "player-01": 1,
+    "player-02": 1,
+    "player-03": 1
+  },
+  "completed_turns_by_actor": {
+    "Arlen Vale": 1,
+    "Elara Voss": 1,
+    "Torren Bright": 1
+  },
+  "dice_checks": 0,
+  "review_approvals": 4,
+  "rejected_replies": 0,
+  "provider": "native_chat_relay",
+  "token_usage": null,
+  "stop_reason": "Early stop after the first outside encounter; bridge contact remains a lead."
+}
