@@ -1,13 +1,13 @@
-# Session 2.5: before-play setup
+# Session 2.5: grouped workflow and original setup
 
-Preparation is implemented. The next real adventure has **not** been played.
-Session 0002 remains the latest completed campaign. The party is on the lane
-outside the Crooked Lantern, with the bridge visible and Sella mentioned as a
-possible contact. They have not reached the bridge or met Sella. Claims about
-Dain remain unverified.
+**The live test has now run and is paused at 29/100 turns.** See the
+[test report](session-0003-live-test.md). Session 0003 reached the bridge and
+sunset; payment cannot be represented by the current inventory contract. Its
+three pending round-12 declarations are saved. Session 0002 remains the latest
+*completed* campaign, not the latest point in the story. Do not restart from it.
 
-The next trial is five rounds, up to 15 completed character turns, with the
-existing hard ceiling of 100 character turns per session. A round may resolve
+The original preparation trial defaulted to five rounds, up to 15 completed
+character turns. The user then requested a 100-turn live test. A round may resolve
 fewer than three actions when a conversation needs an answer before the next
 character chooses. Five rounds is therefore a ceiling, not a promise of 15 turns.
 
@@ -100,7 +100,13 @@ owner permits public fictional archives; player agents must still receive only
 their permitted packets. Do not give them the repository or unrestricted memory
 CLI. The `--role` memory flag is a trusted operator interface, not authentication.
 
-## Start the real trial only when asked
+## Original initialization example — not recovery for the paused run
+
+The commands below document the preparation setup. The actual test used
+`--max-rounds 100` and a 500-call budget with the hard 100-character-turn ceiling.
+To recover the existing story, restore the paused session-0003 archive instead;
+implement its missing transaction capability before resuming. These commands
+would begin again from session 0002 and must not replace the paused campaign.
 
 From a source checkout, retrieve the completed checkpoint into a separate file:
 

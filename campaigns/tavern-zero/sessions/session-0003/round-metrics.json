@@ -1,0 +1,548 @@
+{
+  "phase": "ADJUDICATE",
+  "rounds_completed": 11,
+  "maximum_rounds": 100,
+  "character_turns": 29,
+  "maximum_turns": 100,
+  "calls": 52,
+  "maximum_calls": 500,
+  "paused": {
+    "kind": "capability_gap",
+    "at": "2026-09-20T02:46:14.855472+00:00",
+    "reason": "All three round-12 declarations explicitly seek settlement of Arlen's earned two silver before further choices. COMMON prohibits inventory changes and GM result/apply has no inventory transaction field. Payment cannot be resolved consistently by this engine; no fictional refusal, delay, or payment is invented. Root instructed durable pause before GM creation/dispatch.",
+    "round_pending": 12,
+    "completed_character_turns": 29,
+    "required_capability": "validated inventory/currency transaction",
+    "gm_request_created": false
+  },
+  "inboxes": [],
+  "round_timings": [
+    {
+      "round": 1,
+      "character_turns": 3,
+      "wall_ms": 402723.5231399536,
+      "deferred_characters": []
+    },
+    {
+      "round": 2,
+      "character_turns": 3,
+      "wall_ms": 449843.9419269562,
+      "deferred_characters": []
+    },
+    {
+      "round": 3,
+      "character_turns": 1,
+      "wall_ms": 423011.38830184937,
+      "deferred_characters": [
+        "elara-voss",
+        "torren-bright"
+      ]
+    },
+    {
+      "round": 4,
+      "character_turns": 1,
+      "wall_ms": 433737.2736930847,
+      "deferred_characters": [
+        "torren-bright",
+        "arlen-vale"
+      ]
+    },
+    {
+      "round": 5,
+      "character_turns": 3,
+      "wall_ms": 402982.0041656494,
+      "deferred_characters": []
+    },
+    {
+      "round": 6,
+      "character_turns": 3,
+      "wall_ms": 480049.6504306793,
+      "deferred_characters": []
+    },
+    {
+      "round": 7,
+      "character_turns": 3,
+      "wall_ms": 1512882.0624351501,
+      "deferred_characters": []
+    },
+    {
+      "round": 8,
+      "character_turns": 3,
+      "wall_ms": 440570.8887577057,
+      "deferred_characters": []
+    },
+    {
+      "round": 9,
+      "character_turns": 3,
+      "wall_ms": 585323.2071399689,
+      "deferred_characters": []
+    },
+    {
+      "round": 10,
+      "character_turns": 3,
+      "wall_ms": 448843.7194824219,
+      "deferred_characters": []
+    },
+    {
+      "round": 11,
+      "character_turns": 3,
+      "wall_ms": 451355.5450439453,
+      "deferred_characters": []
+    }
+  ],
+  "accepted_role_replies": 50,
+  "request_characters": 530082,
+  "timing_note": "Dispatch-to-reply includes scheduling/relay time, not pure inference. Null means no reservation timestamp.",
+  "call_timings": [
+    {
+      "request_id": "round-450c6cf164-00001",
+      "agent_id": "gm",
+      "input_characters": 12930,
+      "build_ms": 0.3728110000338347,
+      "queue_wait_ms": 6773.272752761841,
+      "dispatch_to_reply_ms": 146861.6955280304,
+      "apply_ms": 2.0163839999440825
+    },
+    {
+      "request_id": "round-450c6cf164-00002",
+      "agent_id": "player-01",
+      "input_characters": 7457,
+      "build_ms": 0.21831300000485498,
+      "queue_wait_ms": 6.183385848999023,
+      "dispatch_to_reply_ms": 221349.4429588318,
+      "apply_ms": 1.522151999779453
+    },
+    {
+      "request_id": "round-450c6cf164-00003",
+      "agent_id": "player-02",
+      "input_characters": 7429,
+      "build_ms": 0.20991100018363795,
+      "queue_wait_ms": 11.648416519165039,
+      "dispatch_to_reply_ms": 221357.17034339905,
+      "apply_ms": 1.0964319999402505
+    },
+    {
+      "request_id": "round-450c6cf164-00004",
+      "agent_id": "player-03",
+      "input_characters": 7419,
+      "build_ms": 0.2520129996810283,
+      "queue_wait_ms": 17.66061782836914,
+      "dispatch_to_reply_ms": 221363.3484840393,
+      "apply_ms": 1.4321979997475864
+    },
+    {
+      "request_id": "round-450c6cf164-00005",
+      "agent_id": "gm",
+      "input_characters": 15006,
+      "build_ms": 0.30828599983578897,
+      "queue_wait_ms": 7.442712783813477,
+      "dispatch_to_reply_ms": 181314.5809173584,
+      "apply_ms": 3.357958999913535
+    },
+    {
+      "request_id": "round-450c6cf164-00006",
+      "agent_id": "player-01",
+      "input_characters": 7904,
+      "build_ms": 0.31025900034364895,
+      "queue_wait_ms": 10.707378387451172,
+      "dispatch_to_reply_ms": 240460.00003814697,
+      "apply_ms": 2.0620940003936994
+    },
+    {
+      "request_id": "round-450c6cf164-00007",
+      "agent_id": "player-02",
+      "input_characters": 7756,
+      "build_ms": 0.22208800010048435,
+      "queue_wait_ms": 20.029783248901367,
+      "dispatch_to_reply_ms": 240470.55220603943,
+      "apply_ms": 2.5637270000515855
+    },
+    {
+      "request_id": "round-450c6cf164-00008",
+      "agent_id": "player-03",
+      "input_characters": 7806,
+      "build_ms": 0.2070560003630817,
+      "queue_wait_ms": 29.792070388793945,
+      "dispatch_to_reply_ms": 240481.21738433838,
+      "apply_ms": 1.827375999710057
+    },
+    {
+      "request_id": "round-450c6cf164-00009",
+      "agent_id": "gm",
+      "input_characters": 15611,
+      "build_ms": 0.318322000111948,
+      "queue_wait_ms": 11.312484741210938,
+      "dispatch_to_reply_ms": 209292.24848747253,
+      "apply_ms": 4.685175000304298
+    },
+    {
+      "request_id": "round-450c6cf164-00010",
+      "agent_id": "player-01",
+      "input_characters": 7428,
+      "build_ms": 0.31684900022810325,
+      "queue_wait_ms": 13.596057891845703,
+      "dispatch_to_reply_ms": 245384.14645195007,
+      "apply_ms": 2.581639999334584
+    },
+    {
+      "request_id": "round-450c6cf164-00011",
+      "agent_id": "player-02",
+      "input_characters": 7326,
+      "build_ms": 0.2517130001251644,
+      "queue_wait_ms": 27.12416648864746,
+      "dispatch_to_reply_ms": 245395.73073387146,
+      "apply_ms": 3.11880499975814
+    },
+    {
+      "request_id": "round-450c6cf164-00012",
+      "agent_id": "player-03",
+      "input_characters": 7341,
+      "build_ms": 0.2627779999784252,
+      "queue_wait_ms": 40.31825065612793,
+      "dispatch_to_reply_ms": 245408.60724449158,
+      "apply_ms": 2.491467000254488
+    },
+    {
+      "request_id": "round-450c6cf164-00013",
+      "agent_id": "gm",
+      "input_characters": 14639,
+      "build_ms": 0.5222230001891148,
+      "queue_wait_ms": 15.527009963989258,
+      "dispatch_to_reply_ms": 177507.98964500427,
+      "apply_ms": 6.631553000261192
+    },
+    {
+      "request_id": "round-450c6cf164-00014",
+      "agent_id": "player-02",
+      "input_characters": 7723,
+      "build_ms": 0.3430379993005772,
+      "queue_wait_ms": 18.659591674804688,
+      "dispatch_to_reply_ms": 245171.84591293335,
+      "apply_ms": 3.3472929999334156
+    },
+    {
+      "request_id": "round-450c6cf164-00015",
+      "agent_id": "player-03",
+      "input_characters": 7724,
+      "build_ms": 0.3002139992531738,
+      "queue_wait_ms": 35.178184509277344,
+      "dispatch_to_reply_ms": 245188.13347816467,
+      "apply_ms": 3.1769010001880815
+    },
+    {
+      "request_id": "round-450c6cf164-00016",
+      "agent_id": "player-01",
+      "input_characters": 7799,
+      "build_ms": 0.30601300022681244,
+      "queue_wait_ms": 51.85055732727051,
+      "dispatch_to_reply_ms": 245204.59127426147,
+      "apply_ms": 3.509533000396914
+    },
+    {
+      "request_id": "round-450c6cf164-00017",
+      "agent_id": "gm",
+      "input_characters": 15207,
+      "build_ms": 0.734316999114526,
+      "queue_wait_ms": 19.776105880737305,
+      "dispatch_to_reply_ms": 188410.57205200195,
+      "apply_ms": 7.954028999847651
+    },
+    {
+      "request_id": "round-450c6cf164-00019",
+      "agent_id": "player-01",
+      "input_characters": 7931,
+      "build_ms": 0.26844700005312916,
+      "queue_wait_ms": 44.817209243774414,
+      "dispatch_to_reply_ms": 168475.04210472107,
+      "apply_ms": 4.829054999390792
+    },
+    {
+      "request_id": "round-450c6cf164-00018",
+      "agent_id": "player-03",
+      "input_characters": 7939,
+      "build_ms": 0.34578200029500294,
+      "queue_wait_ms": 22.920846939086914,
+      "dispatch_to_reply_ms": 168534.29317474365,
+      "apply_ms": 3.766232000089076
+    },
+    {
+      "request_id": "round-450c6cf164-00020",
+      "agent_id": "player-02",
+      "input_characters": 7864,
+      "build_ms": 0.2603350003482774,
+      "queue_wait_ms": 66.26629829406738,
+      "dispatch_to_reply_ms": 183759.81378555298,
+      "apply_ms": 3.648527999757789
+    },
+    {
+      "request_id": "round-450c6cf164-00021",
+      "agent_id": "gm",
+      "input_characters": 15108,
+      "build_ms": 0.5584169994108379,
+      "queue_wait_ms": 21.83675765991211,
+      "dispatch_to_reply_ms": 219077.28838920593,
+      "apply_ms": 9.481389000029594
+    },
+    {
+      "request_id": "round-450c6cf164-00022",
+      "agent_id": "chronicler",
+      "input_characters": 33333,
+      "build_ms": 0.5328879997250624,
+      "queue_wait_ms": 406343.0223464966,
+      "dispatch_to_reply_ms": 69785.31098365784,
+      "apply_ms": 4.7294469995904365
+    },
+    {
+      "request_id": "round-450c6cf164-00024",
+      "agent_id": "player-01",
+      "input_characters": 7780,
+      "build_ms": 0.27814199984277366,
+      "queue_wait_ms": 54.72421646118164,
+      "dispatch_to_reply_ms": 180378.93176078796,
+      "apply_ms": 5.8450280002944055
+    },
+    {
+      "request_id": "round-450c6cf164-00023",
+      "agent_id": "player-03",
+      "input_characters": 7777,
+      "build_ms": 0.36919600006513065,
+      "queue_wait_ms": 27.71592140197754,
+      "dispatch_to_reply_ms": 180454.19239997864,
+      "apply_ms": 4.717318999610143
+    },
+    {
+      "request_id": "round-450c6cf164-00025",
+      "agent_id": "player-02",
+      "input_characters": 7727,
+      "build_ms": 0.28425099935702747,
+      "queue_wait_ms": 80.98387718200684,
+      "dispatch_to_reply_ms": 180446.74921035767,
+      "apply_ms": 4.896773999462312
+    },
+    {
+      "request_id": "round-450c6cf164-00026",
+      "agent_id": "gm",
+      "input_characters": 15564,
+      "build_ms": 0.5691120004485128,
+      "queue_wait_ms": 29.646635055541992,
+      "dispatch_to_reply_ms": 299422.64676094055,
+      "apply_ms": 11.161118999552855
+    },
+    {
+      "request_id": "round-450c6cf164-00027",
+      "agent_id": "player-03",
+      "input_characters": 7863,
+      "build_ms": 0.3491770003165584,
+      "queue_wait_ms": 30.49015998840332,
+      "dispatch_to_reply_ms": 179550.4252910614,
+      "apply_ms": 6.71849199989083
+    },
+    {
+      "request_id": "round-450c6cf164-00029",
+      "agent_id": "player-02",
+      "input_characters": 7728,
+      "build_ms": 0.2661439993971726,
+      "queue_wait_ms": 92.05746650695801,
+      "dispatch_to_reply_ms": 179544.8498725891,
+      "apply_ms": 5.504185000063444
+    },
+    {
+      "request_id": "round-450c6cf164-00028",
+      "agent_id": "player-01",
+      "input_characters": 7782,
+      "build_ms": 0.3236189995732275,
+      "queue_wait_ms": 60.849905014038086,
+      "dispatch_to_reply_ms": 1314171.8323230743,
+      "apply_ms": 6.16334000005736
+    },
+    {
+      "request_id": "round-450c6cf164-00030",
+      "agent_id": "gm",
+      "input_characters": 15741,
+      "build_ms": 0.6044350002412102,
+      "queue_wait_ms": 31.306028366088867,
+      "dispatch_to_reply_ms": 198537.935256958,
+      "apply_ms": 13.187745000323048
+    },
+    {
+      "request_id": "round-450c6cf164-00031",
+      "agent_id": "player-03",
+      "input_characters": 7825,
+      "build_ms": 0.42215499979647575,
+      "queue_wait_ms": 35.19797325134277,
+      "dispatch_to_reply_ms": 251521.146774292,
+      "apply_ms": 7.210578999547579
+    },
+    {
+      "request_id": "round-450c6cf164-00032",
+      "agent_id": "player-01",
+      "input_characters": 7955,
+      "build_ms": 0.3183919998264173,
+      "queue_wait_ms": 68.76134872436523,
+      "dispatch_to_reply_ms": 251548.44546318054,
+      "apply_ms": 9.741873999701056
+    },
+    {
+      "request_id": "round-450c6cf164-00033",
+      "agent_id": "player-02",
+      "input_characters": 7777,
+      "build_ms": 0.3086560000156169,
+      "queue_wait_ms": 104.05659675598145,
+      "dispatch_to_reply_ms": 251576.04789733887,
+      "apply_ms": 6.417916999453155
+    },
+    {
+      "request_id": "round-450c6cf164-00034",
+      "agent_id": "gm",
+      "input_characters": 15391,
+      "build_ms": 0.6420799991246895,
+      "queue_wait_ms": 37.828683853149414,
+      "dispatch_to_reply_ms": 188761.7733478546,
+      "apply_ms": 14.132140000583604
+    },
+    {
+      "request_id": "round-450c6cf164-00035",
+      "agent_id": "player-03",
+      "input_characters": 7958,
+      "build_ms": 0.37308199989638524,
+      "queue_wait_ms": 37.19449043273926,
+      "dispatch_to_reply_ms": 338298.63119125366,
+      "apply_ms": 8.078684999418329
+    },
+    {
+      "request_id": "round-450c6cf164-00036",
+      "agent_id": "player-01",
+      "input_characters": 7847,
+      "build_ms": 0.3100989997619763,
+      "queue_wait_ms": 76.2166976928711,
+      "dispatch_to_reply_ms": 338328.5844326019,
+      "apply_ms": 7.4248480013920926
+    },
+    {
+      "request_id": "round-450c6cf164-00037",
+      "agent_id": "player-02",
+      "input_characters": 7756,
+      "build_ms": 0.2771099998426507,
+      "queue_wait_ms": 115.4930591583252,
+      "dispatch_to_reply_ms": 354108.4244251251,
+      "apply_ms": 7.708597000601003
+    },
+    {
+      "request_id": "round-450c6cf164-00038",
+      "agent_id": "gm",
+      "input_characters": 15407,
+      "build_ms": 0.680958000884857,
+      "queue_wait_ms": 140190.6247138977,
+      "dispatch_to_reply_ms": 90808.73680114746,
+      "apply_ms": 16.032924000683124
+    },
+    {
+      "request_id": "round-450c6cf164-00039",
+      "agent_id": "player-03",
+      "input_characters": 7729,
+      "build_ms": 0.8713600000191946,
+      "queue_wait_ms": 44.22950744628906,
+      "dispatch_to_reply_ms": 226865.23008346558,
+      "apply_ms": 8.900284999981523
+    },
+    {
+      "request_id": "round-450c6cf164-00040",
+      "agent_id": "player-01",
+      "input_characters": 7621,
+      "build_ms": 0.41180999869538937,
+      "queue_wait_ms": 89.13159370422363,
+      "dispatch_to_reply_ms": 226897.89271354675,
+      "apply_ms": 9.553261999826645
+    },
+    {
+      "request_id": "round-450c6cf164-00041",
+      "agent_id": "player-02",
+      "input_characters": 7928,
+      "build_ms": 0.3311099990241928,
+      "queue_wait_ms": 135.78462600708008,
+      "dispatch_to_reply_ms": 241449.82528686523,
+      "apply_ms": 9.671928999523516
+    },
+    {
+      "request_id": "round-450c6cf164-00042",
+      "agent_id": "gm",
+      "input_characters": 15615,
+      "build_ms": 0.7135449995985255,
+      "queue_wait_ms": 44.14677619934082,
+      "dispatch_to_reply_ms": 207096.39024734497,
+      "apply_ms": 17.835447999459575
+    },
+    {
+      "request_id": "round-450c6cf164-00043",
+      "agent_id": "chronicler",
+      "input_characters": 36334,
+      "build_ms": 0.6057870014046784,
+      "queue_wait_ms": 47.90639877319336,
+      "dispatch_to_reply_ms": 321776.2861251831,
+      "apply_ms": 9.215666001182399
+    },
+    {
+      "request_id": "round-450c6cf164-00044",
+      "agent_id": "player-03",
+      "input_characters": 7743,
+      "build_ms": 0.43455300146888476,
+      "queue_wait_ms": 50.462961196899414,
+      "dispatch_to_reply_ms": 239451.32875442505,
+      "apply_ms": 10.152642000321066
+    },
+    {
+      "request_id": "round-450c6cf164-00045",
+      "agent_id": "player-01",
+      "input_characters": 7977,
+      "build_ms": 0.2876859998650616,
+      "queue_wait_ms": 100.33655166625977,
+      "dispatch_to_reply_ms": 239489.670753479,
+      "apply_ms": 8.986005999759072
+    },
+    {
+      "request_id": "round-450c6cf164-00046",
+      "agent_id": "player-02",
+      "input_characters": 7867,
+      "build_ms": 0.29788000028929673,
+      "queue_wait_ms": 148.83804321289062,
+      "dispatch_to_reply_ms": 253810.23240089417,
+      "apply_ms": 10.888771999816527
+    },
+    {
+      "request_id": "round-450c6cf164-00047",
+      "agent_id": "gm",
+      "input_characters": 15448,
+      "build_ms": 0.6580829995073145,
+      "queue_wait_ms": 55.023193359375,
+      "dispatch_to_reply_ms": 197203.75418663025,
+      "apply_ms": 19.356410999535
+    },
+    {
+      "request_id": "round-450c6cf164-00048",
+      "agent_id": "player-03",
+      "input_characters": 7920,
+      "build_ms": 0.4313379995437572,
+      "queue_wait_ms": 52.85501480102539,
+      "dispatch_to_reply_ms": 278523.4260559082,
+      "apply_ms": 12.18218599933607
+    },
+    {
+      "request_id": "round-450c6cf164-00049",
+      "agent_id": "player-01",
+      "input_characters": 7730,
+      "build_ms": 0.28922700039402116,
+      "queue_wait_ms": 110.58998107910156,
+      "dispatch_to_reply_ms": 278563.5781288147,
+      "apply_ms": 11.768964999646414
+    },
+    {
+      "request_id": "round-450c6cf164-00050",
+      "agent_id": "player-02",
+      "input_characters": 7612,
+      "build_ms": 0.2886869988287799,
+      "queue_wait_ms": 167.08922386169434,
+      "dispatch_to_reply_ms": 278602.6396751404,
+      "apply_ms": 9.46660800036625
+    }
+  ]
+}

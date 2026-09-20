@@ -1,10 +1,11 @@
 # Running this adventure with separate agents
 
-Read `docs/session-2-5.md` before starting the next live session. Use `rounds.py`
+Read `docs/session-0003-live-test.md` and `docs/session-2-5.md` before further play. Use `rounds.py`
 for grouped play and its atomic checkpoint as authority. The user requested
 three independent players, a stronger GM/NPC role, a middle-tier Chronicler,
-and at most **100 total character turns per session**. The next trial defaults
-to five rounds (up to 15 turns). Do not start play merely to test preparation.
+and at most **100 total character turns per session**. The requested 100-turn
+trial is paused at 29 turns: payment is unsupported. Preserve its pending
+round-12 choices. Do not start play merely to test preparation.
 
 The supervising assistant is the sole operator. Generate packets together with
 `rounds.py requests`. Reserve each request using `dispatch` before invoking its
@@ -40,11 +41,18 @@ The Python dispatcher does not launch native chat tools itself; the supervisor
 must perform those handoffs. Optional API transport is separate and requires
 configured API access. Do not substitute unavailable model tiers silently.
 
-The latest completed session is on `world-state`. Inspect its session ID and
-continue into a new directory/session ID, preserving earlier archives. Sessions
-0001 and 0002 are recorded. The next real session is 0003 (informally Session
-2.5). The party is outside the tavern; do not restart inside or claim they have
-already met Sella. Preserve rumors as rumors. Do not publish fixtures as history.
+The latest completed session is 0002 on `world-state`; its root checkpoint is
+retained unchanged. Session 0003 (informally Session 2.5) is paused separately
+with public records under `campaigns/tavern-zero/sessions/session-0003/`. Its
+full compressed checkpoint was saved for the owner; automatic approval review
+blocked public upload pending explicit approval of private agent records.
+Obtain that saved archive before recovery; its README explains restoration.
+The party has met Sella, worked until sunset
+at the bridge, and requested Arlen's earned but unpaid two silver. Implement and
+test a validated payment transaction before explicitly resuming those saved
+choices under a documented new runtime version. Do not use `retry` to clear the
+capability pause, restart from 0002, or mark 0003 completed. Preserve rumors as
+rumors. Do not publish fixtures as history.
 Campaign records, including fictional secrets, may be public by the owner's
 instruction; credentials may never be committed. The CLI does not push.
 

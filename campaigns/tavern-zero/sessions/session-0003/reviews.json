@@ -1,0 +1,39 @@
+[
+  {
+    "kind": "review",
+    "approved": true,
+    "conflicts": [],
+    "summary": "The travelers reached the stone bridge and met Sella, who showed them an entry under yesterday’s date: “Dain — morning — sluice clearing.” Sella says the name was given by a worker reporting for that shift; she does not know when he left or where he went. Her recollection describes him as lean, around thirty, with dark hair above the collar and a pale scar through his left eyebrow, but she cannot confirm he is the Dain sought. Elara and Torren are sorting manageable loose stones on the near bank under Sella’s terms, leaving cracked and heavy pieces aside. Torren may pause to inspect the ledger for supervisor or assignment notation. Arlen has not begun work and is considering Sella’s stated early-departure pay terms.",
+    "source_fact_ids": [
+      "fact-s2-t4-party-reached-bridge",
+      "fact-s2-t5-ledger-dain-entry",
+      "rumor-s2-t5-sella-dain-report",
+      "rumor-s2-t6-sella-worker-description",
+      "rumor-s2-t6-sella-work-boundaries",
+      "fact-s2-t7-elara-begins-sorting",
+      "fact-s2-t8-sorting-status",
+      "fact-s2-t8-ledger-permission",
+      "rumor-s2-t8-early-departure-offer"
+    ],
+    "next_hook": "Torren can inspect the open ledger entry, while Arlen can accept, decline, or seek clarification on Sella’s early-departure terms."
+  },
+  {
+    "kind": "review",
+    "approved": true,
+    "conflicts": [],
+    "summary": "At the stone bridge, Torren, Elara, and Arlen inspected the available information about Dain while sorting manageable loose stones on the near bank. The ledger records only “Dain — morning — sluice clearing”; its adjacent entries provide no supervisor, crew, destination, or cross-reference, so it does not identify the worker or establish what followed. Sella says she has no further reliable destination or departure detail, and says the bridge-approach repairs and stone sorting were planned before the morning’s sluice work. Torren and Elara continue separating sound, cracked, and questionable stones while leaving heavy stones untouched. Arlen completed the minimum hour but has not accepted additional work or received payment. Sella states that leaving before sunset earns one silver total, while staying until sunset earns two silver total, with breaks included.",
+    "source_fact_ids": [
+      "fact-s2-t9-ledger-examined",
+      "fact-s2-t10-adjacent-ledger-lines",
+      "rumor-s2-t10-sella-ledger-and-departure",
+      "rumor-s2-t11-stone-purpose",
+      "rumor-s2-t12-sella-repair-timing",
+      "fact-s2-t12-sorting-progress",
+      "fact-s2-t12-first-hour-complete",
+      "rumor-s2-t13-sella-continued-terms",
+      "rumor-s2-t13-sella-no-new-dain-detail",
+      "fact-s2-t13-party-work-decision"
+    ],
+    "next_hook": "Arlen can decide whether to continue working under Sella’s clarified sunset terms, while the group may pursue another lead on Dain when ready."
+  }
+]

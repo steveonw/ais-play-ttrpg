@@ -4,22 +4,33 @@ A tabletop adventure that grows through play. The GM establishes the world,
 three player characters choose their intentions, software rolls the dice, and
 the runtime records what happened.
 
-**Two sessions are recorded: 24 turns of first-night self-play and a three-turn
-outside encounter with separate agents. Each session has a maximum of 100.**
+**Two completed sessions and a blocked third test are recorded: 24 turns of
+first-night self-play, three turns outside with separate agents, and 29 turns
+of grouped play. The requested 100-turn test stopped on a payment capability gap.**
 Session two uses separate GM, player and Chronicler invocations through the
 live relay. The relay runs without API keys or third-party dependencies;
 an optional API runner is also included. Neither runs in the background by itself.
 
-**[Session 2.5 — prepared grouped workflow](docs/session-2-5.md)**
+**[100-turn live test — blocked at 29, findings and recovery](docs/session-0003-live-test.md)**
 
-The next trial is prepared but has not been played: three independent player
-calls together, one GM/NPC response for ordinary actions, private role journals,
-and a Chronicler review every five rounds. Smaller player models, a stronger GM
-and a middle-tier Chronicler are configured. Software dice and atomic recovery
-remain authoritative. The five-round synthetic test uses 22 calls for 15 turns;
-actual live speed remains unmeasured. [Validation](docs/validation.md).
+The grouped workflow uses three independent players, one GM/NPC response for
+ordinary actions, private journals and a Chronicler review every five rounds.
+The live test used 52 role calls for 29 completed turns, including two transport
+corrections and three pending declarations. Median completed-round time was
+about 7.5 minutes: manual context transfer remained slow. The party reached the
+bridge and completed paid work, but inventory/payment updates are not implemented.
+The paused checkpoint preserves their requests for payment. The earlier 22-call,
+15-turn result was a preparation fixture. [Workflow](docs/session-2-5.md)
+and [validation](docs/validation.md).
 
 ## Read the adventure
+
+**[Session three — At the bridge, paused](https://github.com/steveonw/ais-play-ttrpg/blob/world-state/campaigns/tavern-zero/sessions/session-0003/transcript.md)**
+· [Findings and checkpoint status](https://github.com/steveonw/ais-play-ttrpg/tree/world-state/campaigns/tavern-zero/sessions/session-0003)
+
+Session three remains unfinished at sunset, before payment. Fix the recorded
+capability gap before resuming its saved declarations; do not restart from the
+older completed session or count the pending actions as completed turns.
 
 **[Session two — Outside the Crooked Lantern](https://github.com/steveonw/ais-play-ttrpg/blob/world-state/campaigns/tavern-zero/sessions/session-0002/transcript.md)**
 · [Summary](https://github.com/steveonw/ais-play-ttrpg/blob/world-state/campaigns/tavern-zero/sessions/session-0002/summary.md)
@@ -111,11 +122,12 @@ been exercised against a live API account. See [validation](docs/validation.md).
 | --- | --- |
 | `main` branch | Runtime, tests, configuration, prompts, docs and replay inputs |
 | `world-state` branch | Runtime snapshot, campaign archive and latest checkpoint |
-| `campaigns/tavern-zero/checkpoint.json` | Atomic authority for the saved run |
+| `campaigns/tavern-zero/checkpoint.json` | Latest completed checkpoint, session 0002; not the paused session 0003 |
 | `campaigns/tavern-zero/state/` | World facts, entities and full event timeline |
 | `campaigns/tavern-zero/characters/` | Individual knowledge records |
 | `campaigns/tavern-zero/sessions/session-0001/` | Transcript, summary, metrics and full debug log |
 | `campaigns/tavern-zero/sessions/session-0002/` | Separate-agent transcript, summary, metrics and recovery snapshots |
+| `campaigns/tavern-zero/sessions/session-0003/` | Blocked live test: public transcript, report, metrics and recovery status; full archive awaits publication approval |
 
 Campaign records, including fictional secrets, are public by the owner's choice.
 Player agents must use filtered contexts instead of reading the whole repository.

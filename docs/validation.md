@@ -1,5 +1,16 @@
 # Separate-agent layer validation
 
+## Live test update
+
+The grouped native-agent test was attempted and blocked at **29/100 turns** by
+unsupported payment/inventory changes. It used 52 role calls and completed
+11 rounds, with a median round duration of about 7.5 minutes. Manual packet relay,
+memory selection and repetitive play remain significant limitations. Two
+Chronicler reviews cover rounds 1–10; round 11 remains unreviewed. These results
+do not establish native token cost, a completed 100-turn run or live dice coverage.
+See [the full report](session-0003-live-test.md) and its saved evidence. The
+preparation results below describe synthetic tests, not those live timings.
+
 ## Session 2.5 preparation
 
 **52 automated tests pass: 28 existing tests and 24 grouped-runtime tests.**
