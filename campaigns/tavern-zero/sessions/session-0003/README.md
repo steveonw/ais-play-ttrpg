@@ -11,12 +11,11 @@ or currency, so no GM resolution was invented.
 - [Integrity checks and count reconciliation](verification.json)
 - [Two approved reviews, covering rounds 1–10](reviews.json)
 - [Operator interventions and transport errors](operator-notes.jsonl)
+- [Full paused campaign archive](session-0003-paused.tar.gz)
 
-The full `session-0003-paused.tar.gz` archive was saved separately for the owner.
-Automatic approval review blocked its public upload because it includes private
-agent and character records; explicit approval is required before publishing it.
-It is **not available from this GitHub directory**. The public files above omit
-private intentions, journals and full agent packets.
+The full archive is published with the owner's explicit approval, including
+private agent and character records. The separate table-facing transcript,
+metrics and report omit private intentions, journals and full agent packets.
 
 The archive preserves the exact atomic checkpoint, full accepted role packets
 and replies, error records, public/debug transcripts, world state, journals,
@@ -26,12 +25,13 @@ the campaign owner's authorization. Round 11 remains unreviewed.
 
 ## Restore for inspection
 
-First obtain the owner's saved archive. From a source checkout, choose an empty
-recovery directory and replace `/path/to/` with its actual location:
+From a checkout of `world-state`, verify the download and choose an empty
+recovery directory:
 
 ```bash
 mkdir -p /tmp/ais-ttrpg-recovery
-tar -xzf /path/to/session-0003-paused.tar.gz \
+(cd campaigns/tavern-zero/sessions/session-0003 && sha256sum -c SHA256SUMS)
+tar -xzf campaigns/tavern-zero/sessions/session-0003/session-0003-paused.tar.gz \
   -C /tmp/ais-ttrpg-recovery
 python3 rounds.py --campaign /tmp/ais-ttrpg-recovery/session-0003 status
 ```
@@ -40,8 +40,7 @@ Expected: 29 character turns, 11 rounds, 52 calls, phase `ADJUDICATE`, a
 `capability_gap` pause, three saved declarations, and no outstanding inboxes.
 The exact checkpoint SHA-256 is
 `e86ff63c1c0649cc3e45d28dcb9af458b88432e709358d05f349a99587fe6ea3`.
-`SHA256SUMS` covers the public files, including this README; it does not imply
-that the full archive was published.
+`SHA256SUMS` covers the published files, including this README and the full archive.
 
 Runtime source during this attempt was commit
 `74e4a8cc4e60465ab07f38394fde170bf3d2755f`; only recorded table-direction
@@ -58,6 +57,6 @@ pause with `retry`, pay through narration alone, invent a refusal, or start over
 from the older checkpoint. No resume was performed as part of this test.
 
 `campaigns/tavern-zero/checkpoint.json` remains the latest **completed** session
-0002. Obtain the separately saved archive for the latest unfinished story. The earlier
+0002. Restore this archive for the latest unfinished story. The earlier
 `snapshots/turn-0011-checkpoint.json` is an intermediate snapshot, not the current
 paused state.

@@ -131,12 +131,13 @@ Read-only checks verified contiguous turn ranges, accepted-reply hashes, call
 accounting, unchanged source facts, preserved knowledge, unchanged HP/inventory
 and RNG state, review coverage, three pending declarations, and empty inboxes.
 The public records include machine-readable verification and SHA-256 checksums.
-The full checkpoint archive was saved separately for the owner. Automatic
-approval review rejected its public upload because it contains private agent
-and character records and requested explicit approval for that disclosure.
-The public transcript, metrics and this report exclude those private records.
+The full [paused checkpoint archive](https://github.com/steveonw/ais-play-ttrpg/blob/world-state/campaigns/tavern-zero/sessions/session-0003/session-0003-paused.tar.gz)
+is now published with the owner's explicit approval. It includes private agent
+and character records. The table-facing transcript, metrics and this report
+exclude those private records. An initial upload was blocked by automatic
+approval review; the owner subsequently approved publication of the full archive.
 
-Preserve this failed test as evidence. Obtain the owner's saved archive before
+Preserve this failed test as evidence. Restore the published archive before
 attempting recovery. Implement and test currency accounting,
 then explicitly resume the paused session with its saved choices and document
 the new runtime version. Before another speed comparison, connect summaries to

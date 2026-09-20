@@ -44,9 +44,9 @@ configured API access. Do not substitute unavailable model tiers silently.
 The latest completed session is 0002 on `world-state`; its root checkpoint is
 retained unchanged. Session 0003 (informally Session 2.5) is paused separately
 with public records under `campaigns/tavern-zero/sessions/session-0003/`. Its
-full compressed checkpoint was saved for the owner; automatic approval review
-blocked public upload pending explicit approval of private agent records.
-Obtain that saved archive before recovery; its README explains restoration.
+full compressed checkpoint is published there as `session-0003-paused.tar.gz`
+with the owner's explicit approval, including private agent and character
+records. Its README explains restoration; verify the published checksums.
 The party has met Sella, worked until sunset
 at the bridge, and requested Arlen's earned but unpaid two silver. Implement and
 test a validated payment transaction before explicitly resuming those saved
