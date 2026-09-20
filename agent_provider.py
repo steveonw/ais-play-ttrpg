@@ -12,7 +12,7 @@ class ProviderError(RuntimeError):
 class ResponsesProvider:
     ENDPOINT = "https://api.openai.com/v1/responses"
 
-    def __init__(self, models, timeout=60, max_output_tokens=5000, api_key=None, opener=None):
+    def __init__(self, models, timeout=60, max_output_tokens=5000, api_key=None, opener=None, role_settings=None):
         self.models = models
         self.timeout = timeout
         self.max_output_tokens = max_output_tokens
@@ -21,6 +21,7 @@ class ResponsesProvider:
         if not models or any(not isinstance(v, str) or not v.strip() for v in models.values()):
             raise ProviderError("Configure a model for every role before API mode")
         self.opener = opener or urllib.request.urlopen
+        self.role_settings = role_settings or {}
 
     def complete(self, packet):
         model = self.models.get(packet["agent_id"])
@@ -34,6 +35,11 @@ class ResponsesProvider:
             ],
             "text": {"format": {"type": "json_schema", "name": "ttrpg_" + packet["operation"], "strict": True, "schema": packet["response_schema"]}},
         }
+        settings = self.role_settings.get(packet["agent_id"], {})
+        if settings.get("reasoning_effort"):
+            body["reasoning"] = {"effort": settings["reasoning_effort"]}
+        if settings.get("max_output_tokens"):
+            body["max_output_tokens"] = settings["max_output_tokens"]
         request = urllib.request.Request(self.ENDPOINT, data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "Authorization": "Bearer " + self.api_key}, method="POST")
         try:
             with self.opener(request, timeout=self.timeout) as response:

@@ -10,7 +10,14 @@ Session two uses separate GM, player and Chronicler invocations through the
 live relay. The relay runs without API keys or third-party dependencies;
 an optional API runner is also included. Neither runs in the background by itself.
 
-**[Start or resume separate-agent play](docs/live-play.md)**
+**[Session 2.5 — prepared grouped workflow](docs/session-2-5.md)**
+
+The next trial is prepared but has not been played: three independent player
+calls together, one GM/NPC response for ordinary actions, private role journals,
+and a Chronicler review every five rounds. Smaller player models, a stronger GM
+and a middle-tier Chronicler are configured. Software dice and atomic recovery
+remain authoritative. The five-round synthetic test uses 22 calls for 15 turns;
+actual live speed remains unmeasured. [Validation](docs/validation.md).
 
 ## Read the adventure
 
@@ -79,12 +86,15 @@ It may be lowered, but this version rejects values above 100.
 - A state machine with validated action, review, resolution and scene phases.
 - Approved skill modifiers, seeded d20 checks and advantage/disadvantage.
 - A deterministic recorder that copies GM-approved facts and grants.
-- A separate Chronicler review before live GM scenes and results are committed.
+- Periodic Chronicler reviews in grouped play, with immediate gates for secrets
+  and selective grants; the legacy relay reviews every GM scene/result.
 - Per-character knowledge, private intentions and filtered player requests.
 - Full protocol envelopes in the debug history and a table-facing transcript.
 - Atomic checkpoints with pending rolls, RNG state and idempotent message IDs.
 - Rebuildable JSON/Markdown records and a reproducible first-session fixture.
-- A durable agent dispatcher, strict response schemas and bounded retries.
+- Grouped concurrent declarations, combined GM narration and per-role model profiles.
+- Compact role journals, scoped recall, durable inboxes and handoff timing.
+- Strict response schemas, bounded retries and a single atomic grouped checkpoint.
 - A relay for chat agents and an optional stateless Responses API transport.
 - Continuation from a completed checkpoint, preserving knowledge and dice state.
 - Tests for routing, hidden information, recovery, provider errors and turn limits.
@@ -116,7 +126,8 @@ Never put actual credentials in configuration, prompts, logs or checkpoints.
 - [Original protocol PDF](docs/protocol-v0.1.pdf)
 - [Setup guide](docs/setup-guide.docx)
 - [Implemented runtime contract](docs/runtime.md)
-- [Live separate-agent workflow](docs/live-play.md)
+- [Session 2.5 grouped workflow](docs/session-2-5.md)
+- [Legacy separate-agent workflow](docs/live-play.md)
 - [Role prompts](prompts/roles.md)
 
 The protocol and setup guide describe the wider design. The runtime contract

@@ -1,5 +1,8 @@
 # Live play with separate agents
 
+> This is the legacy per-character relay. For the next trial, use the
+> [Session 2.5 grouped workflow](session-2-5.md).
+
 The execution layer is ready for a supervised live session. One GM, three
 players and one Chronicler receive different packets. They cooperate through
 accepted game events, not direct access to one another's private context.

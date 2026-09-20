@@ -1,5 +1,52 @@
 # Separate-agent layer validation
 
+## Session 2.5 preparation
+
+**52 automated tests pass: 28 existing tests and 24 grouped-runtime tests.**
+No real campaign turn, native model call or paid API call was made during this
+preparation. Session 0002 remains the latest completed adventure.
+
+The new tests cover independent same-scene player requests, parallel transport,
+serial acceptance, per-role journals, scoped recall, frozen dice, crash recovery,
+duplicate replies, immediate review gates, periodic review/end scheduling,
+ordinary group travel, deferred actions, bounded attempts, call reservation,
+stale writers, the 100-character-turn limit, and source-preserving continuation.
+A mocked API request verifies per-role effort and output limits. The native
+operator must still select the specified model tiers when launching agents.
+
+`python3 scripts/benchmark_rounds.py` completes five synthetic rounds and 15
+character turns in **22 fixture role replies**, including opening and final
+review. A one-round no-roll trial needs six replies rather than the legacy
+session's 15. Each ordinary additional round needs four; checks, recalls,
+corrections and secret gates add calls. These figures compare routing overhead,
+not equivalent narrative output or measured model latency.
+
+A disposable probe inherited the completed Session 0002 checkpoint and checked
+all new packet types for one synthetic no-roll round. The source remained
+byte-for-byte unchanged. Compact serialized request sizes were:
+
+| Request | Characters |
+| --- | ---: |
+| Opening GM | 12,738 |
+| Arlen | 7,397 |
+| Elara | 7,993 |
+| Torren | 7,983 |
+| Combined GM result request | 13,916 |
+| Final Chronicler | 12,701 |
+
+These sizes include instructions, schema and profile. The probe uses fixture
+declarations; real wording changes sizes. Optional history is omitted as needed
+to meet player/GM budgets. The complete source and audience-filtered recall
+remain available. On this workspace the five-round local fixture took about
+0.6 seconds; that measures disk work and synthetic responses, **not live AI
+latency**. No story-quality improvement or speedup has yet been demonstrated
+with the new live agents. The next short trial must measure those separately.
+
+Run the read-only campaign probe with
+`python3 scripts/benchmark_rounds.py --checkpoint PATH_TO_COMPLETED_CHECKPOINT`.
+Its temporary records are never published as campaign events. See the
+[operating guide](session-2-5.md) for recovery and privacy limitations.
+
 ## Recorded live session
 
 Session 0002 exercised the full native relay in actual play outside the tavern:
@@ -43,5 +90,4 @@ that hidden entities, secret facts and other players' memories are absent.
 
 The tests do not prove semantic correctness of every narration, resistance to
 an agent deliberately using inherited host tools, or real API compatibility
-for every model/account. No live API call was made. None of these tests advanced
-the existing 24-turn campaign.
+for every model/account. No live API call was made. None of these preparation tests advanced the real campaign.
