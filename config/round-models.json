@@ -1,0 +1,20 @@
+{
+  "player": {
+    "native_model": "gpt-5.6-luna",
+    "reasoning_effort": "low",
+    "api_model_env": "TTRPG_PLAYER_MODEL",
+    "max_output_tokens": 1200
+  },
+  "gm": {
+    "native_model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "api_model_env": "TTRPG_GM_MODEL",
+    "max_output_tokens": 4500
+  },
+  "chronicler": {
+    "native_model": "gpt-5.6-terra",
+    "reasoning_effort": "medium",
+    "api_model_env": "TTRPG_CHRONICLER_MODEL",
+    "max_output_tokens": 3000
+  }
+}

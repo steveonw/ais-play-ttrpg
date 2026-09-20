@@ -71,6 +71,7 @@ class LiveSession:
         path = Path(root) / "live.json"
         require(not path.exists(), "Live session already exists")
         campaign = Campaign(root)
+        require("round_runtime" not in campaign.state, "Use rounds.py for grouped campaigns")
         require(campaign.state["phase"] != "ENDED", "Start a new session from this completed checkpoint")
         settings = {**DEFAULTS, **(limits or {})}
         require(set(settings) == set(DEFAULTS), "Unknown execution limit")

@@ -131,6 +131,7 @@ class Campaign:
 
     def submit(self, operation, message):
         """Reject atomically, or commit one transition. Identical retries are no-ops."""
+        require("round_runtime" not in self.state, "Use rounds.py for grouped campaigns; legacy writes are disabled")
         fields(message, ["message_id", "payload"])
         identifier(message["message_id"])
         require(isinstance(message["payload"], dict), "Payload must be an object")
@@ -294,6 +295,15 @@ class Campaign:
         for event in s["public_log"]:
             if event["kind"] == "scene":
                 lines += [f"## {event['scene_id']}", "", event["text"], ""]
+            elif event["kind"] == "round":
+                lines += [f"## Round {event['round']} — character turns {event['turn_start']}–{event['turn']}", ""]
+                for action in event["declarations"]:
+                    name = s["characters"][action["character_id"]]["name"]
+                    lines += [f"**{name}**", "", "> " + action["speech"] if action["speech"] else "", "Attempt: " + action["action"], ""]
+                for check in event["checks"]:
+                    name = s["characters"][check["character_id"]]["name"]
+                    lines += [f"Dice — {name}, {check['skill']}: {check['individual_rolls']} {check['modifier']:+} = **{check['total']}**, difficulty {check['difficulty']}.", ""]
+                lines += ["GM: " + event["text"], ""]
             else:
                 lines += [f"### Turn {event['turn']} — {event['actor']}", "", f"> {event['speech']}" if event["speech"] else "", "Attempt: " + event["action"], ""]
                 if event["roll"]:
