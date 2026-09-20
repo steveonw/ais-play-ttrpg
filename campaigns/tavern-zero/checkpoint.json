@@ -1,0 +1,4178 @@
+{
+  "format_version": 1,
+  "config": {
+    "protocol_version": "0.1",
+    "campaign_id": "tavern-zero",
+    "session_id": "session-0002",
+    "maximum_turns": 100,
+    "dice_seed": 728491,
+    "world_mode": "SCHRODINGER",
+    "ruleset": "TAVERN_ZERO_CHECKS_V1",
+    "play_mode": "SEPARATE_AGENTS",
+    "repository": "steveonw/ais-play-ttrpg",
+    "github_visibility": "PUBLIC_FULL_CAMPAIGN",
+    "adversary_enabled": false,
+    "characters": [
+      {
+        "id": "arlen-vale",
+        "agent_id": "player-01",
+        "name": "Arlen Vale",
+        "role": "curious rogue",
+        "personality": "Suspicious, curious, dry humor. Notices inconsistencies and dislikes being steered.",
+        "goal": "Find paying work without becoming somebody else's disposable helper.",
+        "skills": {
+          "INSIGHT": 3,
+          "INVESTIGATION": 3,
+          "STEALTH": 4,
+          "DEXTERITY": 3,
+          "PERCEPTION": 2
+        },
+        "hp": 9,
+        "inventory": [
+          "dagger",
+          "travel cloak",
+          "chalk"
+        ],
+        "private_memories": [
+          "I need money, but I will not accept a job without asking what it really involves."
+        ]
+      },
+      {
+        "id": "elara-voss",
+        "agent_id": "player-02",
+        "name": "Elara Voss",
+        "role": "idealistic fighter",
+        "personality": "Direct, protective, stubborn. Offers help first and asks about payment later.",
+        "goal": "Help somebody in immediate trouble without forcing the others into a fight.",
+        "skills": {
+          "ATHLETICS": 4,
+          "PERSUASION": 2,
+          "PERCEPTION": 1,
+          "INSIGHT": 1
+        },
+        "hp": 12,
+        "inventory": [
+          "sword",
+          "shield",
+          "rope"
+        ],
+        "private_memories": [
+          "Promises matter to me, even when keeping them is inconvenient."
+        ]
+      },
+      {
+        "id": "torren-bright",
+        "agent_id": "player-03",
+        "name": "Torren Bright",
+        "role": "cautious wizard",
+        "personality": "Methodical, polite, easily alarmed by unexplained machinery or magic.",
+        "goal": "Understand unusual phenomena before touching them.",
+        "skills": {
+          "ARCANA": 4,
+          "INVESTIGATION": 2,
+          "PERCEPTION": 2,
+          "DEXTERITY": 1
+        },
+        "hp": 7,
+        "inventory": [
+          "notebook",
+          "pencil",
+          "walking staff"
+        ],
+        "private_memories": [
+          "An unexplained event is not evidence of magic until ordinary explanations have been tested."
+        ]
+      }
+    ]
+  },
+  "phase": "ENDED",
+  "turn": 3,
+  "scene_number": 1,
+  "scene_id": "scene-0001",
+  "next_actor": 0,
+  "location": "lantern-lane",
+  "scene": "Morning opens outside the Crooked Lantern, with all three travelers together at its doorway. The rain has eased to a fine drizzle. A muddy lane runs between low buildings toward a stone bridge visible a short walk away; water can be heard beneath its arch.\n\nBeside the tavern entrance, a person in a patched gray coat presses a fresh notice onto a wooden board. Its large lettering reads: “NORTH SLUICE REPAIRS — ENQUIRIES AT THE BRIDGE.” The person steps back to check that the paper holds, then notices the travelers. “Morning.”\n\nThe familiar heading is plainly visible. Whether it leads to anyone who knows Dain remains unanswered.",
+  "characters": {
+    "arlen-vale": {
+      "id": "arlen-vale",
+      "agent_id": "player-01",
+      "name": "Arlen Vale",
+      "role": "curious rogue",
+      "personality": "Suspicious, curious, dry humor. Notices inconsistencies and dislikes being steered.",
+      "goal": "Find paying work without becoming somebody else's disposable helper.",
+      "skills": {
+        "INSIGHT": 3,
+        "INVESTIGATION": 3,
+        "STEALTH": 4,
+        "DEXTERITY": 3,
+        "PERCEPTION": 2
+      },
+      "hp": 9,
+      "inventory": [
+        "dagger",
+        "travel cloak",
+        "chalk"
+      ],
+      "private_memories": [
+        "I need money, but I will not accept a job without asking what it really involves."
+      ],
+      "knowledge": [
+        "fact-seed-tavern",
+        "fact-mara",
+        "fact-opening",
+        "fact-job",
+        "rumor-empty-cellar",
+        "fact-cellar-access",
+        "fact-stairs",
+        "fact-signal",
+        "fact-mara-admission",
+        "belief-arlen-mara",
+        "fact-voice",
+        "fact-shelter-admitted",
+        "fact-trapped",
+        "fact-flood",
+        "fact-rescue",
+        "fact-iven-name",
+        "rumor-rack-cause",
+        "fact-satchel",
+        "fact-shutoff",
+        "rumor-wage-receipts",
+        "fact-drain-ledge",
+        "fact-board-jammed",
+        "fact-handle-broken",
+        "fact-paper-threat",
+        "fact-evidence-lost",
+        "fact-safe-return",
+        "fact-reward",
+        "rumor-hiding",
+        "rumor-dain",
+        "rumor-north-sluice",
+        "fact-inquiry-offer",
+        "fact-next-plan",
+        "fact-daylight-lantern-lane",
+        "fact-visible-stone-bridge",
+        "fact-repair-notice-wording",
+        "fact-notice-poster-present",
+        "rumor-s2-t1-sella-contact",
+        "rumor-s2-t1-repair-hiring",
+        "rumor-s2-t1-poster-role",
+        "rumor-s2-t2-poster-dain-unknown",
+        "rumor-s2-t2-poster-refers-dain-inquiry",
+        "fact-s2-t3-bridge-approach-passable"
+      ],
+      "conditions": []
+    },
+    "elara-voss": {
+      "id": "elara-voss",
+      "agent_id": "player-02",
+      "name": "Elara Voss",
+      "role": "idealistic fighter",
+      "personality": "Direct, protective, stubborn. Offers help first and asks about payment later.",
+      "goal": "Help somebody in immediate trouble without forcing the others into a fight.",
+      "skills": {
+        "ATHLETICS": 4,
+        "PERSUASION": 2,
+        "PERCEPTION": 1,
+        "INSIGHT": 1
+      },
+      "hp": 12,
+      "inventory": [
+        "sword",
+        "shield",
+        "rope"
+      ],
+      "private_memories": [
+        "Promises matter to me, even when keeping them is inconvenient."
+      ],
+      "knowledge": [
+        "fact-seed-tavern",
+        "fact-mara",
+        "fact-opening",
+        "fact-job",
+        "rumor-empty-cellar",
+        "fact-cellar-access",
+        "fact-stairs",
+        "fact-signal",
+        "fact-mara-admission",
+        "fact-voice",
+        "fact-shelter-admitted",
+        "fact-trapped",
+        "fact-flood",
+        "fact-rescue",
+        "fact-iven-name",
+        "rumor-rack-cause",
+        "fact-satchel",
+        "fact-shutoff",
+        "rumor-wage-receipts",
+        "fact-drain-ledge",
+        "fact-board-jammed",
+        "fact-handle-broken",
+        "fact-paper-threat",
+        "fact-evidence-lost",
+        "fact-safe-return",
+        "fact-reward",
+        "rumor-hiding",
+        "rumor-dain",
+        "rumor-north-sluice",
+        "fact-inquiry-offer",
+        "fact-next-plan",
+        "fact-daylight-lantern-lane",
+        "fact-visible-stone-bridge",
+        "fact-repair-notice-wording",
+        "fact-notice-poster-present",
+        "rumor-s2-t1-sella-contact",
+        "rumor-s2-t1-repair-hiring",
+        "rumor-s2-t1-poster-role",
+        "rumor-s2-t2-poster-dain-unknown",
+        "rumor-s2-t2-poster-refers-dain-inquiry",
+        "fact-s2-t3-bridge-approach-passable"
+      ],
+      "conditions": []
+    },
+    "torren-bright": {
+      "id": "torren-bright",
+      "agent_id": "player-03",
+      "name": "Torren Bright",
+      "role": "cautious wizard",
+      "personality": "Methodical, polite, easily alarmed by unexplained machinery or magic.",
+      "goal": "Understand unusual phenomena before touching them.",
+      "skills": {
+        "ARCANA": 4,
+        "INVESTIGATION": 2,
+        "PERCEPTION": 2,
+        "DEXTERITY": 1
+      },
+      "hp": 7,
+      "inventory": [
+        "notebook",
+        "pencil",
+        "walking staff"
+      ],
+      "private_memories": [
+        "An unexplained event is not evidence of magic until ordinary explanations have been tested."
+      ],
+      "knowledge": [
+        "fact-seed-tavern",
+        "fact-mara",
+        "fact-opening",
+        "fact-job",
+        "rumor-empty-cellar",
+        "fact-cellar-access",
+        "fact-stairs",
+        "fact-signal",
+        "fact-mara-admission",
+        "fact-voice",
+        "fact-shelter-admitted",
+        "fact-trapped",
+        "fact-flood",
+        "fact-rescue",
+        "fact-iven-name",
+        "rumor-rack-cause",
+        "fact-satchel",
+        "fact-shutoff",
+        "rumor-wage-receipts",
+        "fact-drain-ledge",
+        "fact-board-jammed",
+        "fact-handle-broken",
+        "fact-paper-threat",
+        "fact-evidence-lost",
+        "fact-safe-return",
+        "fact-reward",
+        "rumor-hiding",
+        "rumor-dain",
+        "rumor-north-sluice",
+        "fact-inquiry-offer",
+        "fact-next-plan",
+        "fact-daylight-lantern-lane",
+        "fact-visible-stone-bridge",
+        "fact-repair-notice-wording",
+        "fact-notice-poster-present",
+        "rumor-s2-t1-sella-contact",
+        "rumor-s2-t1-repair-hiring",
+        "rumor-s2-t1-poster-role",
+        "rumor-s2-t2-poster-dain-unknown",
+        "rumor-s2-t2-poster-refers-dain-inquiry",
+        "fact-s2-t3-bridge-approach-passable"
+      ],
+      "conditions": []
+    }
+  },
+  "entities": {
+    "crooked-lantern": {
+      "id": "crooked-lantern",
+      "name": "The Crooked Lantern",
+      "type": "LOCATION",
+      "undefined_fields": [
+        "settlement",
+        "region",
+        "history"
+      ]
+    },
+    "mara-blackkeg": {
+      "id": "mara-blackkeg",
+      "name": "Mara Blackkeg",
+      "type": "NPC",
+      "undefined_fields": [
+        "history",
+        "family",
+        "motives"
+      ]
+    },
+    "cellar-door": {
+      "id": "cellar-door",
+      "name": "Cellar door",
+      "type": "OBJECT",
+      "undefined_fields": [
+        "lock",
+        "mechanism"
+      ]
+    },
+    "tavern-cellar": {
+      "id": "tavern-cellar",
+      "name": "Crooked Lantern cellar",
+      "type": "LOCATION",
+      "undefined_fields": [
+        "age",
+        "extent",
+        "connections"
+      ]
+    },
+    "trapped-traveler": {
+      "id": "trapped-traveler",
+      "name": "Trapped traveler",
+      "type": "NPC",
+      "undefined_fields": [
+        "name",
+        "occupation",
+        "origin"
+      ]
+    },
+    "fallen-rack": {
+      "id": "fallen-rack",
+      "name": "Fallen storage rack",
+      "type": "OBJECT",
+      "undefined_fields": [
+        "cause-of-fall"
+      ]
+    },
+    "drain-grate": {
+      "id": "drain-grate",
+      "name": "Wooden drainage grate",
+      "type": "OBJECT",
+      "undefined_fields": [
+        "outlet",
+        "obstruction"
+      ]
+    },
+    "leather-satchel": {
+      "id": "leather-satchel",
+      "name": "Iven's leather satchel",
+      "type": "OBJECT",
+      "undefined_fields": [
+        "contents"
+      ]
+    },
+    "shutoff-board": {
+      "id": "shutoff-board",
+      "name": "Drain shutoff board",
+      "type": "OBJECT",
+      "undefined_fields": [
+        "age",
+        "maintenance"
+      ]
+    },
+    "lantern-lane": {
+      "id": "lantern-lane",
+      "name": "Lane outside the Crooked Lantern",
+      "type": "LOCATION",
+      "undefined_fields": [
+        "settlement",
+        "other_destinations",
+        "history"
+      ]
+    },
+    "lane-stone-bridge": {
+      "id": "lane-stone-bridge",
+      "name": "Stone bridge at the end of the lane",
+      "type": "LOCATION",
+      "undefined_fields": [
+        "watercourse_name",
+        "far_bank",
+        "connection_to_north_sluice"
+      ]
+    },
+    "lane-repair-notice": {
+      "id": "lane-repair-notice",
+      "name": "North Sluice Repairs notice",
+      "type": "OBJECT",
+      "undefined_fields": [
+        "author",
+        "authority",
+        "posting_date"
+      ]
+    },
+    "gray-coated-notice-poster": {
+      "id": "gray-coated-notice-poster",
+      "name": "Gray-coated notice poster",
+      "type": "NPC",
+      "undefined_fields": [
+        "name",
+        "occupation",
+        "employer",
+        "knowledge_of_dain"
+      ]
+    },
+    "sella-repair-contact": {
+      "id": "sella-repair-contact",
+      "name": "Sella",
+      "type": "NPC",
+      "undefined_fields": [
+        "appearance",
+        "formal_position",
+        "employer",
+        "knowledge_of_dain",
+        "current_location"
+      ]
+    }
+  },
+  "facts": {
+    "fact-seed-tavern": {
+      "id": "fact-seed-tavern",
+      "statement": "The Crooked Lantern is a tavern.",
+      "classification": "CANON",
+      "source": "campaign-seed",
+      "entity_id": "crooked-lantern",
+      "source_event": "seed",
+      "source_turn": 0,
+      "source_scene": "scene-0000",
+      "source_session": "session-0001"
+    },
+    "fact-mara": {
+      "id": "fact-mara",
+      "statement": "Mara Blackkeg operates the Crooked Lantern.",
+      "entity_id": "mara-blackkeg",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "opening-scene",
+      "source_turn": 0,
+      "source_scene": "scene-0001",
+      "source_session": "session-0001"
+    },
+    "fact-opening": {
+      "id": "fact-opening",
+      "statement": "Rain is falling outside the Crooked Lantern; a metallic knock was heard beneath its floor.",
+      "entity_id": "crooked-lantern",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "opening-scene",
+      "source_turn": 0,
+      "source_scene": "scene-0001",
+      "source_session": "session-0001"
+    },
+    "fact-job": {
+      "id": "fact-job",
+      "statement": "Mara offers the travelers supper and beds if they investigate the cellar bell.",
+      "entity_id": "mara-blackkeg",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "final-001",
+      "source_turn": 1,
+      "source_scene": "scene-0001",
+      "source_session": "session-0001"
+    },
+    "rumor-empty-cellar": {
+      "id": "rumor-empty-cellar",
+      "statement": "Mara says nobody is in the cellar.",
+      "entity_id": "mara-blackkeg",
+      "classification": "RUMOR",
+      "source": "mara-blackkeg",
+      "source_event": "final-001",
+      "source_turn": 1,
+      "source_scene": "scene-0001",
+      "source_session": "session-0001"
+    },
+    "fact-cellar-access": {
+      "id": "fact-cellar-access",
+      "statement": "Mara permits the travelers to investigate the cellar and provides a lamp at its entrance.",
+      "entity_id": "mara-blackkeg",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "final-002",
+      "source_turn": 2,
+      "source_scene": "scene-0001",
+      "source_session": "session-0001"
+    },
+    "fact-stairs": {
+      "id": "fact-stairs",
+      "statement": "Steep wooden stairs lead into a cellar; a bell wire follows the wall and water is visible below.",
+      "entity_id": "crooked-lantern",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "final-002",
+      "source_turn": 2,
+      "source_scene": "scene-0001",
+      "source_session": "session-0001"
+    },
+    "fact-signal": {
+      "id": "fact-signal",
+      "statement": "The cellar bell wire is being pulled from below in a repeating group of three.",
+      "entity_id": "crooked-lantern",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "final-003",
+      "source_turn": 3,
+      "source_scene": "scene-0001",
+      "source_session": "session-0001"
+    },
+    "fact-mara-admission": {
+      "id": "fact-mara-admission",
+      "statement": "Mara retracts her certainty that the cellar is empty and says she hoped it was empty by now.",
+      "entity_id": "mara-blackkeg",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "final-004",
+      "source_turn": 4,
+      "source_scene": "scene-0001",
+      "source_session": "session-0001"
+    },
+    "belief-arlen-mara": {
+      "id": "belief-arlen-mara",
+      "statement": "Arlen judges that Mara is worried about a person below, rather than merely about the bell.",
+      "entity_id": "mara-blackkeg",
+      "classification": "CHARACTER_BELIEF",
+      "source": "arlen-vale",
+      "source_event": "final-004",
+      "source_turn": 4,
+      "source_scene": "scene-0001",
+      "source_session": "session-0001"
+    },
+    "secret-shelter": {
+      "id": "secret-shelter",
+      "statement": "Mara allowed a traveler to rest in the cellar earlier tonight.",
+      "entity_id": "mara-blackkeg",
+      "classification": "SECRET_CANON",
+      "source": "gm",
+      "source_event": "final-004",
+      "source_turn": 4,
+      "source_scene": "scene-0001",
+      "source_session": "session-0001"
+    },
+    "fact-voice": {
+      "id": "fact-voice",
+      "statement": "A person below the tavern warns visitors not to move a rack from their side.",
+      "entity_id": "crooked-lantern",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "final-005",
+      "source_turn": 5,
+      "source_scene": "scene-0001",
+      "source_session": "session-0001"
+    },
+    "fact-shelter-admitted": {
+      "id": "fact-shelter-admitted",
+      "statement": "Mara tells the party she allowed a traveler to sleep in the cellar and thought he had left.",
+      "entity_id": "mara-blackkeg",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "final-007",
+      "source_turn": 7,
+      "source_scene": "scene-0001",
+      "source_session": "session-0001"
+    },
+    "fact-trapped": {
+      "id": "fact-trapped",
+      "statement": "A traveler's hand is trapped beneath a fallen cellar rack; he can reach the bell wire.",
+      "entity_id": "trapped-traveler",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "cellar-scene",
+      "source_turn": 7,
+      "source_scene": "scene-0002",
+      "source_session": "session-0001"
+    },
+    "fact-flood": {
+      "id": "fact-flood",
+      "statement": "Ankle-deep water covers the cellar floor and flows inward through a drainage grate.",
+      "entity_id": "tavern-cellar",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "cellar-scene",
+      "source_turn": 7,
+      "source_scene": "scene-0002",
+      "source_session": "session-0001"
+    },
+    "fact-rescue": {
+      "id": "fact-rescue",
+      "statement": "Elara frees the trapped traveler's bruised hand from the rack.",
+      "entity_id": "trapped-traveler",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "final-008",
+      "source_turn": 8,
+      "source_scene": "scene-0002",
+      "source_session": "session-0001"
+    },
+    "fact-iven-name": {
+      "id": "fact-iven-name",
+      "statement": "The rescued traveler introduces himself as Iven.",
+      "entity_id": "trapped-traveler",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "final-008",
+      "source_turn": 8,
+      "source_scene": "scene-0002",
+      "source_session": "session-0001"
+    },
+    "rumor-rack-cause": {
+      "id": "rumor-rack-cause",
+      "statement": "Iven says the rack shifted while he was trying to clear the drain.",
+      "entity_id": "trapped-traveler",
+      "classification": "RUMOR",
+      "source": "trapped-traveler",
+      "source_event": "final-008",
+      "source_turn": 8,
+      "source_scene": "scene-0002",
+      "source_session": "session-0001"
+    },
+    "fact-satchel": {
+      "id": "fact-satchel",
+      "statement": "A leather satchel is caught under the cellar drainage grate.",
+      "entity_id": "leather-satchel",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "final-008",
+      "source_turn": 8,
+      "source_scene": "scene-0002",
+      "source_session": "session-0001"
+    },
+    "fact-shutoff": {
+      "id": "fact-shutoff",
+      "statement": "A raised shutoff board above the drainage opening can stop the incoming water before the grate is opened.",
+      "entity_id": "drain-grate",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "final-009",
+      "source_turn": 9,
+      "source_scene": "scene-0002",
+      "source_session": "session-0001"
+    },
+    "rumor-wage-receipts": {
+      "id": "rumor-wage-receipts",
+      "statement": "Iven says the satchel contains repair-wage receipts, including one bearing his absent brother's name from last week.",
+      "entity_id": "trapped-traveler",
+      "classification": "RUMOR",
+      "source": "trapped-traveler",
+      "source_event": "final-010",
+      "source_turn": 10,
+      "source_scene": "scene-0002",
+      "source_session": "session-0001"
+    },
+    "fact-drain-ledge": {
+      "id": "fact-drain-ledge",
+      "statement": "A narrow stone ledge runs from the cellar landing toward the drain, with a slick final stretch.",
+      "entity_id": "tavern-cellar",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "final-010",
+      "source_turn": 10,
+      "source_scene": "scene-0002",
+      "source_session": "session-0001"
+    },
+    "fact-board-jammed": {
+      "id": "fact-board-jammed",
+      "statement": "The shutoff board jams halfway down; water still enters and the cellar waterline continues to rise.",
+      "entity_id": "shutoff-board",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "final-011",
+      "source_turn": 11,
+      "source_scene": "scene-0002",
+      "source_session": "session-0001"
+    },
+    "fact-handle-broken": {
+      "id": "fact-handle-broken",
+      "statement": "The shutoff board's handle breaks during the coordinated attempt; the board remains jammed and flooding continues.",
+      "entity_id": "shutoff-board",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "final-014",
+      "source_turn": 14,
+      "source_scene": "scene-0002",
+      "source_session": "session-0001"
+    },
+    "fact-paper-threat": {
+      "id": "fact-paper-threat",
+      "statement": "Water has opened the satchel flap and is beginning to wash out its papers.",
+      "entity_id": "leather-satchel",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "final-014",
+      "source_turn": 14,
+      "source_scene": "scene-0002",
+      "source_session": "session-0001"
+    },
+    "fact-evidence-lost": {
+      "id": "fact-evidence-lost",
+      "statement": "Arlen's retrieval attempt fails: the satchel strap breaks, and the bag and papers wash beyond reach through the drain.",
+      "entity_id": "leather-satchel",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "final-016",
+      "source_turn": 16,
+      "source_scene": "scene-0002",
+      "source_session": "session-0001"
+    },
+    "fact-safe-return": {
+      "id": "fact-safe-return",
+      "statement": "Arlen, Elara, Torren and Iven return safely to the tavern; Mara blocks access to the flooded cellar.",
+      "entity_id": "crooked-lantern",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "final-019",
+      "source_turn": 19,
+      "source_scene": "scene-0002",
+      "source_session": "session-0001"
+    },
+    "fact-reward": {
+      "id": "fact-reward",
+      "statement": "Mara honors the offer of supper and beds after the investigation and rescue.",
+      "entity_id": "mara-blackkeg",
+      "classification": "CANON",
+      "source": "gm",
+      "source_event": "aftermath-scene",
+      "source_turn": 19,
+      "source_scene": "scene-0003",
+      "source_session": "session-0001"
+    },
+    "rumor-hiding": {
+      "id": "rumor-hiding",
+      "statement": "Mara says Iven requested a concealed place to rest because of papers he was carrying; Iven confirms the request.",
+      "entity_id": "trapped-traveler",
+      "classification": "RUMOR",
+      "source": "mara-blackkeg and trapped-traveler",
+      "source_event": "final-020",
+      "source_turn": 20,
+      "source_scene": "scene-0003",
+      "source_session": "session-0001"
+    },
+    "rumor-dain": {
+      "id": "rumor-dain",
+      "statement": "Iven says his brother is Dain, has been absent for a month, and was named on a wage receipt dated seven days ago.",
+      "entity_id": "trapped-traveler",
+      "classification": "RUMOR",
+      "source": "trapped-traveler",
+      "source_event": "final-021",
+      "source_turn": 21,
+      "source_scene": "scene-0003",
+      "source_session": "session-0001"
+    },
+    "rumor-north-sluice": {
+      "id": "rumor-north-sluice",
+      "statement": "Iven remembers the heading North Sluice Repairs on the lost receipt, but did not witness who collected or signed for the wages.",
+      "entity_id": "trapped-traveler",
+      "classification": "RUMOR",
+      "source": "trapped-traveler",
+      "source_event": "final-021",
+      "source_turn": 21,
+      "source_scene": "scene-0003",
+      "source_session": "session-0001"
+    },
+    "fact-inquiry-offer": {
+      "id": "fact-inquiry-offer",
+      "statement": "Arlen offers to help ask cautious questions in daylight, without promising accusations, trespass or further cellar work.",
+      "entity_id": "crooked-lantern",
+      "classification": "CANON",
+      "source": "arlen-vale",
+      "source_event": "final-022",
+      "source_turn": 22,
+      "source_scene": "scene-0003",
+      "source_session": "session-0001"
+    },
+    "fact-next-plan": {
+      "id": "fact-next-plan",
+      "statement": "All three travelers agree to make cautious inquiries in daylight about Iven's account of Dain and North Sluice Repairs.",
+      "entity_id": "crooked-lantern",
+      "classification": "CANON",
+      "source": "player actions 22 through 24",
+      "source_event": "final-024",
+      "source_turn": 24,
+      "source_scene": "scene-0003",
+      "source_session": "session-0001"
+    },
+    "fact-daylight-lantern-lane": {
+      "id": "fact-daylight-lantern-lane",
+      "statement": "The next morning, all three travelers are together outside the Crooked Lantern on a muddy lane; the rain has eased to drizzle.",
+      "classification": "CANON",
+      "source": "gm",
+      "entity_id": "lantern-lane",
+      "source_event": "rq-5695d78ae7f7-000001",
+      "source_turn": 0,
+      "source_scene": "scene-0001",
+      "source_session": "session-0002"
+    },
+    "fact-visible-stone-bridge": {
+      "id": "fact-visible-stone-bridge",
+      "statement": "The lane outside the Crooked Lantern leads toward a visible stone bridge a short walk away, with water audible beneath its arch.",
+      "classification": "CANON",
+      "source": "gm",
+      "entity_id": "lane-stone-bridge",
+      "source_event": "rq-5695d78ae7f7-000001",
+      "source_turn": 0,
+      "source_scene": "scene-0001",
+      "source_session": "session-0002"
+    },
+    "fact-repair-notice-wording": {
+      "id": "fact-repair-notice-wording",
+      "statement": "A notice beside the Crooked Lantern reads: NORTH SLUICE REPAIRS — ENQUIRIES AT THE BRIDGE. Its wording alone does not verify Iven's account.",
+      "classification": "CANON",
+      "source": "gm",
+      "entity_id": "lane-repair-notice",
+      "source_event": "rq-5695d78ae7f7-000001",
+      "source_turn": 0,
+      "source_scene": "scene-0001",
+      "source_session": "session-0002"
+    },
+    "fact-notice-poster-present": {
+      "id": "fact-notice-poster-present",
+      "statement": "A person wearing a patched gray coat has just posted the repair notice beside the tavern and greets the travelers.",
+      "classification": "CANON",
+      "source": "gm",
+      "entity_id": "gray-coated-notice-poster",
+      "source_event": "rq-5695d78ae7f7-000001",
+      "source_turn": 0,
+      "source_scene": "scene-0001",
+      "source_session": "session-0002"
+    },
+    "rumor-s2-t1-sella-contact": {
+      "id": "rumor-s2-t1-sella-contact",
+      "statement": "The gray-coated notice poster says Sella handles repair enquiries and takes names for work at the stone bridge.",
+      "classification": "RUMOR",
+      "source": "gray-coated-notice-poster",
+      "entity_id": "sella-repair-contact",
+      "source_event": "rq-5695d78ae7f7-000005",
+      "source_turn": 1,
+      "source_scene": "scene-0001",
+      "source_session": "session-0002"
+    },
+    "rumor-s2-t1-repair-hiring": {
+      "id": "rumor-s2-t1-repair-hiring",
+      "statement": "The gray-coated notice poster says the repairs need workers to carry stone and clear debris, and directs questions about dry-ground tasks and pay to Sella. No wage or particular safe task has been confirmed.",
+      "classification": "RUMOR",
+      "source": "gray-coated-notice-poster",
+      "entity_id": "lane-repair-notice",
+      "source_event": "rq-5695d78ae7f7-000005",
+      "source_turn": 1,
+      "source_scene": "scene-0001",
+      "source_session": "session-0002"
+    },
+    "rumor-s2-t1-poster-role": {
+      "id": "rumor-s2-t1-poster-role",
+      "statement": "The gray-coated notice poster says they agreed only to put up the repair notices and are repeating the hiring information they were told to advertise.",
+      "classification": "RUMOR",
+      "source": "gray-coated-notice-poster",
+      "entity_id": "gray-coated-notice-poster",
+      "source_event": "rq-5695d78ae7f7-000005",
+      "source_turn": 1,
+      "source_scene": "scene-0001",
+      "source_session": "session-0002"
+    },
+    "rumor-s2-t2-poster-dain-unknown": {
+      "id": "rumor-s2-t2-poster-dain-unknown",
+      "statement": "The gray-coated notice poster says they do not know Dain by that name and offers no sighting or information about his whereabouts.",
+      "classification": "RUMOR",
+      "source": "gray-coated-notice-poster",
+      "entity_id": "gray-coated-notice-poster",
+      "source_event": "rq-5695d78ae7f7-000009",
+      "source_turn": 2,
+      "source_scene": "scene-0001",
+      "source_session": "session-0002"
+    },
+    "rumor-s2-t2-poster-refers-dain-inquiry": {
+      "id": "rumor-s2-t2-poster-refers-dain-inquiry",
+      "statement": "The gray-coated notice poster recommends asking Sella whether Dain worked on the repairs, while explicitly saying they do not know whether Sella knows him.",
+      "classification": "RUMOR",
+      "source": "gray-coated-notice-poster",
+      "entity_id": "sella-repair-contact",
+      "source_event": "rq-5695d78ae7f7-000009",
+      "source_turn": 2,
+      "source_scene": "scene-0001",
+      "source_session": "session-0002"
+    },
+    "fact-s2-t3-bridge-approach-passable": {
+      "id": "fact-s2-t3-bridge-approach-passable",
+      "statement": "The lane from the Crooked Lantern to the visible stone bridge is muddy but passable, with no barrier across the approach.",
+      "classification": "CANON",
+      "source": "gm",
+      "entity_id": "lantern-lane",
+      "source_event": "rq-5695d78ae7f7-000013",
+      "source_turn": 3,
+      "source_scene": "scene-0001",
+      "source_session": "session-0002"
+    }
+  },
+  "pending": null,
+  "rng_algorithm": "python-random-MT19937-v3",
+  "rng_state": [
+    3,
+    [
+      3201951719,
+      751180168,
+      1789488677,
+      2814270466,
+      3440696130,
+      1578758138,
+      2299964309,
+      3174087470,
+      2830528183,
+      1500446534,
+      2118136306,
+      3731764617,
+      1820550749,
+      1590737640,
+      1626915118,
+      3102988301,
+      2908442066,
+      2327418089,
+      1423070659,
+      3461647428,
+      1210746451,
+      1855090119,
+      378907635,
+      3775025664,
+      4066849352,
+      1943320502,
+      3783615827,
+      3686601415,
+      3474033216,
+      756150231,
+      1055303380,
+      1262312836,
+      2160275800,
+      2158647773,
+      1852922428,
+      2719621674,
+      2238908706,
+      2927371619,
+      1265332208,
+      4266056875,
+      1627140254,
+      135744931,
+      34467940,
+      1739085127,
+      931656042,
+      4208667998,
+      815966735,
+      3549637802,
+      3279312590,
+      1801455522,
+      1926574160,
+      273203204,
+      2514282143,
+      2668615503,
+      3127751092,
+      1953836260,
+      987211031,
+      1234918788,
+      201636495,
+      2222244715,
+      294671121,
+      4290306487,
+      14629135,
+      1950820527,
+      1415824729,
+      2121565202,
+      745306089,
+      3770244575,
+      3765821639,
+      4050864033,
+      4188894112,
+      1453215677,
+      674582334,
+      125678265,
+      1104672078,
+      1390475967,
+      2240783773,
+      4280770524,
+      3925441326,
+      53777579,
+      212099376,
+      3044010185,
+      86182392,
+      3187530197,
+      698504661,
+      97647280,
+      1486866332,
+      233413936,
+      3553839552,
+      1010106772,
+      2934355633,
+      3759397537,
+      1912099359,
+      2869786693,
+      3023525736,
+      3083044191,
+      356185467,
+      1881716,
+      735624665,
+      2345323360,
+      3177221924,
+      2393174465,
+      3979705053,
+      4113722734,
+      750640577,
+      2673765717,
+      3293344237,
+      1348610353,
+      650443469,
+      3057752409,
+      247420443,
+      1243123697,
+      1835016765,
+      1894881763,
+      3322492638,
+      1071348912,
+      2619915029,
+      3508572267,
+      3045978257,
+      3926970030,
+      208165088,
+      3678848685,
+      3537803256,
+      601540672,
+      1696152664,
+      945863892,
+      1352623703,
+      405791864,
+      802472876,
+      5974848,
+      2846491246,
+      1664839511,
+      3453779928,
+      1863466313,
+      1263818693,
+      3887919832,
+      2210605991,
+      4163898868,
+      1673046911,
+      238288690,
+      3770304175,
+      68705282,
+      1612220283,
+      412248719,
+      1608002922,
+      3737804111,
+      2689731741,
+      3440520706,
+      3453725945,
+      2727796112,
+      378307499,
+      4199286657,
+      1111650117,
+      1693251488,
+      2329561857,
+      1222417782,
+      1913484023,
+      3578604094,
+      3615560919,
+      427524541,
+      3144226665,
+      428139300,
+      3562850461,
+      647423827,
+      1186656481,
+      3709584610,
+      1251872363,
+      2810820056,
+      2019157650,
+      2833301155,
+      1393444084,
+      3318233053,
+      2112441102,
+      1060154778,
+      3055967393,
+      1289154633,
+      907932451,
+      3222252686,
+      577198705,
+      2029757175,
+      2622040130,
+      2782125968,
+      1621222848,
+      4019114620,
+      3657406564,
+      4116065421,
+      1958236456,
+      1028985016,
+      2629037952,
+      386056184,
+      3381284686,
+      763627415,
+      3499978172,
+      3079598119,
+      560305465,
+      3028937348,
+      1886553290,
+      2160210564,
+      889111544,
+      3675297970,
+      1224207197,
+      2793387753,
+      1398386276,
+      2879254302,
+      1035926658,
+      39858646,
+      1759415673,
+      1745458238,
+      3127365015,
+      1458408547,
+      2961740938,
+      1566148449,
+      1854527664,
+      1329695216,
+      3492172507,
+      764553370,
+      2666207256,
+      3128253077,
+      4052419229,
+      2946210513,
+      190736418,
+      3091333695,
+      3812089740,
+      2651806967,
+      2504263922,
+      4200143074,
+      573945748,
+      2500919314,
+      920105940,
+      2664391015,
+      3087673777,
+      3328156435,
+      4291370202,
+      1630955588,
+      1605321329,
+      1556191376,
+      3045227189,
+      4070408615,
+      1308697828,
+      4100097549,
+      3350540308,
+      303632761,
+      4106483306,
+      3830956660,
+      3156410444,
+      2089040102,
+      3220997790,
+      1489000340,
+      2313809928,
+      5788770,
+      3939437090,
+      1682867138,
+      2935233493,
+      1886177180,
+      3461828422,
+      2565091271,
+      1063601078,
+      3249362938,
+      47748594,
+      574821613,
+      728647057,
+      2973459927,
+      447658999,
+      3128565561,
+      3508060126,
+      1309486836,
+      2265071489,
+      1281592067,
+      1032489384,
+      48120650,
+      1611395390,
+      1256225280,
+      2215507830,
+      3322123585,
+      1740736956,
+      2370102943,
+      754950646,
+      1811951523,
+      249629590,
+      835702134,
+      1158804868,
+      1405596055,
+      3846192783,
+      2950621761,
+      3565534283,
+      1484301625,
+      1578255343,
+      2413641091,
+      615562418,
+      2342753701,
+      2508764160,
+      4016285982,
+      1983180175,
+      3795161044,
+      1810619356,
+      2014458449,
+      2772592245,
+      2669888496,
+      450360373,
+      394349069,
+      2528104929,
+      182669079,
+      2653389295,
+      3571507754,
+      3385240628,
+      217172316,
+      560608805,
+      3144560711,
+      2000217290,
+      449304399,
+      889684312,
+      3440840907,
+      3152282105,
+      2535015415,
+      2482937695,
+      818283411,
+      1565248684,
+      1806382269,
+      2591299677,
+      179055866,
+      1854239252,
+      1756439363,
+      1706287089,
+      2230371962,
+      2489530173,
+      3556114974,
+      4120990862,
+      1064318528,
+      18599128,
+      1444796648,
+      1383786710,
+      4140840986,
+      611117079,
+      1801843364,
+      1225072880,
+      2168616075,
+      621587362,
+      3222337014,
+      2597790979,
+      1611628404,
+      2190979471,
+      988334334,
+      3906530422,
+      2507009885,
+      1892673471,
+      1005851027,
+      1920601586,
+      4254135800,
+      3274599078,
+      3449930924,
+      3609121300,
+      36654504,
+      402519418,
+      3272434964,
+      2902474598,
+      2565071837,
+      2223036926,
+      431606089,
+      852215842,
+      3748382584,
+      3948276805,
+      3256255594,
+      2935382389,
+      2821254287,
+      1758863167,
+      51130519,
+      1044768437,
+      3139141904,
+      389758661,
+      1834085476,
+      2951343884,
+      2014245562,
+      294003510,
+      593076158,
+      2247563575,
+      4027139838,
+      3856918880,
+      2903709951,
+      2529263616,
+      1305813887,
+      3210720016,
+      3674750273,
+      327812619,
+      1171284290,
+      1664063624,
+      2940528548,
+      3817807865,
+      3359477964,
+      946999043,
+      1105323055,
+      941925514,
+      3242769697,
+      3707026309,
+      3438610764,
+      241669972,
+      1319894481,
+      3273321752,
+      825890315,
+      1113940537,
+      1053685192,
+      2022249303,
+      3966771156,
+      685175338,
+      3581720765,
+      3868265085,
+      2451104398,
+      4143658448,
+      1376720827,
+      2450386009,
+      2552753861,
+      2089092795,
+      3295803587,
+      1175042907,
+      2026936493,
+      2358011702,
+      4190143757,
+      4198565800,
+      866135702,
+      2269507125,
+      2263362174,
+      2557448405,
+      4159005260,
+      2603117506,
+      3317365906,
+      3555160636,
+      2065099938,
+      1618170212,
+      1127315658,
+      2018708966,
+      1817324550,
+      3316328084,
+      618821458,
+      1462740419,
+      67326017,
+      595146789,
+      2184262517,
+      3616193489,
+      885347075,
+      3588156694,
+      3615861864,
+      2268804017,
+      1645028709,
+      1913042750,
+      3888274373,
+      3133560541,
+      3886596560,
+      2309489500,
+      2922789671,
+      1070204867,
+      2137327807,
+      1512336902,
+      1365985433,
+      3155733826,
+      340261463,
+      2252408388,
+      3317848273,
+      209750007,
+      3755164378,
+      2607575035,
+      2487193840,
+      1630661938,
+      3021591371,
+      3855415360,
+      71538238,
+      2787290009,
+      1684109600,
+      2317414893,
+      649394911,
+      3827644048,
+      2779827852,
+      3451870271,
+      4109388347,
+      2629668477,
+      3821079188,
+      457238108,
+      1118781125,
+      3343081075,
+      706544215,
+      1306561697,
+      1684928471,
+      3611795597,
+      748144529,
+      2918924980,
+      502862405,
+      1672811018,
+      3348493050,
+      2517730800,
+      2152391712,
+      2647926062,
+      706158904,
+      838032060,
+      820254542,
+      2495468024,
+      2468104299,
+      4193185504,
+      1032729212,
+      1611681007,
+      206120499,
+      237385144,
+      1636126587,
+      1276550978,
+      253640343,
+      3838840846,
+      276393980,
+      3190401737,
+      1782636273,
+      3942057095,
+      3390532784,
+      662211129,
+      2708454600,
+      3479436783,
+      481522046,
+      3102978997,
+      1356054783,
+      1417881052,
+      3646314396,
+      3523182446,
+      4195389306,
+      3394980870,
+      2658349383,
+      964107962,
+      2770861445,
+      2064155972,
+      2184342962,
+      1360049886,
+      3185466641,
+      3647433751,
+      2799299684,
+      1583263254,
+      522994253,
+      4293148099,
+      2898171327,
+      672643590,
+      4291549820,
+      1717007617,
+      4237145968,
+      1631763109,
+      2889740819,
+      3868345912,
+      3082953045,
+      2327935383,
+      2406765282,
+      1544822663,
+      567353101,
+      724987437,
+      994985315,
+      3436230749,
+      3015286181,
+      4144309749,
+      3384475985,
+      239256278,
+      988738681,
+      1935756940,
+      1348111739,
+      4294636404,
+      1272461549,
+      3822023178,
+      1291815247,
+      1694440005,
+      2215840373,
+      3195968060,
+      269444010,
+      330189604,
+      2022159760,
+      2717165710,
+      4010543486,
+      651651213,
+      1401035371,
+      1338636748,
+      884805061,
+      3120555836,
+      1752942863,
+      2854980438,
+      2327777144,
+      870433830,
+      762629782,
+      97001468,
+      1234199098,
+      1111460562,
+      3609881756,
+      1145235826,
+      1671532920,
+      725899421,
+      3605705832,
+      394117560,
+      1282716431,
+      759747135,
+      3478595507,
+      677439685,
+      2764991488,
+      2393605264,
+      3651947391,
+      2904575369,
+      2506263251,
+      1843576810,
+      1854862953,
+      375917832,
+      3017964235,
+      1789774369,
+      2071421809,
+      1056027962,
+      3640380027,
+      2942540282,
+      381492772,
+      3995812874,
+      1289753086,
+      3628536283,
+      1582549056,
+      1292539296,
+      2346596928,
+      3186277991,
+      674204880,
+      4165765655,
+      1254756352,
+      4119084693,
+      800821260,
+      1595881352,
+      1162069420,
+      3343743444,
+      1044128137,
+      3914286932,
+      362743431,
+      2772714161,
+      92188212,
+      13
+    ],
+    null
+  ],
+  "accepted": {
+    "rq-5695d78ae7f7-000001": "2ada4dc591a7db8c01c716499289bbaf0af3955b54ac72b0d250ea620b6628c5",
+    "rq-5695d78ae7f7-000003": "5ae41f06c257f32147ec615ac1887705fc93d6ce0b79c8ce396034f64101eea6",
+    "rq-5695d78ae7f7-000004": "cde79aa966e86aec254eff8126f70c7eaf15d8171d90b1a36b75e5e2fd074f8e",
+    "rq-5695d78ae7f7-000005": "1b6d13cfaaf5004f6ec8d7f3273eff9fe1d03ba7627a34d60a5df684088d6705",
+    "rq-5695d78ae7f7-000007": "d2897e6dc8a18060e1824b0abe7fc79d95aac2b2bf5fb53e31d78f9e91db0b6e",
+    "rq-5695d78ae7f7-000008": "bca074c98dec026276cdccf96a942d862b2350746a91cbb2f5508a682db6a26f",
+    "rq-5695d78ae7f7-000009": "8d02521189f64be551bc90424fd6e48c201145f7cd9189813472d79b9dbb3d88",
+    "rq-5695d78ae7f7-000011": "6e1502750ea77fcd3b145577c9b646fa26e0b02cd2ce686d13919f45519d6fb6",
+    "rq-5695d78ae7f7-000012": "790e9437f11b62456af488efa6b2b43ed31b8e8b960c664fd9a64fd48ddfbb58",
+    "rq-5695d78ae7f7-000013": "452ea7b62fd7cf982d711c9331b30d5dcbdd3981c0f243d4580bcc82930a0223",
+    "rq-5695d78ae7f7-000015": "ccc5e5520b634870ecfc50de74bdf7c622129b73230a0eac37e752800eac176a"
+  },
+  "events": [
+    {
+      "protocol_version": "0.1",
+      "campaign_id": "tavern-zero",
+      "session_id": "session-0002",
+      "scene_id": "scene-0001",
+      "turn_id": 0,
+      "message_id": "rq-5695d78ae7f7-000001",
+      "sender": "gm",
+      "recipient": "orchestrator",
+      "message_type": "GM_SCENE",
+      "visibility": "SYSTEM",
+      "payload": {
+        "narration": "Morning opens outside the Crooked Lantern, with all three travelers together at its doorway. The rain has eased to a fine drizzle. A muddy lane runs between low buildings toward a stone bridge visible a short walk away; water can be heard beneath its arch.\n\nBeside the tavern entrance, a person in a patched gray coat presses a fresh notice onto a wooden board. Its large lettering reads: “NORTH SLUICE REPAIRS — ENQUIRIES AT THE BRIDGE.” The person steps back to check that the paper holds, then notices the travelers. “Morning.”\n\nThe familiar heading is plainly visible. Whether it leads to anyone who knows Dain remains unanswered.",
+        "location": "lantern-lane",
+        "entities": [
+          {
+            "id": "lantern-lane",
+            "name": "Lane outside the Crooked Lantern",
+            "type": "LOCATION",
+            "undefined_fields": [
+              "settlement",
+              "other_destinations",
+              "history"
+            ]
+          },
+          {
+            "id": "lane-stone-bridge",
+            "name": "Stone bridge at the end of the lane",
+            "type": "LOCATION",
+            "undefined_fields": [
+              "watercourse_name",
+              "far_bank",
+              "connection_to_north_sluice"
+            ]
+          },
+          {
+            "id": "lane-repair-notice",
+            "name": "North Sluice Repairs notice",
+            "type": "OBJECT",
+            "undefined_fields": [
+              "author",
+              "authority",
+              "posting_date"
+            ]
+          },
+          {
+            "id": "gray-coated-notice-poster",
+            "name": "Gray-coated notice poster",
+            "type": "NPC",
+            "undefined_fields": [
+              "name",
+              "occupation",
+              "employer",
+              "knowledge_of_dain"
+            ]
+          }
+        ],
+        "facts": [
+          {
+            "id": "fact-daylight-lantern-lane",
+            "statement": "The next morning, all three travelers are together outside the Crooked Lantern on a muddy lane; the rain has eased to drizzle.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "lantern-lane"
+          },
+          {
+            "id": "fact-visible-stone-bridge",
+            "statement": "The lane outside the Crooked Lantern leads toward a visible stone bridge a short walk away, with water audible beneath its arch.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "lane-stone-bridge"
+          },
+          {
+            "id": "fact-repair-notice-wording",
+            "statement": "A notice beside the Crooked Lantern reads: NORTH SLUICE REPAIRS — ENQUIRIES AT THE BRIDGE. Its wording alone does not verify Iven's account.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "lane-repair-notice"
+          },
+          {
+            "id": "fact-notice-poster-present",
+            "statement": "A person wearing a patched gray coat has just posted the repair notice beside the tavern and greets the travelers.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "gray-coated-notice-poster"
+          }
+        ],
+        "grants": [
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "fact-daylight-lantern-lane"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "fact-daylight-lantern-lane"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "fact-daylight-lantern-lane"
+          },
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "fact-visible-stone-bridge"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "fact-visible-stone-bridge"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "fact-visible-stone-bridge"
+          },
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "fact-repair-notice-wording"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "fact-repair-notice-wording"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "fact-repair-notice-wording"
+          },
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "fact-notice-poster-present"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "fact-notice-poster-present"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "fact-notice-poster-present"
+          }
+        ]
+      }
+    },
+    {
+      "protocol_version": "0.1",
+      "campaign_id": "tavern-zero",
+      "session_id": "session-0002",
+      "scene_id": "scene-0001",
+      "turn_id": 0,
+      "message_id": "chronicle-rq-5695d78ae7f7-000001",
+      "sender": "chronicler",
+      "recipient": "orchestrator",
+      "message_type": "CHRONICLE_PATCH",
+      "visibility": "SYSTEM",
+      "payload": {
+        "facts_added": [
+          {
+            "id": "fact-daylight-lantern-lane",
+            "statement": "The next morning, all three travelers are together outside the Crooked Lantern on a muddy lane; the rain has eased to drizzle.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "lantern-lane",
+            "source_event": "rq-5695d78ae7f7-000001",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "fact-visible-stone-bridge",
+            "statement": "The lane outside the Crooked Lantern leads toward a visible stone bridge a short walk away, with water audible beneath its arch.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "lane-stone-bridge",
+            "source_event": "rq-5695d78ae7f7-000001",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "fact-repair-notice-wording",
+            "statement": "A notice beside the Crooked Lantern reads: NORTH SLUICE REPAIRS — ENQUIRIES AT THE BRIDGE. Its wording alone does not verify Iven's account.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "lane-repair-notice",
+            "source_event": "rq-5695d78ae7f7-000001",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "fact-notice-poster-present",
+            "statement": "A person wearing a patched gray coat has just posted the repair notice beside the tavern and greets the travelers.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "gray-coated-notice-poster",
+            "source_event": "rq-5695d78ae7f7-000001",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          }
+        ],
+        "knowledge_added": [
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "fact-daylight-lantern-lane"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "fact-daylight-lantern-lane"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "fact-daylight-lantern-lane"
+          },
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "fact-visible-stone-bridge"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "fact-visible-stone-bridge"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "fact-visible-stone-bridge"
+          },
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "fact-repair-notice-wording"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "fact-repair-notice-wording"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "fact-repair-notice-wording"
+          },
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "fact-notice-poster-present"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "fact-notice-poster-present"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "fact-notice-poster-present"
+          }
+        ],
+        "entities_created": [
+          {
+            "id": "lantern-lane",
+            "name": "Lane outside the Crooked Lantern",
+            "type": "LOCATION",
+            "undefined_fields": [
+              "settlement",
+              "other_destinations",
+              "history"
+            ]
+          },
+          {
+            "id": "lane-stone-bridge",
+            "name": "Stone bridge at the end of the lane",
+            "type": "LOCATION",
+            "undefined_fields": [
+              "watercourse_name",
+              "far_bank",
+              "connection_to_north_sluice"
+            ]
+          },
+          {
+            "id": "lane-repair-notice",
+            "name": "North Sluice Repairs notice",
+            "type": "OBJECT",
+            "undefined_fields": [
+              "author",
+              "authority",
+              "posting_date"
+            ]
+          },
+          {
+            "id": "gray-coated-notice-poster",
+            "name": "Gray-coated notice poster",
+            "type": "NPC",
+            "undefined_fields": [
+              "name",
+              "occupation",
+              "employer",
+              "knowledge_of_dain"
+            ]
+          }
+        ],
+        "source_event": "rq-5695d78ae7f7-000001"
+      }
+    },
+    {
+      "protocol_version": "0.1",
+      "campaign_id": "tavern-zero",
+      "session_id": "session-0002",
+      "scene_id": "scene-0001",
+      "turn_id": 1,
+      "message_id": "context-rq-5695d78ae7f7-000003",
+      "sender": "orchestrator",
+      "recipient": "player-01",
+      "message_type": "PLAYER_TURN_REQUEST",
+      "visibility": "CHARACTER",
+      "payload": {
+        "role": "player-01",
+        "character": {
+          "id": "arlen-vale",
+          "agent_id": "player-01",
+          "name": "Arlen Vale",
+          "role": "curious rogue",
+          "personality": "Suspicious, curious, dry humor. Notices inconsistencies and dislikes being steered.",
+          "goal": "Find paying work without becoming somebody else's disposable helper.",
+          "skills": {
+            "INSIGHT": 3,
+            "INVESTIGATION": 3,
+            "STEALTH": 4,
+            "DEXTERITY": 3,
+            "PERCEPTION": 2
+          },
+          "hp": 9,
+          "inventory": [
+            "dagger",
+            "travel cloak",
+            "chalk"
+          ],
+          "private_memories": [
+            "I need money, but I will not accept a job without asking what it really involves."
+          ],
+          "knowledge": [
+            "fact-seed-tavern",
+            "fact-mara",
+            "fact-opening",
+            "fact-job",
+            "rumor-empty-cellar",
+            "fact-cellar-access",
+            "fact-stairs",
+            "fact-signal",
+            "fact-mara-admission",
+            "belief-arlen-mara",
+            "fact-voice",
+            "fact-shelter-admitted",
+            "fact-trapped",
+            "fact-flood",
+            "fact-rescue",
+            "fact-iven-name",
+            "rumor-rack-cause",
+            "fact-satchel",
+            "fact-shutoff",
+            "rumor-wage-receipts",
+            "fact-drain-ledge",
+            "fact-board-jammed",
+            "fact-handle-broken",
+            "fact-paper-threat",
+            "fact-evidence-lost",
+            "fact-safe-return",
+            "fact-reward",
+            "rumor-hiding",
+            "rumor-dain",
+            "rumor-north-sluice",
+            "fact-inquiry-offer",
+            "fact-next-plan",
+            "fact-daylight-lantern-lane",
+            "fact-visible-stone-bridge",
+            "fact-repair-notice-wording",
+            "fact-notice-poster-present"
+          ],
+          "conditions": []
+        },
+        "scene": "Morning opens outside the Crooked Lantern, with all three travelers together at its doorway. The rain has eased to a fine drizzle. A muddy lane runs between low buildings toward a stone bridge visible a short walk away; water can be heard beneath its arch.\n\nBeside the tavern entrance, a person in a patched gray coat presses a fresh notice onto a wooden board. Its large lettering reads: “NORTH SLUICE REPAIRS — ENQUIRIES AT THE BRIDGE.” The person steps back to check that the paper holds, then notices the travelers. “Morning.”\n\nThe familiar heading is plainly visible. Whether it leads to anyone who knows Dain remains unanswered.",
+        "location": "lantern-lane",
+        "known_facts": [
+          {
+            "id": "fact-seed-tavern",
+            "statement": "The Crooked Lantern is a tavern.",
+            "classification": "CANON",
+            "source": "campaign-seed",
+            "entity_id": "crooked-lantern",
+            "source_event": "seed",
+            "source_turn": 0,
+            "source_scene": "scene-0000",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-mara",
+            "statement": "Mara Blackkeg operates the Crooked Lantern.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "opening-scene",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-opening",
+            "statement": "Rain is falling outside the Crooked Lantern; a metallic knock was heard beneath its floor.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "opening-scene",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-job",
+            "statement": "Mara offers the travelers supper and beds if they investigate the cellar bell.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-001",
+            "source_turn": 1,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "rumor-empty-cellar",
+            "statement": "Mara says nobody is in the cellar.",
+            "entity_id": "mara-blackkeg",
+            "classification": "RUMOR",
+            "source": "mara-blackkeg",
+            "source_event": "final-001",
+            "source_turn": 1,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-cellar-access",
+            "statement": "Mara permits the travelers to investigate the cellar and provides a lamp at its entrance.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-002",
+            "source_turn": 2,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-stairs",
+            "statement": "Steep wooden stairs lead into a cellar; a bell wire follows the wall and water is visible below.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-002",
+            "source_turn": 2,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-signal",
+            "statement": "The cellar bell wire is being pulled from below in a repeating group of three.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-003",
+            "source_turn": 3,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-mara-admission",
+            "statement": "Mara retracts her certainty that the cellar is empty and says she hoped it was empty by now.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-004",
+            "source_turn": 4,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "belief-arlen-mara",
+            "statement": "Arlen judges that Mara is worried about a person below, rather than merely about the bell.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CHARACTER_BELIEF",
+            "source": "arlen-vale",
+            "source_event": "final-004",
+            "source_turn": 4,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-voice",
+            "statement": "A person below the tavern warns visitors not to move a rack from their side.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-005",
+            "source_turn": 5,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-shelter-admitted",
+            "statement": "Mara tells the party she allowed a traveler to sleep in the cellar and thought he had left.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-007",
+            "source_turn": 7,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-trapped",
+            "statement": "A traveler's hand is trapped beneath a fallen cellar rack; he can reach the bell wire.",
+            "entity_id": "trapped-traveler",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "cellar-scene",
+            "source_turn": 7,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-flood",
+            "statement": "Ankle-deep water covers the cellar floor and flows inward through a drainage grate.",
+            "entity_id": "tavern-cellar",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "cellar-scene",
+            "source_turn": 7,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-rescue",
+            "statement": "Elara frees the trapped traveler's bruised hand from the rack.",
+            "entity_id": "trapped-traveler",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-008",
+            "source_turn": 8,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-iven-name",
+            "statement": "The rescued traveler introduces himself as Iven.",
+            "entity_id": "trapped-traveler",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-008",
+            "source_turn": 8,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "rumor-rack-cause",
+            "statement": "Iven says the rack shifted while he was trying to clear the drain.",
+            "entity_id": "trapped-traveler",
+            "classification": "RUMOR",
+            "source": "trapped-traveler",
+            "source_event": "final-008",
+            "source_turn": 8,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-satchel",
+            "statement": "A leather satchel is caught under the cellar drainage grate.",
+            "entity_id": "leather-satchel",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-008",
+            "source_turn": 8,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-shutoff",
+            "statement": "A raised shutoff board above the drainage opening can stop the incoming water before the grate is opened.",
+            "entity_id": "drain-grate",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-009",
+            "source_turn": 9,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "rumor-wage-receipts",
+            "statement": "Iven says the satchel contains repair-wage receipts, including one bearing his absent brother's name from last week.",
+            "entity_id": "trapped-traveler",
+            "classification": "RUMOR",
+            "source": "trapped-traveler",
+            "source_event": "final-010",
+            "source_turn": 10,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-drain-ledge",
+            "statement": "A narrow stone ledge runs from the cellar landing toward the drain, with a slick final stretch.",
+            "entity_id": "tavern-cellar",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-010",
+            "source_turn": 10,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-board-jammed",
+            "statement": "The shutoff board jams halfway down; water still enters and the cellar waterline continues to rise.",
+            "entity_id": "shutoff-board",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-011",
+            "source_turn": 11,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-handle-broken",
+            "statement": "The shutoff board's handle breaks during the coordinated attempt; the board remains jammed and flooding continues.",
+            "entity_id": "shutoff-board",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-014",
+            "source_turn": 14,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-paper-threat",
+            "statement": "Water has opened the satchel flap and is beginning to wash out its papers.",
+            "entity_id": "leather-satchel",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-014",
+            "source_turn": 14,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-evidence-lost",
+            "statement": "Arlen's retrieval attempt fails: the satchel strap breaks, and the bag and papers wash beyond reach through the drain.",
+            "entity_id": "leather-satchel",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-016",
+            "source_turn": 16,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-safe-return",
+            "statement": "Arlen, Elara, Torren and Iven return safely to the tavern; Mara blocks access to the flooded cellar.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-019",
+            "source_turn": 19,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-reward",
+            "statement": "Mara honors the offer of supper and beds after the investigation and rescue.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "aftermath-scene",
+            "source_turn": 19,
+            "source_scene": "scene-0003",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "rumor-hiding",
+            "statement": "Mara says Iven requested a concealed place to rest because of papers he was carrying; Iven confirms the request.",
+            "entity_id": "trapped-traveler",
+            "classification": "RUMOR",
+            "source": "mara-blackkeg and trapped-traveler",
+            "source_event": "final-020",
+            "source_turn": 20,
+            "source_scene": "scene-0003",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "rumor-dain",
+            "statement": "Iven says his brother is Dain, has been absent for a month, and was named on a wage receipt dated seven days ago.",
+            "entity_id": "trapped-traveler",
+            "classification": "RUMOR",
+            "source": "trapped-traveler",
+            "source_event": "final-021",
+            "source_turn": 21,
+            "source_scene": "scene-0003",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "rumor-north-sluice",
+            "statement": "Iven remembers the heading North Sluice Repairs on the lost receipt, but did not witness who collected or signed for the wages.",
+            "entity_id": "trapped-traveler",
+            "classification": "RUMOR",
+            "source": "trapped-traveler",
+            "source_event": "final-021",
+            "source_turn": 21,
+            "source_scene": "scene-0003",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-inquiry-offer",
+            "statement": "Arlen offers to help ask cautious questions in daylight, without promising accusations, trespass or further cellar work.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "arlen-vale",
+            "source_event": "final-022",
+            "source_turn": 22,
+            "source_scene": "scene-0003",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-next-plan",
+            "statement": "All three travelers agree to make cautious inquiries in daylight about Iven's account of Dain and North Sluice Repairs.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "player actions 22 through 24",
+            "source_event": "final-024",
+            "source_turn": 24,
+            "source_scene": "scene-0003",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-daylight-lantern-lane",
+            "statement": "The next morning, all three travelers are together outside the Crooked Lantern on a muddy lane; the rain has eased to drizzle.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "lantern-lane",
+            "source_event": "rq-5695d78ae7f7-000001",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "fact-visible-stone-bridge",
+            "statement": "The lane outside the Crooked Lantern leads toward a visible stone bridge a short walk away, with water audible beneath its arch.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "lane-stone-bridge",
+            "source_event": "rq-5695d78ae7f7-000001",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "fact-repair-notice-wording",
+            "statement": "A notice beside the Crooked Lantern reads: NORTH SLUICE REPAIRS — ENQUIRIES AT THE BRIDGE. Its wording alone does not verify Iven's account.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "lane-repair-notice",
+            "source_event": "rq-5695d78ae7f7-000001",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "fact-notice-poster-present",
+            "statement": "A person wearing a patched gray coat has just posted the repair notice beside the tavern and greets the travelers.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "gray-coated-notice-poster",
+            "source_event": "rq-5695d78ae7f7-000001",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          }
+        ],
+        "recent_public_events": [
+          {
+            "turn": 0,
+            "kind": "scene",
+            "text": "Morning opens outside the Crooked Lantern, with all three travelers together at its doorway. The rain has eased to a fine drizzle. A muddy lane runs between low buildings toward a stone bridge visible a short walk away; water can be heard beneath its arch.\n\nBeside the tavern entrance, a person in a patched gray coat presses a fresh notice onto a wooden board. Its large lettering reads: “NORTH SLUICE REPAIRS — ENQUIRIES AT THE BRIDGE.” The person steps back to check that the paper holds, then notices the travelers. “Morning.”\n\nThe familiar heading is plainly visible. Whether it leads to anyone who knows Dain remains unanswered.",
+            "scene_id": "scene-0001"
+          }
+        ]
+      }
+    },
+    {
+      "protocol_version": "0.1",
+      "campaign_id": "tavern-zero",
+      "session_id": "session-0002",
+      "scene_id": "scene-0001",
+      "turn_id": 1,
+      "message_id": "rq-5695d78ae7f7-000003",
+      "sender": "player-01",
+      "recipient": "orchestrator",
+      "message_type": "PLAYER_ACTION",
+      "visibility": "SYSTEM",
+      "payload": {
+        "character_id": "arlen-vale",
+        "speech": "Morning. Who should we ask for at the bridge? And are these repairs hiring? I like to learn what a job involves before discovering it waist-deep.",
+        "action": "Arlen remains beside his companions and gestures toward the notice, asking the gray-coated person about the contact and the work.",
+        "intent": "Find out who is behind the notice and whether there is paid work, without yet volunteering Iven's account or committing to anything.",
+        "target": "gray-coated-notice-poster"
+      }
+    },
+    {
+      "protocol_version": "0.1",
+      "campaign_id": "tavern-zero",
+      "session_id": "session-0002",
+      "scene_id": "scene-0001",
+      "turn_id": 1,
+      "message_id": "rq-5695d78ae7f7-000004",
+      "sender": "gm",
+      "recipient": "orchestrator",
+      "message_type": "GM_REVIEW",
+      "visibility": "GM_PRIVATE",
+      "payload": {
+        "roll": null
+      }
+    },
+    {
+      "protocol_version": "0.1",
+      "campaign_id": "tavern-zero",
+      "session_id": "session-0002",
+      "scene_id": "scene-0001",
+      "turn_id": 1,
+      "message_id": "rq-5695d78ae7f7-000005",
+      "sender": "gm",
+      "recipient": "orchestrator",
+      "message_type": "GM_FINAL_RESULT",
+      "visibility": "SYSTEM",
+      "payload": {
+        "narration": "The notice poster smooths a curling corner of the paper. “Ask for Sella at the bridge. She handles the repair enquiries and takes names for work.”\n\nAt Arlen’s mention of water, the poster gives a brief nod. “They’re looking for hands to carry stone and clear debris. That’s what I was told to advertise. Sella can tell you which tasks are on dry ground and what each pays. I only agreed to put up the notices.”\n\nThe poster remains beside the board, leaving room for another question.",
+        "outcome": "NO_ROLL",
+        "entities": [
+          {
+            "id": "sella-repair-contact",
+            "name": "Sella",
+            "type": "NPC",
+            "undefined_fields": [
+              "appearance",
+              "formal_position",
+              "employer",
+              "knowledge_of_dain",
+              "current_location"
+            ]
+          }
+        ],
+        "facts": [
+          {
+            "id": "rumor-s2-t1-sella-contact",
+            "statement": "The gray-coated notice poster says Sella handles repair enquiries and takes names for work at the stone bridge.",
+            "classification": "RUMOR",
+            "source": "gray-coated-notice-poster",
+            "entity_id": "sella-repair-contact"
+          },
+          {
+            "id": "rumor-s2-t1-repair-hiring",
+            "statement": "The gray-coated notice poster says the repairs need workers to carry stone and clear debris, and directs questions about dry-ground tasks and pay to Sella. No wage or particular safe task has been confirmed.",
+            "classification": "RUMOR",
+            "source": "gray-coated-notice-poster",
+            "entity_id": "lane-repair-notice"
+          },
+          {
+            "id": "rumor-s2-t1-poster-role",
+            "statement": "The gray-coated notice poster says they agreed only to put up the repair notices and are repeating the hiring information they were told to advertise.",
+            "classification": "RUMOR",
+            "source": "gray-coated-notice-poster",
+            "entity_id": "gray-coated-notice-poster"
+          }
+        ],
+        "grants": [
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "rumor-s2-t1-sella-contact"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "rumor-s2-t1-sella-contact"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "rumor-s2-t1-sella-contact"
+          },
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "rumor-s2-t1-repair-hiring"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "rumor-s2-t1-repair-hiring"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "rumor-s2-t1-repair-hiring"
+          },
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "rumor-s2-t1-poster-role"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "rumor-s2-t1-poster-role"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "rumor-s2-t1-poster-role"
+          }
+        ],
+        "scene_finished": false
+      }
+    },
+    {
+      "protocol_version": "0.1",
+      "campaign_id": "tavern-zero",
+      "session_id": "session-0002",
+      "scene_id": "scene-0001",
+      "turn_id": 1,
+      "message_id": "chronicle-rq-5695d78ae7f7-000005",
+      "sender": "chronicler",
+      "recipient": "orchestrator",
+      "message_type": "CHRONICLE_PATCH",
+      "visibility": "SYSTEM",
+      "payload": {
+        "facts_added": [
+          {
+            "id": "rumor-s2-t1-sella-contact",
+            "statement": "The gray-coated notice poster says Sella handles repair enquiries and takes names for work at the stone bridge.",
+            "classification": "RUMOR",
+            "source": "gray-coated-notice-poster",
+            "entity_id": "sella-repair-contact",
+            "source_event": "rq-5695d78ae7f7-000005",
+            "source_turn": 1,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "rumor-s2-t1-repair-hiring",
+            "statement": "The gray-coated notice poster says the repairs need workers to carry stone and clear debris, and directs questions about dry-ground tasks and pay to Sella. No wage or particular safe task has been confirmed.",
+            "classification": "RUMOR",
+            "source": "gray-coated-notice-poster",
+            "entity_id": "lane-repair-notice",
+            "source_event": "rq-5695d78ae7f7-000005",
+            "source_turn": 1,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "rumor-s2-t1-poster-role",
+            "statement": "The gray-coated notice poster says they agreed only to put up the repair notices and are repeating the hiring information they were told to advertise.",
+            "classification": "RUMOR",
+            "source": "gray-coated-notice-poster",
+            "entity_id": "gray-coated-notice-poster",
+            "source_event": "rq-5695d78ae7f7-000005",
+            "source_turn": 1,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          }
+        ],
+        "knowledge_added": [
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "rumor-s2-t1-sella-contact"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "rumor-s2-t1-sella-contact"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "rumor-s2-t1-sella-contact"
+          },
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "rumor-s2-t1-repair-hiring"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "rumor-s2-t1-repair-hiring"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "rumor-s2-t1-repair-hiring"
+          },
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "rumor-s2-t1-poster-role"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "rumor-s2-t1-poster-role"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "rumor-s2-t1-poster-role"
+          }
+        ],
+        "entities_created": [
+          {
+            "id": "sella-repair-contact",
+            "name": "Sella",
+            "type": "NPC",
+            "undefined_fields": [
+              "appearance",
+              "formal_position",
+              "employer",
+              "knowledge_of_dain",
+              "current_location"
+            ]
+          }
+        ],
+        "source_event": "rq-5695d78ae7f7-000005"
+      }
+    },
+    {
+      "protocol_version": "0.1",
+      "campaign_id": "tavern-zero",
+      "session_id": "session-0002",
+      "scene_id": "scene-0001",
+      "turn_id": 2,
+      "message_id": "context-rq-5695d78ae7f7-000007",
+      "sender": "orchestrator",
+      "recipient": "player-02",
+      "message_type": "PLAYER_TURN_REQUEST",
+      "visibility": "CHARACTER",
+      "payload": {
+        "role": "player-02",
+        "character": {
+          "id": "elara-voss",
+          "agent_id": "player-02",
+          "name": "Elara Voss",
+          "role": "idealistic fighter",
+          "personality": "Direct, protective, stubborn. Offers help first and asks about payment later.",
+          "goal": "Help somebody in immediate trouble without forcing the others into a fight.",
+          "skills": {
+            "ATHLETICS": 4,
+            "PERSUASION": 2,
+            "PERCEPTION": 1,
+            "INSIGHT": 1
+          },
+          "hp": 12,
+          "inventory": [
+            "sword",
+            "shield",
+            "rope"
+          ],
+          "private_memories": [
+            "Promises matter to me, even when keeping them is inconvenient."
+          ],
+          "knowledge": [
+            "fact-seed-tavern",
+            "fact-mara",
+            "fact-opening",
+            "fact-job",
+            "rumor-empty-cellar",
+            "fact-cellar-access",
+            "fact-stairs",
+            "fact-signal",
+            "fact-mara-admission",
+            "fact-voice",
+            "fact-shelter-admitted",
+            "fact-trapped",
+            "fact-flood",
+            "fact-rescue",
+            "fact-iven-name",
+            "rumor-rack-cause",
+            "fact-satchel",
+            "fact-shutoff",
+            "rumor-wage-receipts",
+            "fact-drain-ledge",
+            "fact-board-jammed",
+            "fact-handle-broken",
+            "fact-paper-threat",
+            "fact-evidence-lost",
+            "fact-safe-return",
+            "fact-reward",
+            "rumor-hiding",
+            "rumor-dain",
+            "rumor-north-sluice",
+            "fact-inquiry-offer",
+            "fact-next-plan",
+            "fact-daylight-lantern-lane",
+            "fact-visible-stone-bridge",
+            "fact-repair-notice-wording",
+            "fact-notice-poster-present",
+            "rumor-s2-t1-sella-contact",
+            "rumor-s2-t1-repair-hiring",
+            "rumor-s2-t1-poster-role"
+          ],
+          "conditions": []
+        },
+        "scene": "Morning opens outside the Crooked Lantern, with all three travelers together at its doorway. The rain has eased to a fine drizzle. A muddy lane runs between low buildings toward a stone bridge visible a short walk away; water can be heard beneath its arch.\n\nBeside the tavern entrance, a person in a patched gray coat presses a fresh notice onto a wooden board. Its large lettering reads: “NORTH SLUICE REPAIRS — ENQUIRIES AT THE BRIDGE.” The person steps back to check that the paper holds, then notices the travelers. “Morning.”\n\nThe familiar heading is plainly visible. Whether it leads to anyone who knows Dain remains unanswered.",
+        "location": "lantern-lane",
+        "known_facts": [
+          {
+            "id": "fact-seed-tavern",
+            "statement": "The Crooked Lantern is a tavern.",
+            "classification": "CANON",
+            "source": "campaign-seed",
+            "entity_id": "crooked-lantern",
+            "source_event": "seed",
+            "source_turn": 0,
+            "source_scene": "scene-0000",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-mara",
+            "statement": "Mara Blackkeg operates the Crooked Lantern.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "opening-scene",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-opening",
+            "statement": "Rain is falling outside the Crooked Lantern; a metallic knock was heard beneath its floor.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "opening-scene",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-job",
+            "statement": "Mara offers the travelers supper and beds if they investigate the cellar bell.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-001",
+            "source_turn": 1,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "rumor-empty-cellar",
+            "statement": "Mara says nobody is in the cellar.",
+            "entity_id": "mara-blackkeg",
+            "classification": "RUMOR",
+            "source": "mara-blackkeg",
+            "source_event": "final-001",
+            "source_turn": 1,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-cellar-access",
+            "statement": "Mara permits the travelers to investigate the cellar and provides a lamp at its entrance.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-002",
+            "source_turn": 2,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-stairs",
+            "statement": "Steep wooden stairs lead into a cellar; a bell wire follows the wall and water is visible below.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-002",
+            "source_turn": 2,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-signal",
+            "statement": "The cellar bell wire is being pulled from below in a repeating group of three.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-003",
+            "source_turn": 3,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-mara-admission",
+            "statement": "Mara retracts her certainty that the cellar is empty and says she hoped it was empty by now.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-004",
+            "source_turn": 4,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-voice",
+            "statement": "A person below the tavern warns visitors not to move a rack from their side.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-005",
+            "source_turn": 5,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-shelter-admitted",
+            "statement": "Mara tells the party she allowed a traveler to sleep in the cellar and thought he had left.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-007",
+            "source_turn": 7,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-trapped",
+            "statement": "A traveler's hand is trapped beneath a fallen cellar rack; he can reach the bell wire.",
+            "entity_id": "trapped-traveler",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "cellar-scene",
+            "source_turn": 7,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-flood",
+            "statement": "Ankle-deep water covers the cellar floor and flows inward through a drainage grate.",
+            "entity_id": "tavern-cellar",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "cellar-scene",
+            "source_turn": 7,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-rescue",
+            "statement": "Elara frees the trapped traveler's bruised hand from the rack.",
+            "entity_id": "trapped-traveler",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-008",
+            "source_turn": 8,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-iven-name",
+            "statement": "The rescued traveler introduces himself as Iven.",
+            "entity_id": "trapped-traveler",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-008",
+            "source_turn": 8,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "rumor-rack-cause",
+            "statement": "Iven says the rack shifted while he was trying to clear the drain.",
+            "entity_id": "trapped-traveler",
+            "classification": "RUMOR",
+            "source": "trapped-traveler",
+            "source_event": "final-008",
+            "source_turn": 8,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-satchel",
+            "statement": "A leather satchel is caught under the cellar drainage grate.",
+            "entity_id": "leather-satchel",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-008",
+            "source_turn": 8,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-shutoff",
+            "statement": "A raised shutoff board above the drainage opening can stop the incoming water before the grate is opened.",
+            "entity_id": "drain-grate",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-009",
+            "source_turn": 9,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "rumor-wage-receipts",
+            "statement": "Iven says the satchel contains repair-wage receipts, including one bearing his absent brother's name from last week.",
+            "entity_id": "trapped-traveler",
+            "classification": "RUMOR",
+            "source": "trapped-traveler",
+            "source_event": "final-010",
+            "source_turn": 10,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-drain-ledge",
+            "statement": "A narrow stone ledge runs from the cellar landing toward the drain, with a slick final stretch.",
+            "entity_id": "tavern-cellar",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-010",
+            "source_turn": 10,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-board-jammed",
+            "statement": "The shutoff board jams halfway down; water still enters and the cellar waterline continues to rise.",
+            "entity_id": "shutoff-board",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-011",
+            "source_turn": 11,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-handle-broken",
+            "statement": "The shutoff board's handle breaks during the coordinated attempt; the board remains jammed and flooding continues.",
+            "entity_id": "shutoff-board",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-014",
+            "source_turn": 14,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-paper-threat",
+            "statement": "Water has opened the satchel flap and is beginning to wash out its papers.",
+            "entity_id": "leather-satchel",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-014",
+            "source_turn": 14,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-evidence-lost",
+            "statement": "Arlen's retrieval attempt fails: the satchel strap breaks, and the bag and papers wash beyond reach through the drain.",
+            "entity_id": "leather-satchel",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-016",
+            "source_turn": 16,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-safe-return",
+            "statement": "Arlen, Elara, Torren and Iven return safely to the tavern; Mara blocks access to the flooded cellar.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-019",
+            "source_turn": 19,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-reward",
+            "statement": "Mara honors the offer of supper and beds after the investigation and rescue.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "aftermath-scene",
+            "source_turn": 19,
+            "source_scene": "scene-0003",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "rumor-hiding",
+            "statement": "Mara says Iven requested a concealed place to rest because of papers he was carrying; Iven confirms the request.",
+            "entity_id": "trapped-traveler",
+            "classification": "RUMOR",
+            "source": "mara-blackkeg and trapped-traveler",
+            "source_event": "final-020",
+            "source_turn": 20,
+            "source_scene": "scene-0003",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "rumor-dain",
+            "statement": "Iven says his brother is Dain, has been absent for a month, and was named on a wage receipt dated seven days ago.",
+            "entity_id": "trapped-traveler",
+            "classification": "RUMOR",
+            "source": "trapped-traveler",
+            "source_event": "final-021",
+            "source_turn": 21,
+            "source_scene": "scene-0003",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "rumor-north-sluice",
+            "statement": "Iven remembers the heading North Sluice Repairs on the lost receipt, but did not witness who collected or signed for the wages.",
+            "entity_id": "trapped-traveler",
+            "classification": "RUMOR",
+            "source": "trapped-traveler",
+            "source_event": "final-021",
+            "source_turn": 21,
+            "source_scene": "scene-0003",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-inquiry-offer",
+            "statement": "Arlen offers to help ask cautious questions in daylight, without promising accusations, trespass or further cellar work.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "arlen-vale",
+            "source_event": "final-022",
+            "source_turn": 22,
+            "source_scene": "scene-0003",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-next-plan",
+            "statement": "All three travelers agree to make cautious inquiries in daylight about Iven's account of Dain and North Sluice Repairs.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "player actions 22 through 24",
+            "source_event": "final-024",
+            "source_turn": 24,
+            "source_scene": "scene-0003",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-daylight-lantern-lane",
+            "statement": "The next morning, all three travelers are together outside the Crooked Lantern on a muddy lane; the rain has eased to drizzle.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "lantern-lane",
+            "source_event": "rq-5695d78ae7f7-000001",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "fact-visible-stone-bridge",
+            "statement": "The lane outside the Crooked Lantern leads toward a visible stone bridge a short walk away, with water audible beneath its arch.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "lane-stone-bridge",
+            "source_event": "rq-5695d78ae7f7-000001",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "fact-repair-notice-wording",
+            "statement": "A notice beside the Crooked Lantern reads: NORTH SLUICE REPAIRS — ENQUIRIES AT THE BRIDGE. Its wording alone does not verify Iven's account.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "lane-repair-notice",
+            "source_event": "rq-5695d78ae7f7-000001",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "fact-notice-poster-present",
+            "statement": "A person wearing a patched gray coat has just posted the repair notice beside the tavern and greets the travelers.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "gray-coated-notice-poster",
+            "source_event": "rq-5695d78ae7f7-000001",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "rumor-s2-t1-sella-contact",
+            "statement": "The gray-coated notice poster says Sella handles repair enquiries and takes names for work at the stone bridge.",
+            "classification": "RUMOR",
+            "source": "gray-coated-notice-poster",
+            "entity_id": "sella-repair-contact",
+            "source_event": "rq-5695d78ae7f7-000005",
+            "source_turn": 1,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "rumor-s2-t1-repair-hiring",
+            "statement": "The gray-coated notice poster says the repairs need workers to carry stone and clear debris, and directs questions about dry-ground tasks and pay to Sella. No wage or particular safe task has been confirmed.",
+            "classification": "RUMOR",
+            "source": "gray-coated-notice-poster",
+            "entity_id": "lane-repair-notice",
+            "source_event": "rq-5695d78ae7f7-000005",
+            "source_turn": 1,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "rumor-s2-t1-poster-role",
+            "statement": "The gray-coated notice poster says they agreed only to put up the repair notices and are repeating the hiring information they were told to advertise.",
+            "classification": "RUMOR",
+            "source": "gray-coated-notice-poster",
+            "entity_id": "gray-coated-notice-poster",
+            "source_event": "rq-5695d78ae7f7-000005",
+            "source_turn": 1,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          }
+        ],
+        "recent_public_events": [
+          {
+            "turn": 0,
+            "kind": "scene",
+            "text": "Morning opens outside the Crooked Lantern, with all three travelers together at its doorway. The rain has eased to a fine drizzle. A muddy lane runs between low buildings toward a stone bridge visible a short walk away; water can be heard beneath its arch.\n\nBeside the tavern entrance, a person in a patched gray coat presses a fresh notice onto a wooden board. Its large lettering reads: “NORTH SLUICE REPAIRS — ENQUIRIES AT THE BRIDGE.” The person steps back to check that the paper holds, then notices the travelers. “Morning.”\n\nThe familiar heading is plainly visible. Whether it leads to anyone who knows Dain remains unanswered.",
+            "scene_id": "scene-0001"
+          },
+          {
+            "turn": 1,
+            "kind": "turn",
+            "actor": "Arlen Vale",
+            "speech": "Morning. Who should we ask for at the bridge? And are these repairs hiring? I like to learn what a job involves before discovering it waist-deep.",
+            "action": "Arlen remains beside his companions and gestures toward the notice, asking the gray-coated person about the contact and the work.",
+            "roll": null,
+            "skill": null,
+            "text": "The notice poster smooths a curling corner of the paper. “Ask for Sella at the bridge. She handles the repair enquiries and takes names for work.”\n\nAt Arlen’s mention of water, the poster gives a brief nod. “They’re looking for hands to carry stone and clear debris. That’s what I was told to advertise. Sella can tell you which tasks are on dry ground and what each pays. I only agreed to put up the notices.”\n\nThe poster remains beside the board, leaving room for another question.",
+            "scene_id": "scene-0001"
+          }
+        ]
+      }
+    },
+    {
+      "protocol_version": "0.1",
+      "campaign_id": "tavern-zero",
+      "session_id": "session-0002",
+      "scene_id": "scene-0001",
+      "turn_id": 2,
+      "message_id": "rq-5695d78ae7f7-000007",
+      "sender": "player-02",
+      "recipient": "orchestrator",
+      "message_type": "PLAYER_ACTION",
+      "visibility": "SYSTEM",
+      "payload": {
+        "character_id": "elara-voss",
+        "speech": "Thank you. One more question: do you know a man named Dain? His brother hasn't heard from him in a month. We're trying to find out whether he needs help.",
+        "action": "Elara stays beside her companions and asks the notice poster about Dain, keeping her hands relaxed at her sides.",
+        "intent": "Keep the promise to make inquiries and seek a lead on Dain without accusing anyone or pressuring her companions into danger.",
+        "target": "gray-coated-notice-poster"
+      }
+    },
+    {
+      "protocol_version": "0.1",
+      "campaign_id": "tavern-zero",
+      "session_id": "session-0002",
+      "scene_id": "scene-0001",
+      "turn_id": 2,
+      "message_id": "rq-5695d78ae7f7-000008",
+      "sender": "gm",
+      "recipient": "orchestrator",
+      "message_type": "GM_REVIEW",
+      "visibility": "GM_PRIVATE",
+      "payload": {
+        "roll": null
+      }
+    },
+    {
+      "protocol_version": "0.1",
+      "campaign_id": "tavern-zero",
+      "session_id": "session-0002",
+      "scene_id": "scene-0001",
+      "turn_id": 2,
+      "message_id": "rq-5695d78ae7f7-000009",
+      "sender": "gm",
+      "recipient": "orchestrator",
+      "message_type": "GM_FINAL_RESULT",
+      "visibility": "SYSTEM",
+      "payload": {
+        "narration": "The notice poster turns from the board to Elara. “I don't know him by that name. I'm sorry—you've more reason to ask than someone looking for a day's wages.”\n\nThey glance toward the bridge. “Ask Sella whether he worked on the repairs. I can't say whether she knows him, but she handles the work enquiries. I wouldn't want to send you off thinking I'd seen him.”\n\nThe poster remains beside the notice. The bridge is still visible through the drizzle.",
+        "outcome": "NO_ROLL",
+        "entities": [],
+        "facts": [
+          {
+            "id": "rumor-s2-t2-poster-dain-unknown",
+            "statement": "The gray-coated notice poster says they do not know Dain by that name and offers no sighting or information about his whereabouts.",
+            "classification": "RUMOR",
+            "source": "gray-coated-notice-poster",
+            "entity_id": "gray-coated-notice-poster"
+          },
+          {
+            "id": "rumor-s2-t2-poster-refers-dain-inquiry",
+            "statement": "The gray-coated notice poster recommends asking Sella whether Dain worked on the repairs, while explicitly saying they do not know whether Sella knows him.",
+            "classification": "RUMOR",
+            "source": "gray-coated-notice-poster",
+            "entity_id": "sella-repair-contact"
+          }
+        ],
+        "grants": [
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "rumor-s2-t2-poster-dain-unknown"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "rumor-s2-t2-poster-dain-unknown"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "rumor-s2-t2-poster-dain-unknown"
+          },
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "rumor-s2-t2-poster-refers-dain-inquiry"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "rumor-s2-t2-poster-refers-dain-inquiry"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "rumor-s2-t2-poster-refers-dain-inquiry"
+          }
+        ],
+        "scene_finished": false
+      }
+    },
+    {
+      "protocol_version": "0.1",
+      "campaign_id": "tavern-zero",
+      "session_id": "session-0002",
+      "scene_id": "scene-0001",
+      "turn_id": 2,
+      "message_id": "chronicle-rq-5695d78ae7f7-000009",
+      "sender": "chronicler",
+      "recipient": "orchestrator",
+      "message_type": "CHRONICLE_PATCH",
+      "visibility": "SYSTEM",
+      "payload": {
+        "facts_added": [
+          {
+            "id": "rumor-s2-t2-poster-dain-unknown",
+            "statement": "The gray-coated notice poster says they do not know Dain by that name and offers no sighting or information about his whereabouts.",
+            "classification": "RUMOR",
+            "source": "gray-coated-notice-poster",
+            "entity_id": "gray-coated-notice-poster",
+            "source_event": "rq-5695d78ae7f7-000009",
+            "source_turn": 2,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "rumor-s2-t2-poster-refers-dain-inquiry",
+            "statement": "The gray-coated notice poster recommends asking Sella whether Dain worked on the repairs, while explicitly saying they do not know whether Sella knows him.",
+            "classification": "RUMOR",
+            "source": "gray-coated-notice-poster",
+            "entity_id": "sella-repair-contact",
+            "source_event": "rq-5695d78ae7f7-000009",
+            "source_turn": 2,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          }
+        ],
+        "knowledge_added": [
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "rumor-s2-t2-poster-dain-unknown"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "rumor-s2-t2-poster-dain-unknown"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "rumor-s2-t2-poster-dain-unknown"
+          },
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "rumor-s2-t2-poster-refers-dain-inquiry"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "rumor-s2-t2-poster-refers-dain-inquiry"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "rumor-s2-t2-poster-refers-dain-inquiry"
+          }
+        ],
+        "entities_created": [],
+        "source_event": "rq-5695d78ae7f7-000009"
+      }
+    },
+    {
+      "protocol_version": "0.1",
+      "campaign_id": "tavern-zero",
+      "session_id": "session-0002",
+      "scene_id": "scene-0001",
+      "turn_id": 3,
+      "message_id": "context-rq-5695d78ae7f7-000011",
+      "sender": "orchestrator",
+      "recipient": "player-03",
+      "message_type": "PLAYER_TURN_REQUEST",
+      "visibility": "CHARACTER",
+      "payload": {
+        "role": "player-03",
+        "character": {
+          "id": "torren-bright",
+          "agent_id": "player-03",
+          "name": "Torren Bright",
+          "role": "cautious wizard",
+          "personality": "Methodical, polite, easily alarmed by unexplained machinery or magic.",
+          "goal": "Understand unusual phenomena before touching them.",
+          "skills": {
+            "ARCANA": 4,
+            "INVESTIGATION": 2,
+            "PERCEPTION": 2,
+            "DEXTERITY": 1
+          },
+          "hp": 7,
+          "inventory": [
+            "notebook",
+            "pencil",
+            "walking staff"
+          ],
+          "private_memories": [
+            "An unexplained event is not evidence of magic until ordinary explanations have been tested."
+          ],
+          "knowledge": [
+            "fact-seed-tavern",
+            "fact-mara",
+            "fact-opening",
+            "fact-job",
+            "rumor-empty-cellar",
+            "fact-cellar-access",
+            "fact-stairs",
+            "fact-signal",
+            "fact-mara-admission",
+            "fact-voice",
+            "fact-shelter-admitted",
+            "fact-trapped",
+            "fact-flood",
+            "fact-rescue",
+            "fact-iven-name",
+            "rumor-rack-cause",
+            "fact-satchel",
+            "fact-shutoff",
+            "rumor-wage-receipts",
+            "fact-drain-ledge",
+            "fact-board-jammed",
+            "fact-handle-broken",
+            "fact-paper-threat",
+            "fact-evidence-lost",
+            "fact-safe-return",
+            "fact-reward",
+            "rumor-hiding",
+            "rumor-dain",
+            "rumor-north-sluice",
+            "fact-inquiry-offer",
+            "fact-next-plan",
+            "fact-daylight-lantern-lane",
+            "fact-visible-stone-bridge",
+            "fact-repair-notice-wording",
+            "fact-notice-poster-present",
+            "rumor-s2-t1-sella-contact",
+            "rumor-s2-t1-repair-hiring",
+            "rumor-s2-t1-poster-role",
+            "rumor-s2-t2-poster-dain-unknown",
+            "rumor-s2-t2-poster-refers-dain-inquiry"
+          ],
+          "conditions": []
+        },
+        "scene": "Morning opens outside the Crooked Lantern, with all three travelers together at its doorway. The rain has eased to a fine drizzle. A muddy lane runs between low buildings toward a stone bridge visible a short walk away; water can be heard beneath its arch.\n\nBeside the tavern entrance, a person in a patched gray coat presses a fresh notice onto a wooden board. Its large lettering reads: “NORTH SLUICE REPAIRS — ENQUIRIES AT THE BRIDGE.” The person steps back to check that the paper holds, then notices the travelers. “Morning.”\n\nThe familiar heading is plainly visible. Whether it leads to anyone who knows Dain remains unanswered.",
+        "location": "lantern-lane",
+        "known_facts": [
+          {
+            "id": "fact-seed-tavern",
+            "statement": "The Crooked Lantern is a tavern.",
+            "classification": "CANON",
+            "source": "campaign-seed",
+            "entity_id": "crooked-lantern",
+            "source_event": "seed",
+            "source_turn": 0,
+            "source_scene": "scene-0000",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-mara",
+            "statement": "Mara Blackkeg operates the Crooked Lantern.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "opening-scene",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-opening",
+            "statement": "Rain is falling outside the Crooked Lantern; a metallic knock was heard beneath its floor.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "opening-scene",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-job",
+            "statement": "Mara offers the travelers supper and beds if they investigate the cellar bell.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-001",
+            "source_turn": 1,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "rumor-empty-cellar",
+            "statement": "Mara says nobody is in the cellar.",
+            "entity_id": "mara-blackkeg",
+            "classification": "RUMOR",
+            "source": "mara-blackkeg",
+            "source_event": "final-001",
+            "source_turn": 1,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-cellar-access",
+            "statement": "Mara permits the travelers to investigate the cellar and provides a lamp at its entrance.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-002",
+            "source_turn": 2,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-stairs",
+            "statement": "Steep wooden stairs lead into a cellar; a bell wire follows the wall and water is visible below.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-002",
+            "source_turn": 2,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-signal",
+            "statement": "The cellar bell wire is being pulled from below in a repeating group of three.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-003",
+            "source_turn": 3,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-mara-admission",
+            "statement": "Mara retracts her certainty that the cellar is empty and says she hoped it was empty by now.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-004",
+            "source_turn": 4,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-voice",
+            "statement": "A person below the tavern warns visitors not to move a rack from their side.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-005",
+            "source_turn": 5,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-shelter-admitted",
+            "statement": "Mara tells the party she allowed a traveler to sleep in the cellar and thought he had left.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-007",
+            "source_turn": 7,
+            "source_scene": "scene-0001",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-trapped",
+            "statement": "A traveler's hand is trapped beneath a fallen cellar rack; he can reach the bell wire.",
+            "entity_id": "trapped-traveler",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "cellar-scene",
+            "source_turn": 7,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-flood",
+            "statement": "Ankle-deep water covers the cellar floor and flows inward through a drainage grate.",
+            "entity_id": "tavern-cellar",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "cellar-scene",
+            "source_turn": 7,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-rescue",
+            "statement": "Elara frees the trapped traveler's bruised hand from the rack.",
+            "entity_id": "trapped-traveler",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-008",
+            "source_turn": 8,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-iven-name",
+            "statement": "The rescued traveler introduces himself as Iven.",
+            "entity_id": "trapped-traveler",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-008",
+            "source_turn": 8,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "rumor-rack-cause",
+            "statement": "Iven says the rack shifted while he was trying to clear the drain.",
+            "entity_id": "trapped-traveler",
+            "classification": "RUMOR",
+            "source": "trapped-traveler",
+            "source_event": "final-008",
+            "source_turn": 8,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-satchel",
+            "statement": "A leather satchel is caught under the cellar drainage grate.",
+            "entity_id": "leather-satchel",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-008",
+            "source_turn": 8,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-shutoff",
+            "statement": "A raised shutoff board above the drainage opening can stop the incoming water before the grate is opened.",
+            "entity_id": "drain-grate",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-009",
+            "source_turn": 9,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "rumor-wage-receipts",
+            "statement": "Iven says the satchel contains repair-wage receipts, including one bearing his absent brother's name from last week.",
+            "entity_id": "trapped-traveler",
+            "classification": "RUMOR",
+            "source": "trapped-traveler",
+            "source_event": "final-010",
+            "source_turn": 10,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-drain-ledge",
+            "statement": "A narrow stone ledge runs from the cellar landing toward the drain, with a slick final stretch.",
+            "entity_id": "tavern-cellar",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-010",
+            "source_turn": 10,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-board-jammed",
+            "statement": "The shutoff board jams halfway down; water still enters and the cellar waterline continues to rise.",
+            "entity_id": "shutoff-board",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-011",
+            "source_turn": 11,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-handle-broken",
+            "statement": "The shutoff board's handle breaks during the coordinated attempt; the board remains jammed and flooding continues.",
+            "entity_id": "shutoff-board",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-014",
+            "source_turn": 14,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-paper-threat",
+            "statement": "Water has opened the satchel flap and is beginning to wash out its papers.",
+            "entity_id": "leather-satchel",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-014",
+            "source_turn": 14,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-evidence-lost",
+            "statement": "Arlen's retrieval attempt fails: the satchel strap breaks, and the bag and papers wash beyond reach through the drain.",
+            "entity_id": "leather-satchel",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-016",
+            "source_turn": 16,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-safe-return",
+            "statement": "Arlen, Elara, Torren and Iven return safely to the tavern; Mara blocks access to the flooded cellar.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "final-019",
+            "source_turn": 19,
+            "source_scene": "scene-0002",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-reward",
+            "statement": "Mara honors the offer of supper and beds after the investigation and rescue.",
+            "entity_id": "mara-blackkeg",
+            "classification": "CANON",
+            "source": "gm",
+            "source_event": "aftermath-scene",
+            "source_turn": 19,
+            "source_scene": "scene-0003",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "rumor-hiding",
+            "statement": "Mara says Iven requested a concealed place to rest because of papers he was carrying; Iven confirms the request.",
+            "entity_id": "trapped-traveler",
+            "classification": "RUMOR",
+            "source": "mara-blackkeg and trapped-traveler",
+            "source_event": "final-020",
+            "source_turn": 20,
+            "source_scene": "scene-0003",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "rumor-dain",
+            "statement": "Iven says his brother is Dain, has been absent for a month, and was named on a wage receipt dated seven days ago.",
+            "entity_id": "trapped-traveler",
+            "classification": "RUMOR",
+            "source": "trapped-traveler",
+            "source_event": "final-021",
+            "source_turn": 21,
+            "source_scene": "scene-0003",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "rumor-north-sluice",
+            "statement": "Iven remembers the heading North Sluice Repairs on the lost receipt, but did not witness who collected or signed for the wages.",
+            "entity_id": "trapped-traveler",
+            "classification": "RUMOR",
+            "source": "trapped-traveler",
+            "source_event": "final-021",
+            "source_turn": 21,
+            "source_scene": "scene-0003",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-inquiry-offer",
+            "statement": "Arlen offers to help ask cautious questions in daylight, without promising accusations, trespass or further cellar work.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "arlen-vale",
+            "source_event": "final-022",
+            "source_turn": 22,
+            "source_scene": "scene-0003",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-next-plan",
+            "statement": "All three travelers agree to make cautious inquiries in daylight about Iven's account of Dain and North Sluice Repairs.",
+            "entity_id": "crooked-lantern",
+            "classification": "CANON",
+            "source": "player actions 22 through 24",
+            "source_event": "final-024",
+            "source_turn": 24,
+            "source_scene": "scene-0003",
+            "source_session": "session-0001"
+          },
+          {
+            "id": "fact-daylight-lantern-lane",
+            "statement": "The next morning, all three travelers are together outside the Crooked Lantern on a muddy lane; the rain has eased to drizzle.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "lantern-lane",
+            "source_event": "rq-5695d78ae7f7-000001",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "fact-visible-stone-bridge",
+            "statement": "The lane outside the Crooked Lantern leads toward a visible stone bridge a short walk away, with water audible beneath its arch.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "lane-stone-bridge",
+            "source_event": "rq-5695d78ae7f7-000001",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "fact-repair-notice-wording",
+            "statement": "A notice beside the Crooked Lantern reads: NORTH SLUICE REPAIRS — ENQUIRIES AT THE BRIDGE. Its wording alone does not verify Iven's account.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "lane-repair-notice",
+            "source_event": "rq-5695d78ae7f7-000001",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "fact-notice-poster-present",
+            "statement": "A person wearing a patched gray coat has just posted the repair notice beside the tavern and greets the travelers.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "gray-coated-notice-poster",
+            "source_event": "rq-5695d78ae7f7-000001",
+            "source_turn": 0,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "rumor-s2-t1-sella-contact",
+            "statement": "The gray-coated notice poster says Sella handles repair enquiries and takes names for work at the stone bridge.",
+            "classification": "RUMOR",
+            "source": "gray-coated-notice-poster",
+            "entity_id": "sella-repair-contact",
+            "source_event": "rq-5695d78ae7f7-000005",
+            "source_turn": 1,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "rumor-s2-t1-repair-hiring",
+            "statement": "The gray-coated notice poster says the repairs need workers to carry stone and clear debris, and directs questions about dry-ground tasks and pay to Sella. No wage or particular safe task has been confirmed.",
+            "classification": "RUMOR",
+            "source": "gray-coated-notice-poster",
+            "entity_id": "lane-repair-notice",
+            "source_event": "rq-5695d78ae7f7-000005",
+            "source_turn": 1,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "rumor-s2-t1-poster-role",
+            "statement": "The gray-coated notice poster says they agreed only to put up the repair notices and are repeating the hiring information they were told to advertise.",
+            "classification": "RUMOR",
+            "source": "gray-coated-notice-poster",
+            "entity_id": "gray-coated-notice-poster",
+            "source_event": "rq-5695d78ae7f7-000005",
+            "source_turn": 1,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "rumor-s2-t2-poster-dain-unknown",
+            "statement": "The gray-coated notice poster says they do not know Dain by that name and offers no sighting or information about his whereabouts.",
+            "classification": "RUMOR",
+            "source": "gray-coated-notice-poster",
+            "entity_id": "gray-coated-notice-poster",
+            "source_event": "rq-5695d78ae7f7-000009",
+            "source_turn": 2,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          },
+          {
+            "id": "rumor-s2-t2-poster-refers-dain-inquiry",
+            "statement": "The gray-coated notice poster recommends asking Sella whether Dain worked on the repairs, while explicitly saying they do not know whether Sella knows him.",
+            "classification": "RUMOR",
+            "source": "gray-coated-notice-poster",
+            "entity_id": "sella-repair-contact",
+            "source_event": "rq-5695d78ae7f7-000009",
+            "source_turn": 2,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          }
+        ],
+        "recent_public_events": [
+          {
+            "turn": 0,
+            "kind": "scene",
+            "text": "Morning opens outside the Crooked Lantern, with all three travelers together at its doorway. The rain has eased to a fine drizzle. A muddy lane runs between low buildings toward a stone bridge visible a short walk away; water can be heard beneath its arch.\n\nBeside the tavern entrance, a person in a patched gray coat presses a fresh notice onto a wooden board. Its large lettering reads: “NORTH SLUICE REPAIRS — ENQUIRIES AT THE BRIDGE.” The person steps back to check that the paper holds, then notices the travelers. “Morning.”\n\nThe familiar heading is plainly visible. Whether it leads to anyone who knows Dain remains unanswered.",
+            "scene_id": "scene-0001"
+          },
+          {
+            "turn": 1,
+            "kind": "turn",
+            "actor": "Arlen Vale",
+            "speech": "Morning. Who should we ask for at the bridge? And are these repairs hiring? I like to learn what a job involves before discovering it waist-deep.",
+            "action": "Arlen remains beside his companions and gestures toward the notice, asking the gray-coated person about the contact and the work.",
+            "roll": null,
+            "skill": null,
+            "text": "The notice poster smooths a curling corner of the paper. “Ask for Sella at the bridge. She handles the repair enquiries and takes names for work.”\n\nAt Arlen’s mention of water, the poster gives a brief nod. “They’re looking for hands to carry stone and clear debris. That’s what I was told to advertise. Sella can tell you which tasks are on dry ground and what each pays. I only agreed to put up the notices.”\n\nThe poster remains beside the board, leaving room for another question.",
+            "scene_id": "scene-0001"
+          },
+          {
+            "turn": 2,
+            "kind": "turn",
+            "actor": "Elara Voss",
+            "speech": "Thank you. One more question: do you know a man named Dain? His brother hasn't heard from him in a month. We're trying to find out whether he needs help.",
+            "action": "Elara stays beside her companions and asks the notice poster about Dain, keeping her hands relaxed at her sides.",
+            "roll": null,
+            "skill": null,
+            "text": "The notice poster turns from the board to Elara. “I don't know him by that name. I'm sorry—you've more reason to ask than someone looking for a day's wages.”\n\nThey glance toward the bridge. “Ask Sella whether he worked on the repairs. I can't say whether she knows him, but she handles the work enquiries. I wouldn't want to send you off thinking I'd seen him.”\n\nThe poster remains beside the notice. The bridge is still visible through the drizzle.",
+            "scene_id": "scene-0001"
+          }
+        ]
+      }
+    },
+    {
+      "protocol_version": "0.1",
+      "campaign_id": "tavern-zero",
+      "session_id": "session-0002",
+      "scene_id": "scene-0001",
+      "turn_id": 3,
+      "message_id": "rq-5695d78ae7f7-000011",
+      "sender": "player-03",
+      "recipient": "orchestrator",
+      "message_type": "PLAYER_ACTION",
+      "visibility": "SYSTEM",
+      "payload": {
+        "character_id": "torren-bright",
+        "speech": "Thank you for being precise. Let's ask Sella whether Dain worked there, and what records might establish when. One question at a time.",
+        "action": "Torren nods to the notice poster, then gestures toward the bridge and offers to walk there with his companions, keeping his staff ready for the muddy footing.",
+        "intent": "Follow the referral with the party and seek a verifiable connection between Dain and the repairs without treating the lost receipt or the poster's suggestion as proof.",
+        "target": "lane-stone-bridge"
+      }
+    },
+    {
+      "protocol_version": "0.1",
+      "campaign_id": "tavern-zero",
+      "session_id": "session-0002",
+      "scene_id": "scene-0001",
+      "turn_id": 3,
+      "message_id": "rq-5695d78ae7f7-000012",
+      "sender": "gm",
+      "recipient": "orchestrator",
+      "message_type": "GM_REVIEW",
+      "visibility": "GM_PRIVATE",
+      "payload": {
+        "roll": null
+      }
+    },
+    {
+      "protocol_version": "0.1",
+      "campaign_id": "tavern-zero",
+      "session_id": "session-0002",
+      "scene_id": "scene-0001",
+      "turn_id": 3,
+      "message_id": "rq-5695d78ae7f7-000013",
+      "sender": "gm",
+      "recipient": "orchestrator",
+      "message_type": "GM_FINAL_RESULT",
+      "visibility": "SYSTEM",
+      "payload": {
+        "narration": "“You're welcome,” the notice poster replies, stepping aside to leave the lane clear.\n\nThe short approach to the bridge is muddy but passable, with no barrier across it. Torren's invitation leaves the three companions together beside the notice, with the way onward open.",
+        "outcome": "NO_ROLL",
+        "entities": [],
+        "facts": [
+          {
+            "id": "fact-s2-t3-bridge-approach-passable",
+            "statement": "The lane from the Crooked Lantern to the visible stone bridge is muddy but passable, with no barrier across the approach.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "lantern-lane"
+          }
+        ],
+        "grants": [
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "fact-s2-t3-bridge-approach-passable"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "fact-s2-t3-bridge-approach-passable"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "fact-s2-t3-bridge-approach-passable"
+          }
+        ],
+        "scene_finished": false
+      }
+    },
+    {
+      "protocol_version": "0.1",
+      "campaign_id": "tavern-zero",
+      "session_id": "session-0002",
+      "scene_id": "scene-0001",
+      "turn_id": 3,
+      "message_id": "chronicle-rq-5695d78ae7f7-000013",
+      "sender": "chronicler",
+      "recipient": "orchestrator",
+      "message_type": "CHRONICLE_PATCH",
+      "visibility": "SYSTEM",
+      "payload": {
+        "facts_added": [
+          {
+            "id": "fact-s2-t3-bridge-approach-passable",
+            "statement": "The lane from the Crooked Lantern to the visible stone bridge is muddy but passable, with no barrier across the approach.",
+            "classification": "CANON",
+            "source": "gm",
+            "entity_id": "lantern-lane",
+            "source_event": "rq-5695d78ae7f7-000013",
+            "source_turn": 3,
+            "source_scene": "scene-0001",
+            "source_session": "session-0002"
+          }
+        ],
+        "knowledge_added": [
+          {
+            "character_id": "arlen-vale",
+            "fact_id": "fact-s2-t3-bridge-approach-passable"
+          },
+          {
+            "character_id": "elara-voss",
+            "fact_id": "fact-s2-t3-bridge-approach-passable"
+          },
+          {
+            "character_id": "torren-bright",
+            "fact_id": "fact-s2-t3-bridge-approach-passable"
+          }
+        ],
+        "entities_created": [],
+        "source_event": "rq-5695d78ae7f7-000013"
+      }
+    },
+    {
+      "protocol_version": "0.1",
+      "campaign_id": "tavern-zero",
+      "session_id": "session-0002",
+      "scene_id": "scene-0001",
+      "turn_id": 3,
+      "message_id": "rq-5695d78ae7f7-000015",
+      "sender": "chronicler",
+      "recipient": "orchestrator",
+      "message_type": "SESSION_SUMMARY",
+      "visibility": "SYSTEM",
+      "payload": {
+        "summary": "The three travelers began the morning together outside the Crooked Lantern in drizzle. They saw a notice reading “NORTH SLUICE REPAIRS — ENQUIRIES AT THE BRIDGE” and a nearby stone bridge. Arlen asked the gray-coated notice poster about repair enquiries and employment. The poster said Sella handles enquiries and takes names at the bridge, and described advertised work carrying stone and clearing debris; these statements remain unverified, with no pay or safe task confirmed. Elara asked about Dain. The poster said they did not know him by that name and suggested asking Sella whether he worked on the repairs, explicitly offering no sighting or assurance that Sella knows him. Torren proposed walking to the bridge together to ask about Dain and possible records. The approach is muddy but passable and unobstructed. The party remains together beside the notice; they have not yet reached the bridge or met Sella. Iven’s account of Dain and the lost wage receipt remains unverified. Three turns were completed without rolls or combat.",
+        "source_fact_ids": [
+          "fact-daylight-lantern-lane",
+          "fact-visible-stone-bridge",
+          "fact-repair-notice-wording",
+          "fact-notice-poster-present",
+          "rumor-s2-t1-sella-contact",
+          "rumor-s2-t1-repair-hiring",
+          "rumor-s2-t1-poster-role",
+          "rumor-s2-t2-poster-dain-unknown",
+          "rumor-s2-t2-poster-refers-dain-inquiry",
+          "fact-s2-t3-bridge-approach-passable",
+          "rumor-dain",
+          "rumor-north-sluice"
+        ],
+        "next_hook": "Decide whether to walk together to the bridge and ask for Sella, following the poster’s suggestion. Ask whether Dain worked on the repairs and whether any records could independently verify Iven’s account. Sella’s presence, knowledge, and any relevant records remain unestablished."
+      }
+    }
+  ],
+  "public_log": [
+    {
+      "turn": 0,
+      "kind": "scene",
+      "text": "Morning opens outside the Crooked Lantern, with all three travelers together at its doorway. The rain has eased to a fine drizzle. A muddy lane runs between low buildings toward a stone bridge visible a short walk away; water can be heard beneath its arch.\n\nBeside the tavern entrance, a person in a patched gray coat presses a fresh notice onto a wooden board. Its large lettering reads: “NORTH SLUICE REPAIRS — ENQUIRIES AT THE BRIDGE.” The person steps back to check that the paper holds, then notices the travelers. “Morning.”\n\nThe familiar heading is plainly visible. Whether it leads to anyone who knows Dain remains unanswered.",
+      "scene_id": "scene-0001"
+    },
+    {
+      "turn": 1,
+      "kind": "turn",
+      "actor": "Arlen Vale",
+      "speech": "Morning. Who should we ask for at the bridge? And are these repairs hiring? I like to learn what a job involves before discovering it waist-deep.",
+      "action": "Arlen remains beside his companions and gestures toward the notice, asking the gray-coated person about the contact and the work.",
+      "roll": null,
+      "skill": null,
+      "text": "The notice poster smooths a curling corner of the paper. “Ask for Sella at the bridge. She handles the repair enquiries and takes names for work.”\n\nAt Arlen’s mention of water, the poster gives a brief nod. “They’re looking for hands to carry stone and clear debris. That’s what I was told to advertise. Sella can tell you which tasks are on dry ground and what each pays. I only agreed to put up the notices.”\n\nThe poster remains beside the board, leaving room for another question.",
+      "scene_id": "scene-0001"
+    },
+    {
+      "turn": 2,
+      "kind": "turn",
+      "actor": "Elara Voss",
+      "speech": "Thank you. One more question: do you know a man named Dain? His brother hasn't heard from him in a month. We're trying to find out whether he needs help.",
+      "action": "Elara stays beside her companions and asks the notice poster about Dain, keeping her hands relaxed at her sides.",
+      "roll": null,
+      "skill": null,
+      "text": "The notice poster turns from the board to Elara. “I don't know him by that name. I'm sorry—you've more reason to ask than someone looking for a day's wages.”\n\nThey glance toward the bridge. “Ask Sella whether he worked on the repairs. I can't say whether she knows him, but she handles the work enquiries. I wouldn't want to send you off thinking I'd seen him.”\n\nThe poster remains beside the notice. The bridge is still visible through the drizzle.",
+      "scene_id": "scene-0001"
+    },
+    {
+      "turn": 3,
+      "kind": "turn",
+      "actor": "Torren Bright",
+      "speech": "Thank you for being precise. Let's ask Sella whether Dain worked there, and what records might establish when. One question at a time.",
+      "action": "Torren nods to the notice poster, then gestures toward the bridge and offers to walk there with his companions, keeping his staff ready for the muddy footing.",
+      "roll": null,
+      "skill": null,
+      "text": "“You're welcome,” the notice poster replies, stepping aside to leave the lane clear.\n\nThe short approach to the bridge is muddy but passable, with no barrier across it. Torren's invitation leaves the three companions together beside the notice, with the way onward open.",
+      "scene_id": "scene-0001"
+    }
+  ],
+  "summary": {
+    "summary": "The three travelers began the morning together outside the Crooked Lantern in drizzle. They saw a notice reading “NORTH SLUICE REPAIRS — ENQUIRIES AT THE BRIDGE” and a nearby stone bridge. Arlen asked the gray-coated notice poster about repair enquiries and employment. The poster said Sella handles enquiries and takes names at the bridge, and described advertised work carrying stone and clearing debris; these statements remain unverified, with no pay or safe task confirmed. Elara asked about Dain. The poster said they did not know him by that name and suggested asking Sella whether he worked on the repairs, explicitly offering no sighting or assurance that Sella knows him. Torren proposed walking to the bridge together to ask about Dain and possible records. The approach is muddy but passable and unobstructed. The party remains together beside the notice; they have not yet reached the bridge or met Sella. Iven’s account of Dain and the lost wage receipt remains unverified. Three turns were completed without rolls or combat.",
+    "source_fact_ids": [
+      "fact-daylight-lantern-lane",
+      "fact-visible-stone-bridge",
+      "fact-repair-notice-wording",
+      "fact-notice-poster-present",
+      "rumor-s2-t1-sella-contact",
+      "rumor-s2-t1-repair-hiring",
+      "rumor-s2-t1-poster-role",
+      "rumor-s2-t2-poster-dain-unknown",
+      "rumor-s2-t2-poster-refers-dain-inquiry",
+      "fact-s2-t3-bridge-approach-passable",
+      "rumor-dain",
+      "rumor-north-sluice"
+    ],
+    "next_hook": "Decide whether to walk together to the bridge and ask for Sella, following the poster’s suggestion. Ask whether Dain worked on the repairs and whether any records could independently verify Iven’s account. Sella’s presence, knowledge, and any relevant records remain unestablished."
+  },
+  "campaign_turns_before": 24,
+  "previous_session": {
+    "session_id": "session-0001",
+    "turns": 24,
+    "summary": {
+      "summary": "The three travelers investigated the Crooked Lantern's cellar bell and rescued Iven, whose hand was trapped beneath a fallen rack. Torren identified a shutoff board, but Elara's first attempt and a later coordinated attempt both failed; its rotten handle broke and the cellar remained flooded. Arlen's attempt to retrieve Iven's satchel also failed, and the papers washed beyond reach. The party withdrew safely. Mara honored the promised supper and beds. Iven says the lost papers were wage receipts naming his absent brother Dain under the heading North Sluice Repairs; those claims remain unverified. The party agreed to cautious inquiries in daylight. No combat occurred. Seven software checks produced four successes and three failures.",
+      "source_fact_ids": [
+        "fact-rescue",
+        "fact-shutoff",
+        "fact-board-jammed",
+        "fact-handle-broken",
+        "fact-evidence-lost",
+        "fact-safe-return",
+        "fact-reward",
+        "rumor-dain",
+        "rumor-north-sluice",
+        "fact-next-plan"
+      ],
+      "next_hook": "Ask where North Sluice Repairs is, whether Dain worked there, and who can independently verify Iven's account. The route, worksite, employer, reasons for Dain's absence, and truth of the wage claim remain undefined."
+    },
+    "checkpoint_sha256": "055334b6be0a2363a6ef01023f014c2c68f61e459d5df976b3b61330bae00833"
+  },
+  "prior_public_log": [
+    {
+      "turn": 14,
+      "kind": "turn",
+      "actor": "Elara Voss",
+      "speech": "Ready. One, two—pull.",
+      "action": "Elara secures her rope to the board's handle and pulls from the dry step while Arlen and Torren keep it square with the staff.",
+      "roll": {
+        "roll_id": "roll-0014",
+        "individual_rolls": [
+          1,
+          6
+        ],
+        "selected_roll": 6,
+        "modifier": 4,
+        "total": 10
+      },
+      "skill": "ATHLETICS",
+      "text": "The board shifts, then its rotten handle tears free with Elara's rope still around it. Arlen and Torren keep the staff from whipping loose, but the board remains jammed. There is no usable handle left. Water lifts the satchel's flap and a pale corner of paper streams out through the grate. The group has bought no reprieve; this repair now needs tools and footing they do not have.",
+      "scene_id": "scene-0002"
+    },
+    {
+      "turn": 15,
+      "kind": "turn",
+      "actor": "Torren Bright",
+      "speech": "Enough. We've rescued a person; let's not trade three more for a door. Iven, onto the upper step. Arlen, if you can reach it from the ledge, one try—then we leave.",
+      "action": "Torren withdraws his staff, offers it as support to Iven, and guides him toward the dry upper steps while keeping the lamp in view.",
+      "roll": null,
+      "skill": null,
+      "text": "Iven takes the offered staff with his good hand and climbs to the dry step beside the landing. He can stand and move without assistance once there. 'Leave it if you have to,' he says, although his eyes stay on the water. The satchel is still within one arm's reach of the ledge; its papers are not secure.",
+      "scene_id": "scene-0002"
+    },
+    {
+      "turn": 16,
+      "kind": "turn",
+      "actor": "Arlen Vale",
+      "speech": "One try. If I say let go, let go.",
+      "action": "Arlen crouches on the ledge and reaches for the satchel's shoulder strap, trying to lift the open bag without spilling its remaining papers.",
+      "roll": {
+        "roll_id": "roll-0016",
+        "individual_rolls": [
+          2
+        ],
+        "selected_roll": 2,
+        "modifier": 3,
+        "total": 5
+      },
+      "skill": "DEXTERITY",
+      "text": "The wet strap parts in Arlen's hand. The bag turns under the grate and empties into the dark water beyond it. He has to brace both hands against the stone to keep his footing. When he can look again, the satchel and its papers are out of reach. Iven shuts his eyes. 'All right,' he says. 'All right. Come back.'",
+      "scene_id": "scene-0002"
+    },
+    {
+      "turn": 17,
+      "kind": "turn",
+      "actor": "Elara Voss",
+      "speech": "We're done down here. Iven first, Torren behind him. Arlen, come with me. Mara needs to know that board is broken.",
+      "action": "Elara gathers her rope and takes a position on the stairs to help Iven climb, leaving the broken board alone.",
+      "roll": null,
+      "skill": null,
+      "text": "Iven climbs past Elara using the sound steps. His hand is painful, but he can walk. The water continues below them. The broken handle comes away with Elara's rope; the board itself cannot be operated safely from the landing.",
+      "scene_id": "scene-0002"
+    },
+    {
+      "turn": 18,
+      "kind": "turn",
+      "actor": "Torren Bright",
+      "speech": "Mara! Your guest is coming up. He'll need clean cloth. And nobody else goes down until the water drops.",
+      "action": "Torren follows Iven to the upper steps with his recovered staff and calls to Mara for help.",
+      "roll": null,
+      "skill": null,
+      "text": "Mara appears at the top with folded linen. 'Iven?' She sets the cloth on the floor and reaches to steady him with both hands. Seeing the water on their clothes, she moves a chair away from the door to clear their path.",
+      "scene_id": "scene-0002"
+    },
+    {
+      "turn": 19,
+      "kind": "turn",
+      "actor": "Arlen Vale",
+      "speech": "A bell that rings because somebody needs help. I can invoice that as an investigation. The plumbing is beyond our qualifications.",
+      "action": "Arlen climbs back to the others, makes sure nobody remains below, and lets Mara know the satchel was lost.",
+      "roll": null,
+      "skill": null,
+      "text": "All three travelers and Iven reach the tavern floor. Mara closes the cellar door and draws a bench across it. Iven sits beside the counter, his empty good hand resting on his knee. The bell is silent below them.",
+      "scene_id": "scene-0002"
+    },
+    {
+      "turn": 19,
+      "kind": "scene",
+      "text": "The four sit near the counter while Mara wraps Iven's hand in clean linen. Rain still brushes the shutters. The cellar remains flooded behind its blocked door, and the lost receipts remain lost. Mara places a pot of hot broth on the table. 'You found out what was ringing. Supper and beds, as promised.'",
+      "scene_id": "scene-0003"
+    },
+    {
+      "turn": 20,
+      "kind": "turn",
+      "actor": "Elara Voss",
+      "speech": "Thank you for the food. But next time, tell us someone might be down there. Why were you hiding him?",
+      "action": "Elara asks Mara directly about sheltering Iven while leaving him space to answer for himself.",
+      "roll": null,
+      "skill": null,
+      "text": "'He asked for somewhere nobody would think to look,' Mara says. 'I gave him a dry corner. It was dry then. I didn't want strangers asking whose papers he had.' Iven nods. 'My request. Her mistake was thinking I left. Mine was trying to mend the drain alone.' Neither offers proof of who, if anyone, is looking for him.",
+      "scene_id": "scene-0003"
+    },
+    {
+      "turn": 21,
+      "kind": "turn",
+      "actor": "Torren Bright",
+      "speech": "I can write down what you remember. That won't replace the receipts. Your brother's name first, and the place printed on them. I'll mark this as your account, not proof.",
+      "action": "Torren opens his notebook and asks Iven for the exact names he remembers, distinguishing recollection from verified evidence.",
+      "roll": null,
+      "skill": null,
+      "text": "'Dain,' Iven says. 'My brother is Dain. The heading was North Sluice Repairs. Seven days ago, wages collected beside his name. I didn't see him sign it. I don't know who did.' He stares at the page. 'I know how little that is without the paper.' Neither Mara nor anyone at the table can corroborate the receipt.",
+      "scene_id": "scene-0003"
+    },
+    {
+      "turn": 22,
+      "kind": "turn",
+      "actor": "Arlen Vale",
+      "speech": "We can ask about a man and a worksite tomorrow. That isn't a promise to accuse anyone, break into anything, or wade through another cellar. And if it becomes a job, we agree the price before the drowning.",
+      "action": "Arlen accepts Mara's supper and offers to help make cautious inquiries in the morning, with explicit limits.",
+      "roll": null,
+      "skill": null,
+      "text": "Iven gives a tired nod. 'Questions would be more than I had this morning.' Mara puts bread beside the broth. 'Ask in daylight,' she says. 'The drain can wait for someone with a proper brace.' No fee or route has yet been agreed.",
+      "scene_id": "scene-0003"
+    },
+    {
+      "turn": 23,
+      "kind": "turn",
+      "actor": "Elara Voss",
+      "speech": "Questions first. I want to know whether Dain needs help. Tonight we keep Iven warm and make sure nobody goes past that bench.",
+      "action": "Elara agrees to the morning inquiries, checks that Iven has a seat near the warmth, and leaves the cellar barrier in place.",
+      "roll": null,
+      "skill": null,
+      "text": "Mara brings another dry cloth for Iven's hand. He has stopped shivering by the time the broth cools enough to drink. The bench stays across the cellar door. Beyond the shutters, rain conceals whatever roads and settlements lie outside.",
+      "scene_id": "scene-0003"
+    },
+    {
+      "turn": 24,
+      "kind": "turn",
+      "actor": "Torren Bright",
+      "speech": "Dain. North Sluice Repairs. Claimed wages, not confirmed wages. Those are our questions. The rest can remain blank until morning.",
+      "action": "Torren reads back the distinctions in his notes, agrees to cautious inquiries at dawn, and closes the notebook for the night.",
+      "roll": null,
+      "skill": null,
+      "text": "Iven corrects nothing in the account. Mara lights the way to the promised beds. For tonight, the travelers have a rescued man, an unfixed flood, and two names written above a great deal of blank paper. The world beyond the tavern has not yet answered them.",
+      "scene_id": "scene-0003"
+    }
+  ]
+}

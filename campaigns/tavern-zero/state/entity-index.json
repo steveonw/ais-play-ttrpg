@@ -1,0 +1,138 @@
+{
+  "crooked-lantern": {
+    "id": "crooked-lantern",
+    "name": "The Crooked Lantern",
+    "type": "LOCATION",
+    "undefined_fields": [
+      "settlement",
+      "region",
+      "history"
+    ]
+  },
+  "mara-blackkeg": {
+    "id": "mara-blackkeg",
+    "name": "Mara Blackkeg",
+    "type": "NPC",
+    "undefined_fields": [
+      "history",
+      "family",
+      "motives"
+    ]
+  },
+  "cellar-door": {
+    "id": "cellar-door",
+    "name": "Cellar door",
+    "type": "OBJECT",
+    "undefined_fields": [
+      "lock",
+      "mechanism"
+    ]
+  },
+  "tavern-cellar": {
+    "id": "tavern-cellar",
+    "name": "Crooked Lantern cellar",
+    "type": "LOCATION",
+    "undefined_fields": [
+      "age",
+      "extent",
+      "connections"
+    ]
+  },
+  "trapped-traveler": {
+    "id": "trapped-traveler",
+    "name": "Trapped traveler",
+    "type": "NPC",
+    "undefined_fields": [
+      "name",
+      "occupation",
+      "origin"
+    ]
+  },
+  "fallen-rack": {
+    "id": "fallen-rack",
+    "name": "Fallen storage rack",
+    "type": "OBJECT",
+    "undefined_fields": [
+      "cause-of-fall"
+    ]
+  },
+  "drain-grate": {
+    "id": "drain-grate",
+    "name": "Wooden drainage grate",
+    "type": "OBJECT",
+    "undefined_fields": [
+      "outlet",
+      "obstruction"
+    ]
+  },
+  "leather-satchel": {
+    "id": "leather-satchel",
+    "name": "Iven's leather satchel",
+    "type": "OBJECT",
+    "undefined_fields": [
+      "contents"
+    ]
+  },
+  "shutoff-board": {
+    "id": "shutoff-board",
+    "name": "Drain shutoff board",
+    "type": "OBJECT",
+    "undefined_fields": [
+      "age",
+      "maintenance"
+    ]
+  },
+  "lantern-lane": {
+    "id": "lantern-lane",
+    "name": "Lane outside the Crooked Lantern",
+    "type": "LOCATION",
+    "undefined_fields": [
+      "settlement",
+      "other_destinations",
+      "history"
+    ]
+  },
+  "lane-stone-bridge": {
+    "id": "lane-stone-bridge",
+    "name": "Stone bridge at the end of the lane",
+    "type": "LOCATION",
+    "undefined_fields": [
+      "watercourse_name",
+      "far_bank",
+      "connection_to_north_sluice"
+    ]
+  },
+  "lane-repair-notice": {
+    "id": "lane-repair-notice",
+    "name": "North Sluice Repairs notice",
+    "type": "OBJECT",
+    "undefined_fields": [
+      "author",
+      "authority",
+      "posting_date"
+    ]
+  },
+  "gray-coated-notice-poster": {
+    "id": "gray-coated-notice-poster",
+    "name": "Gray-coated notice poster",
+    "type": "NPC",
+    "undefined_fields": [
+      "name",
+      "occupation",
+      "employer",
+      "knowledge_of_dain"
+    ]
+  },
+  "sella-repair-contact": {
+    "id": "sella-repair-contact",
+    "name": "Sella",
+    "type": "NPC",
+    "undefined_fields": [
+      "appearance",
+      "formal_position",
+      "employer",
+      "knowledge_of_dain",
+      "current_location"
+    ]
+  }
+}

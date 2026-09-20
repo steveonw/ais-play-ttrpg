@@ -1,0 +1,42 @@
+{
+  "mode": "SINGLE_MODEL_SELF_PLAY",
+  "maximum_turns": 100,
+  "completed_actor_turns": 24,
+  "scenes": 3,
+  "software_checks": 7,
+  "successes": 4,
+  "failures": 3,
+  "dice_values": [
+    [
+      19
+    ],
+    [
+      15
+    ],
+    [
+      11
+    ],
+    [
+      15
+    ],
+    [
+      4
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2
+    ]
+  ],
+  "fact_records": 33,
+  "entities": 9,
+  "character_knowledge_counts": {
+    "arlen-vale": 32,
+    "elara-voss": 31,
+    "torren-bright": 31
+  },
+  "independent_agent_isolation_tested": false,
+  "replayed_with_identical_dice": true
+}

@@ -1,0 +1,48 @@
+{
+  "status": "BLOCKED",
+  "completed_character_turns": 29,
+  "requested_turns": 100,
+  "completed_rounds": 11,
+  "pending_round": 12,
+  "pending_declarations": 3,
+  "native_role_calls": 52,
+  "accepted_replies": 50,
+  "transport_correction_calls": 2,
+  "calls_by_role": {
+    "gm": 13,
+    "player": 36,
+    "chronicler": 3
+  },
+  "accepted_by_role": {
+    "gm": 12,
+    "player": 36,
+    "chronicler": 2
+  },
+  "reviews_approved": 2,
+  "reviewed_through_round": 10,
+  "unreviewed_completed_rounds": [
+    11
+  ],
+  "dice_checks": 0,
+  "recalls": 0,
+  "deferred_declarations": 4,
+  "calls_per_completed_turn": 1.7931,
+  "calls_through_last_completed_round": 49,
+  "median_round_seconds": 448.844,
+  "max_round_seconds": 1512.882,
+  "accepted_dispatch_to_reply_median_seconds": {
+    "player": 240.966,
+    "gm": 192.983,
+    "chronicler": 195.781
+  },
+  "approx_elapsed_seconds": 7262.546,
+  "elapsed_start_proxy": "mtime of preserved first dispatched packet; not an instrumented session start",
+  "first_packet_mtime_utc": "2026-09-20T00:45:12.309692+00:00",
+  "paused_at_utc": "2026-09-20T02:46:14.855472+00:00",
+  "timing_limits": "Round timing excludes between-round reviews. Handoff includes scheduling, relay and submission. A recorded 1289.925-second coordinator stall affected round 7. Supervisor inference calls and tokens/cost are not counted.",
+  "token_usage": null,
+  "cost": null,
+  "source_sha256": "6447cef9093bb8f0310f4b39ebafd16147e980c60467523457efb301450bc74b",
+  "paused_checkpoint_sha256": "e86ff63c1c0649cc3e45d28dcb9af458b88432e709358d05f349a99587fe6ea3",
+  "verification": "PASS: turn ranges, accepted reply digests, call accounting, source facts/knowledge, unchanged HP/inventory/RNG, pending declarations, approved review coverage, and no outstanding inboxes verified."
+}
