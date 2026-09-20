@@ -127,7 +127,7 @@ been exercised against a live API account. See [validation](docs/validation.md).
 | `campaigns/tavern-zero/characters/` | Individual knowledge records |
 | `campaigns/tavern-zero/sessions/session-0001/` | Transcript, summary, metrics and full debug log |
 | `campaigns/tavern-zero/sessions/session-0002/` | Separate-agent transcript, summary, metrics and recovery snapshots |
-| `campaigns/tavern-zero/sessions/session-0003/` | Blocked live test: public transcript, report, metrics and recovery status; full archive awaits publication approval |
+| `campaigns/tavern-zero/sessions/session-0003/` | Blocked live test: transcript, report, metrics, full paused campaign archive and recovery instructions |
 
 Campaign records, including fictional secrets, are public by the owner's choice.
 Player agents must use filtered contexts instead of reading the whole repository.
